@@ -8,6 +8,17 @@ const schema = a.schema({
     validationMessage: a.string(),
     userId: a.string(),
   }).authorization(allow => [allow.owner()]),
+  
+  Tutorial: a.model({
+    title: a.string(),
+    description: a.string(),
+    initialCode: a.string(),
+    solution: a.string(),
+    order: a.integer(),
+  }).authorization(allow => [
+    allow.public().read(),
+    allow.owner().create().update().delete(),
+  ]),
 });
 
 export type Schema = ClientSchema<typeof schema>;
