@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import CodeMirror from '@uiw/react-codemirror';
 import { javascript } from '@codemirror/lang-javascript';
 import { oneDark } from '@codemirror/theme-one-dark';
@@ -8,23 +8,22 @@ interface CodeEditorProps {
   onChange: (code: string) => void;
   onRun: () => void;
   userId: string;
+  executionSpeed: 'fast' | 'educational';
+  onSpeedChange: (speed: 'fast' | 'educational') => void;
 }
 
 export function CodeEditor({ code, onChange, onRun }: CodeEditorProps) {
   const [validationMessage, setValidationMessage] = useState('');
   const [isRunning, setIsRunning] = useState(false);
 
-  const validateAndRun = async () => {
+  const handleRun = async () => {
     setIsRunning(true);
     setValidationMessage('');
     
     try {
       // Client-side syntax validation
       new Function(code);
-      
-      // If validation passes, clear any error message and run the code
-      setValidationMessage('');
-      onRun();
+      onRun(); // This will trigger the parent's run handler
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : 'Invalid code';
       setValidationMessage(`Error: ${errorMessage}`);
@@ -71,50 +70,59 @@ export function CodeEditor({ code, onChange, onRun }: CodeEditorProps) {
     URL.revokeObjectURL(url);
   };
 
+  // Throttled onChange handler to prevent too many updates
+  const throttledOnChange = useCallback(
+    (() => {
+      let timeout: NodeJS.Timeout | null = null;
+      return (value: string) => {
+        if (timeout) {
+          clearTimeout(timeout);
+        }
+        timeout = setTimeout(() => {
+          onChange(value);
+          timeout = null;
+        }, 150);
+      };
+    })(),
+    [onChange]
+  );
+
   return (
     <div className="flex flex-col h-full">
-      <div className="flex justify-between items-center mb-2">
-        <div className="space-x-2">
-          <button
-            onClick={validateAndRun}
-            disabled={isRunning}
-            className={`px-4 py-2 text-white rounded-md transition-colors duration-200
-              ${isRunning 
-                ? 'bg-gray-500 cursor-not-allowed' 
-                : 'bg-green-600 hover:bg-green-700'}`}
-          >
-            {isRunning ? (
-              <span className="flex items-center">
-                <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                </svg>
-                Running...
-              </span>
-            ) : 'Run Code'}
-          </button>
-          <button
-            onClick={downloadCode}
-            className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 
-                     transition-colors duration-200"
-          >
-            Download
-          </button>
-        </div>
-        {validationMessage && (
-          <div className="px-4 py-2 bg-red-100 text-red-800 rounded-md">
-            {validationMessage}
-          </div>
-        )}
+      <div className="flex flex-wrap gap-2 mb-2">
+        <button
+          onClick={handleRun}
+          disabled={isRunning}
+          className={`px-4 py-2 text-white rounded-md transition-colors ${
+            isRunning ? 'bg-gray-500' : 'bg-green-600 hover:bg-green-700'
+          }`}
+        >
+          {isRunning ? 'Running...' : 'Run Code'}
+        </button>
+        <button
+          onClick={downloadCode}
+          className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+        >
+          Download
+        </button>
       </div>
-      <CodeMirror
-        value={code}
-        height="100%"
-        theme={oneDark}
-        extensions={[javascript()]}
-        onChange={onChange}
-        className="flex-grow border border-gray-700 rounded-lg overflow-hidden"
-      />
+      
+      {validationMessage && (
+        <div className="px-4 py-2 mb-2 bg-red-100 text-red-800 rounded-md">
+          {validationMessage}
+        </div>
+      )}
+      
+      <div className="flex-1 h-[calc(100%-4rem)]">
+        <CodeMirror
+          value={code}
+          height="100%"
+          theme={oneDark}
+          extensions={[javascript()]}
+          onChange={throttledOnChange}
+          className="h-full border border-gray-700 rounded-lg overflow-hidden"
+        />
+      </div>
     </div>
   );
 }
