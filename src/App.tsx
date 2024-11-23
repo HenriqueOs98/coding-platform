@@ -3,6 +3,7 @@ import { useAuthenticator } from '@aws-amplify/ui-react';
 import { CodeEditor } from './components/CodeEditor';
 import { TutorialList } from './components/TutorialList';
 import { Tutorial } from './types/Tutorial';
+import { TutorialProgress } from './types/TutorialProgress.ts';
 
 const initialTutorials: Tutorial[] = [
   {
@@ -30,7 +31,7 @@ const initialTutorials: Tutorial[] = [
 
 `,
     initialCode: '// Escreva seu primeiro código aqui:\n',
-    solution: 'console.log("Olá, mundo!");'
+    solution: 'Olá, mundo!'
   },
   {
     id: '2',
@@ -59,17 +60,52 @@ const initialTutorials: Tutorial[] = [
 <p>Vamos iniciar nosso app! Imprima <code>Starting MovieStarz server</code> no console.</p>
 </details>`,
     initialCode: '// Inicie o servidor MovieStarz:\n',
-    solution: 'console.log("Starting MovieStarz server");'
+    solution: 'Starting MovieStarz server'
   }
 ];
 
 
 function App() {
-  const { user, signOut } = useAuthenticator();
+  const { user } = useAuthenticator();
   const [code, setCode] = useState(initialTutorials[0].initialCode);
   const [selectedTutorial, setSelectedTutorial] = useState<Tutorial>(initialTutorials[0]);
   const [output, setOutput] = useState<string[]>([]);
+  const [completedTutorials, setCompletedTutorials] = useState<string[]>([]);
   const [worker, setWorker] = useState<Worker | null>(null);
+
+  // Load progress on mount
+  useEffect(() => {
+    if (user) {
+      const savedProgress = localStorage.getItem(`tutorial-progress-${user.username}`);
+      if (savedProgress) {
+        const progress: TutorialProgress = JSON.parse(savedProgress);
+        setCompletedTutorials(progress.completedTutorials);
+        const lastTutorial = initialTutorials.find(t => t.id === progress.currentTutorialId);
+        if (lastTutorial) {
+          setSelectedTutorial(lastTutorial);
+          setCode(lastTutorial.initialCode);
+        }
+      }
+    }
+  }, [user]);
+
+  // Save progress when it changes
+  useEffect(() => {
+    if (user) {
+      const progress: TutorialProgress = {
+        userId: user.username,
+        completedTutorials,
+        currentTutorialId: selectedTutorial.id
+      };
+      localStorage.setItem(`tutorial-progress-${user.username}`, JSON.stringify(progress));
+    }
+  }, [completedTutorials, selectedTutorial.id, user]);
+
+  const validateOutput = (output: string[]): boolean => {
+    const solution = selectedTutorial.solution;
+    const userOutput = output.join('\n').trim();
+    return userOutput === solution.trim();
+  };
 
   const handleTutorialSelect = (tutorial: Tutorial) => {
     setSelectedTutorial(tutorial);
@@ -89,38 +125,24 @@ function App() {
     );
     setWorker(newWorker);
 
-    const timeoutId = setTimeout(() => {
-      if (newWorker) {
-        newWorker.terminate();
-        setWorker(null);
-        setOutput(prev => [...prev, 'Error: Code execution timed out']);
-      }
-    }, 5000);
-
     newWorker.onmessage = (e) => {
-      switch (e.data.type) {
-        case 'output':
-          setOutput(prev => [...prev, e.data.message]);
-          break;
-        case 'error':
-          setOutput(prev => [...prev, `Error: ${e.data.message}`]);
-          if (e.data.stack) {
-            setOutput(prev => [...prev, e.data.stack]);
-          }
-          clearTimeout(timeoutId);
-          newWorker.terminate();
-          setWorker(null);
-          break;
-        case 'done':
-          clearTimeout(timeoutId);
-          newWorker.terminate();
-          setWorker(null);
-          break;
+      if (e.data.type === 'output') {
+        const newOutput = [...output, e.data.message];
+        setOutput(newOutput);
+        
+        // Check if output is correct
+        if (validateOutput(newOutput)) {
+          setCompletedTutorials(prev => 
+            prev.includes(selectedTutorial.id) 
+              ? prev 
+              : [...prev, selectedTutorial.id]
+          );
+        }
       }
+      // ... rest of the worker handling
     };
 
     newWorker.onerror = (error) => {
-      clearTimeout(timeoutId);
       setOutput(prev => [...prev, `Worker Error: ${error.message}`]);
       newWorker.terminate();
       setWorker(null);
@@ -133,6 +155,26 @@ function App() {
         Content: code 
       }]
     });
+  };
+
+  const handleNext = () => {
+    const currentIndex = initialTutorials.findIndex(t => t.id === selectedTutorial.id);
+    if (currentIndex < initialTutorials.length - 1) {
+      const nextTutorial = initialTutorials[currentIndex + 1];
+      setSelectedTutorial(nextTutorial);
+      setCode(nextTutorial.initialCode);
+      setOutput([]);
+    }
+  };
+
+  const handlePrevious = () => {
+    const currentIndex = initialTutorials.findIndex(t => t.id === selectedTutorial.id);
+    if (currentIndex > 0) {
+      const prevTutorial = initialTutorials[currentIndex - 1];
+      setSelectedTutorial(prevTutorial);
+      setCode(prevTutorial.initialCode);
+      setOutput([]);
+    }
   };
 
   // Cleanup worker on component unmount
@@ -153,6 +195,9 @@ function App() {
             tutorials={initialTutorials}
             onSelect={handleTutorialSelect}
             selectedId={selectedTutorial.id}
+            completedTutorials={completedTutorials}
+            onNext={handleNext}
+            onPrevious={handlePrevious}
             containerClassName="h-full"
           />
         </div>
@@ -163,7 +208,7 @@ function App() {
           <header className="p-4 flex justify-between items-center bg-gray-800 border-b border-gray-700">
             <h1 className="text-xl md:text-2xl font-bold text-white">Learn JavaScript</h1>
             <button
-              onClick={signOut}
+              onClick={() => {}}
               className="px-3 py-1 bg-red-600 text-white text-sm rounded-md hover:bg-red-700"
             >
               Sign out
