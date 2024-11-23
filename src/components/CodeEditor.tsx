@@ -113,7 +113,7 @@ export function CodeEditor({ code, onChange, onRun }: CodeEditorProps) {
         </div>
       )}
       
-      <div className="flex-1 h-[calc(100%-4rem)]">
+      <div className="flex-1 h-[400px] lg:h-[calc(100%-4rem)]">
         <CodeMirror
           value={code}
           height="100%"
