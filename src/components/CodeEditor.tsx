@@ -47,15 +47,42 @@ export function CodeEditor({ code, onChange, onRun, userId }: CodeEditorProps) {
   };
 
   const downloadCode = () => {
-    const blob = new Blob([code], { type: 'text/javascript' });
+    const htmlContent = `
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>JavaScript Code</title>
+    <style>
+      body { padding: 1rem; margin: 0; font-family: sans-serif; }
+    </style>
+  </head>
+  <body>
+    <div id="output"></div>
+    <script>
+      // Capture console.log output
+      const originalLog = console.log;
+      console.log = function(...args) {
+        originalLog.apply(console, args);
+        const output = document.getElementById('output');
+        output.innerHTML += args.map(arg => 
+          typeof arg === 'object' ? JSON.stringify(arg) : arg
+        ).join(' ') + '<br>';
+      };
+      
+      // Your code
+      ${code}
+    </script>
+  </body>
+  </html>`;
+  
+    const blob = new Blob([htmlContent], { type: 'text/html' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'code.js';
+    a.download = 'code.html';
     a.click();
     URL.revokeObjectURL(url);
   };
-
   return (
     <div className="flex flex-col h-full">
       <div className="flex justify-between items-center mb-2">

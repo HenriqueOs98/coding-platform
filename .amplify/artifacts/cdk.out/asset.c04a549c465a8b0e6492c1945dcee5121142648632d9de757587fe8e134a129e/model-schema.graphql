@@ -1,0 +1,8 @@
+type CodeSnippet @model @auth(rules: [{allow: owner, ownerField: "owner"}])
+{
+  language: String
+  code: String
+  isValid: Boolean
+  validationMessage: String
+  userId: String
+}

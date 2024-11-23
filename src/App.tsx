@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useAuthenticator } from '@aws-amplify/ui-react';
 import { CodeEditor } from './components/CodeEditor';
-import { OutputPanel } from './components/OutputPanel';
 import { TutorialList } from './components/TutorialList';
 import { Tutorial } from './types/Tutorial';
 
@@ -56,13 +55,52 @@ function App() {
           </div>
           
           <div className="flex-1 grid grid-cols-2 gap-4">
-            <CodeEditor
-              code={code}
-              onChange={setCode}
-              onRun={() => setOutput(code)}
-              userId={user?.username || ''}
-            />
-            <OutputPanel code={output} />
+  <CodeEditor
+    code={code}
+    onChange={setCode}
+    onRun={() => setOutput(code)}
+    userId={user?.username || ''}
+  />
+  <div className="bg-gray-800 rounded-lg p-4 flex flex-col">
+    <div className="flex justify-between items-center mb-4">
+      <h2 className="text-xl font-bold text-white">Output</h2>
+    </div>
+    <iframe
+      id="output-frame"
+      className="flex-grow bg-white rounded-lg"
+      srcDoc={`
+        <html>
+          <head>
+            <style>
+              body { padding: 1rem; margin: 0; font-family: sans-serif; }
+            </style>
+          </head>
+          <body>
+            <div id="output"></div>
+            <script>
+              // Capture console.log output
+              const originalLog = console.log;
+              console.log = function(...args) {
+                originalLog.apply(console, args);
+                const output = document.getElementById('output');
+                output.innerHTML += args.map(arg => 
+                  typeof arg === 'object' ? JSON.stringify(arg) : arg
+                ).join(' ') + '<br>';
+              };
+              
+              // Run the code
+              try {
+                ${output}
+              } catch (error) {
+                console.log('Error:', error.message);
+              }
+            </script>
+          </body>
+        </html>
+      `}
+      sandbox="allow-scripts"
+    />
+  </div>
           </div>
         </div>
       </div>
@@ -71,4 +109,3 @@ function App() {
 }
 
 export default App;
-
