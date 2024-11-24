@@ -135,6 +135,7 @@ function TutorialList({
   onPrevious,
   containerClassName 
 }: TutorialListProps) {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const currentTutorial = tutorials.find(t => t.id === selectedId);
   const currentIndex = tutorials.findIndex(t => t.id === selectedId);
   const isFirstTutorial = currentIndex === 0;
@@ -142,26 +143,97 @@ function TutorialList({
   const isCurrentTutorialCompleted = completedTutorials.includes(selectedId);
 
   return (
-    <div className={`bg-gray-800 p-4 flex flex-col h-[500px] lg:h-full ${containerClassName}`}>
-      {/* Tutorial List */}
-      <div className="mb-4 border-b border-gray-700 pb-4">
-        {tutorials.map((tutorial) => (
-          <button
-            key={tutorial.id}
-            onClick={() => onSelect(tutorial)}
-            className={`w-full text-left px-4 py-2 rounded-md mb-2 ${
-              tutorial.id === selectedId
-                ? 'bg-blue-600 text-white'
-                : 'text-gray-300 hover:bg-gray-700'
-            } ${
-              completedTutorials.includes(tutorial.id)
-                ? 'border-l-4 border-green-500'
-                : ''
-            }`}
+    <div className={`bg-gray-800 p-4 flex flex-col ${containerClassName}`}>
+      {/* Tutorial Navigation - Mobile */}
+      <div className="sm:hidden mb-4 flex justify-between items-center">
+        <button
+          onClick={onPrevious}
+          disabled={isFirstTutorial}
+          className={`px-4 py-2 rounded-md ${
+            isFirstTutorial ? 'bg-gray-600 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700'
+          } text-white`}
+        >
+          Previous
+        </button>
+        
+        <span className="text-gray-400">
+          Tutorial {currentIndex + 1} of {tutorials.length}
+        </span>
+        
+        <button
+          onClick={onNext}
+          disabled={!isCurrentTutorialCompleted || isLastTutorial}
+          className={`px-4 py-2 rounded-md ${
+            !isCurrentTutorialCompleted || isLastTutorial
+              ? 'bg-gray-600 cursor-not-allowed'
+              : 'bg-green-600 hover:bg-green-700'
+          } text-white`}
+        >
+          Next
+        </button>
+      </div>
+
+      {/* Tutorial Dropdown */}
+      <div className="relative mb-4 border-b border-gray-700 pb-4">
+        <button
+          onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+          className="w-full flex justify-between items-center px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600"
+        >
+          <span>{currentTutorial?.title || 'Select Tutorial'}</span>
+          <svg
+            className={`w-5 h-5 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
           >
-            {tutorial.title}
-          </button>
-        ))}
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        {isDropdownOpen && (
+          <div className="absolute z-10 w-full mt-1 bg-gray-800 border border-gray-700 rounded-md shadow-lg">
+            {tutorials.map((tutorial, index) => {
+              const isAvailable = index === 0 || completedTutorials.includes(tutorials[index - 1].id);
+              
+              return (
+                <button
+                  key={tutorial.id}
+                  onClick={() => {
+                    if (isAvailable) {
+                      onSelect(tutorial);
+                      setIsDropdownOpen(false);
+                    }
+                  }}
+                  className={`w-full text-left px-4 py-2 ${
+                    tutorial.id === selectedId
+                      ? 'bg-blue-600 text-white'
+                      : isAvailable
+                      ? 'text-gray-300 hover:bg-gray-700'
+                      : 'text-gray-500 cursor-not-allowed bg-gray-800'
+                  } ${
+                    completedTutorials.includes(tutorial.id)
+                      ? 'border-l-4 border-green-500'
+                      : ''
+                  }`}
+                >
+                  <div className="flex items-center">
+                    {completedTutorials.includes(tutorial.id) && (
+                      <svg className="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    )}
+                    {!isAvailable && (
+                      <svg className="w-4 h-4 mr-2 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
+                      </svg>
+                    )}
+                    {tutorial.title}
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        )}
       </div>
 
       {/* Tutorial Content */}
@@ -174,7 +246,7 @@ function TutorialList({
         />
       </div>
       
-      {/* Navigation Controls */}
+      {/* Desktop Navigation */}
       <div className="mt-4 pt-4 border-t border-gray-700">
         <div className="flex justify-between items-center">
           <button
