@@ -13,7 +13,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/deploymentType",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "region": {
@@ -21,7 +21,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/region",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "auth": {
@@ -101,13 +101,13 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_cognito.CfnUserPool",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_cognito.UserPool",
-                      "version": "2.163.1"
+                      "version": "2.170.0"
                     }
                   },
                   "UserPoolAppClient": {
@@ -150,13 +150,13 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_cognito.CfnUserPoolClient",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_cognito.UserPoolClient",
-                      "version": "2.163.1"
+                      "version": "2.170.0"
                     }
                   },
                   "IdentityPool": {
@@ -207,7 +207,7 @@
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_cognito.CfnIdentityPool",
-                      "version": "2.163.1"
+                      "version": "2.170.0"
                     }
                   },
                   "authenticatedUserRole": {
@@ -219,7 +219,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/auth/amplifyAuth/authenticatedUserRole/ImportauthenticatedUserRole",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.Resource",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "Resource": {
@@ -268,13 +268,13 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_iam.CfnRole",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_iam.Role",
-                      "version": "2.163.1"
+                      "version": "2.170.0"
                     }
                   },
                   "unauthenticatedUserRole": {
@@ -286,7 +286,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/auth/amplifyAuth/unauthenticatedUserRole/ImportunauthenticatedUserRole",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.Resource",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "Resource": {
@@ -335,13 +335,13 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_iam.CfnRole",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_iam.Role",
-                      "version": "2.163.1"
+                      "version": "2.170.0"
                     }
                   },
                   "IdentityPoolRoleAttachment": {
@@ -396,7 +396,7 @@
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_cognito.CfnIdentityPoolRoleAttachment",
-                      "version": "2.163.1"
+                      "version": "2.170.0"
                     }
                   }
                 },
@@ -414,7 +414,7 @@
                     "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/auth/CDKMetadata/Default",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.CfnResource",
-                      "version": "2.163.1"
+                      "version": "2.170.0"
                     }
                   },
                   "Condition": {
@@ -422,7 +422,7 @@
                     "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/auth/CDKMetadata/Condition",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.CfnCondition",
-                      "version": "2.163.1"
+                      "version": "2.170.0"
                     }
                   }
                 },
@@ -436,7 +436,7 @@
                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/auth/amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthamplifyAuthUserPool2D58DAAFRef",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnOutput",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               },
               "amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthamplifyAuthUserPoolAppClientC8A58010Ref": {
@@ -444,7 +444,7 @@
                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/auth/amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthamplifyAuthUserPoolAppClientC8A58010Ref",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnOutput",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               },
               "amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthamplifyAuthIdentityPool07E20BC8Ref": {
@@ -452,7 +452,7 @@
                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/auth/amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthamplifyAuthIdentityPool07E20BC8Ref",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnOutput",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               },
               "amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthamplifyAuthauthenticatedUserRoleA4F3C1A9Ref": {
@@ -460,7 +460,7 @@
                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/auth/amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthamplifyAuthauthenticatedUserRoleA4F3C1A9Ref",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnOutput",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               },
               "amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthamplifyAuthunauthenticatedUserRoleFA209D13Ref": {
@@ -468,13 +468,13 @@
                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/auth/amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthamplifyAuthunauthenticatedUserRoleFA209D13Ref",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnOutput",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "aws-cdk-lib.NestedStack",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "auth.NestedStack": {
@@ -513,7 +513,7 @@
                           {
                             "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
                           },
-                          "/318c89e1a51748809de800c3c08a660c0cb19ccdc9731c3576489ae2e5a27185.json"
+                          "/a84f52efe9b88e765e6da93055e75904c2693abbb52b732e7c7e0c7fba00026f.json"
                         ]
                       ]
                     }
@@ -521,7 +521,7 @@
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnStack",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               }
             },
@@ -535,7 +535,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/userPoolId",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "webClientId": {
@@ -543,7 +543,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/webClientId",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "identityPoolId": {
@@ -551,7 +551,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/identityPoolId",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "authRegion": {
@@ -559,7 +559,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/authRegion",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "allowUnauthenticatedIdentities": {
@@ -567,7 +567,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/allowUnauthenticatedIdentities",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "signupAttributes": {
@@ -575,7 +575,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/signupAttributes",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "usernameAttributes": {
@@ -583,7 +583,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/usernameAttributes",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "verificationMechanisms": {
@@ -591,7 +591,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/verificationMechanisms",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "passwordPolicyMinLength": {
@@ -599,7 +599,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/passwordPolicyMinLength",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "passwordPolicyRequirements": {
@@ -607,7 +607,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/passwordPolicyRequirements",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "mfaConfiguration": {
@@ -615,7 +615,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/mfaConfiguration",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "mfaTypes": {
@@ -623,7 +623,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/mfaTypes",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "socialProviders": {
@@ -631,7 +631,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/socialProviders",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "oauthCognitoDomain": {
@@ -639,7 +639,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/oauthCognitoDomain",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "oauthScope": {
@@ -647,7 +647,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/oauthScope",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "oauthRedirectSignIn": {
@@ -655,7 +655,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/oauthRedirectSignIn",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "oauthRedirectSignOut": {
@@ -663,7 +663,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/oauthRedirectSignOut",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "oauthResponseType": {
@@ -671,7 +671,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/oauthResponseType",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "oauthClientId": {
@@ -679,7 +679,15 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/oauthClientId",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
+            }
+          },
+          "groups": {
+            "id": "groups",
+            "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/groups",
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.CfnOutput",
+              "version": "2.170.0"
             }
           },
           "data": {
@@ -695,7 +703,7 @@
                     "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/transformer-user-pool",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.Resource",
-                      "version": "2.163.1"
+                      "version": "2.170.0"
                     }
                   },
                   "GraphQLAPI": {
@@ -745,7 +753,7 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_appsync.CfnGraphQLApi",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "TransformerSchema": {
@@ -761,13 +769,13 @@
                               ]
                             },
                             "definitionS3Location": {
-                              "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/f92a673a51b87410a06dee6a6a93a3e55f32096e143e967e9b583783f1b73043.graphql"
+                              "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/cf1493a45323244e1c5bb1842a5099d2ebde5803f33396158c728c0da2fe3484.graphql"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_appsync.CfnGraphQLSchema",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "DefaultApiKey": {
@@ -782,12 +790,12 @@
                                 "ApiId"
                               ]
                             },
-                            "expires": 1734914855
+                            "expires": 1735008445
                           }
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_appsync.CfnApiKey",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "NONE_DS": {
@@ -813,13 +821,13 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnDataSource",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_appsync.NoneDataSource",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "schema": {
@@ -831,7 +839,7 @@
                             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/GraphQLAPI/schema/Stage",
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.AssetStaging",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "AssetBucket": {
@@ -839,19 +847,19 @@
                             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/GraphQLAPI/schema/AssetBucket",
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_appsync.GraphqlApiBase",
-                      "version": "2.163.1"
+                      "version": "2.170.0"
                     }
                   },
                   "AmplifyTableManager": {
@@ -867,7 +875,7 @@
                             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/AmplifyManagedTableIsCompleteRole/ImportAmplifyManagedTableIsCompleteRole",
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.Resource",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "Resource": {
@@ -967,13 +975,13 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_iam.CfnRole",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_iam.Role",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "ImmutableRoleAmplifyManagedTableIsCompleteRole": {
@@ -981,7 +989,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/ImmutableRoleAmplifyManagedTableIsCompleteRole",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.Resource",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "AmplifyManagedTableOnEventRole": {
@@ -993,7 +1001,7 @@
                             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/AmplifyManagedTableOnEventRole/ImportAmplifyManagedTableOnEventRole",
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.Resource",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "Resource": {
@@ -1093,7 +1101,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_iam.CfnRole",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "DefaultPolicy": {
@@ -1128,19 +1136,19 @@
                                 },
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_iam.CfnPolicy",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_iam.Policy",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_iam.Role",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "TableManagerCustomProvider": {
@@ -1160,7 +1168,7 @@
                                     "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/TableManagerCustomProvider/framework-onEvent/Code/Stage",
                                     "constructInfo": {
                                       "fqn": "aws-cdk-lib.AssetStaging",
-                                      "version": "2.163.1"
+                                      "version": "2.170.0"
                                     }
                                   },
                                   "AssetBucket": {
@@ -1168,13 +1176,13 @@
                                     "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/TableManagerCustomProvider/framework-onEvent/Code/AssetBucket",
                                     "constructInfo": {
                                       "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                      "version": "2.163.1"
+                                      "version": "2.170.0"
                                     }
                                   }
                                 },
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "Resource": {
@@ -1187,7 +1195,7 @@
                                       "s3Bucket": {
                                         "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
                                       },
-                                      "s3Key": "ceafeabd15da961c098d25de257c4480ca482e43c1681000eedc2706dacae760.zip"
+                                      "s3Key": "ca9699b9a2845c45e80cba1111f95ae2ac773af7d87163ae9c808ec547e38e00.zip"
                                     },
                                     "description": "AmplifyManagedTable - onEvent (amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/TableManagerCustomProvider)",
                                     "environment": {
@@ -1224,13 +1232,13 @@
                                 },
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_lambda.CfnFunction",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_lambda.Function",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "framework-isComplete": {
@@ -1247,7 +1255,7 @@
                                       "s3Bucket": {
                                         "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
                                       },
-                                      "s3Key": "ceafeabd15da961c098d25de257c4480ca482e43c1681000eedc2706dacae760.zip"
+                                      "s3Key": "ca9699b9a2845c45e80cba1111f95ae2ac773af7d87163ae9c808ec547e38e00.zip"
                                     },
                                     "description": "AmplifyManagedTable - isComplete (amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/TableManagerCustomProvider)",
                                     "handler": "amplify-table-manager-handler.isComplete",
@@ -1277,13 +1285,13 @@
                                 },
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_lambda.CfnFunction",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_lambda.Function",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -1305,7 +1313,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Role/ImportRole",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.Resource",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "Resource": {
@@ -1344,7 +1352,7 @@
                                 },
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_iam.CfnRole",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "DefaultPolicy": {
@@ -1398,19 +1406,19 @@
                                     },
                                     "constructInfo": {
                                       "fqn": "aws-cdk-lib.aws_iam.CfnPolicy",
-                                      "version": "2.163.1"
+                                      "version": "2.170.0"
                                     }
                                   }
                                 },
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_iam.Policy",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_iam.Role",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "Resource": {
@@ -1418,7 +1426,7 @@
                             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Resource",
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.CfnResource",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -1436,7 +1444,7 @@
                             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/CDKMetadata/Default",
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.CfnResource",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "Condition": {
@@ -1444,7 +1452,7 @@
                             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/CDKMetadata/Condition",
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.CfnCondition",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -1458,7 +1466,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/reference-to-amplifyamplifyvitereacttemplatehicksandbox4470aeb2eddataamplifyDataGraphQLAPI733506A5ApiId",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.CfnParameter",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "amplifyamplifyvitereacttemplatehicksandbox4470aeb2eddataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEvent90AFD6ACArn": {
@@ -1466,13 +1474,13 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/amplifyamplifyvitereacttemplatehicksandbox4470aeb2eddataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEvent90AFD6ACArn",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.CfnOutput",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.NestedStack",
-                      "version": "2.163.1"
+                      "version": "2.170.0"
                     }
                   },
                   "AmplifyTableManager.NestedStack": {
@@ -1523,7 +1531,7 @@
                                   {
                                     "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
                                   },
-                                  "/b3e8d6af2a2e16b49915e315b92902a4ebb557b02382b6f34137c0d7f5ee3f2b.json"
+                                  "/6be06273111c15bdee3a7083569e6f4eecfad17b947999f960e055a99e470771.json"
                                 ]
                               ]
                             }
@@ -1531,7 +1539,7 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.CfnStack",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       }
                     },
@@ -1549,7 +1557,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/DynamoDBModelTableReadIOPS",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.CfnParameter",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "DynamoDBModelTableWriteIOPS": {
@@ -1557,7 +1565,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/DynamoDBModelTableWriteIOPS",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.CfnParameter",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "DynamoDBBillingMode": {
@@ -1565,7 +1573,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/DynamoDBBillingMode",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.CfnParameter",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "DynamoDBEnablePointInTimeRecovery": {
@@ -1573,7 +1581,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/DynamoDBEnablePointInTimeRecovery",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.CfnParameter",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "DynamoDBEnableServerSideEncryption": {
@@ -1581,7 +1589,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/DynamoDBEnableServerSideEncryption",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.CfnParameter",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "HasEnvironmentParameter": {
@@ -1589,7 +1597,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/HasEnvironmentParameter",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.CfnCondition",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "ShouldUseServerSideEncryption": {
@@ -1597,7 +1605,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/ShouldUseServerSideEncryption",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.CfnCondition",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "ShouldUsePayPerRequestBilling": {
@@ -1605,7 +1613,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/ShouldUsePayPerRequestBilling",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.CfnCondition",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "ShouldUsePointInTimeRecovery": {
@@ -1613,7 +1621,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/ShouldUsePointInTimeRecovery",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.CfnCondition",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "CodeSnippetTable": {
@@ -1629,19 +1637,19 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/CodeSnippetTable/Default/Default",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.CfnResource",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.CustomResource",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.Resource",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "CustomTableCodeSnippetTable": {
@@ -1649,7 +1657,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/CustomTableCodeSnippetTable",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_dynamodb.TableBase",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "GetAttCodeSnippetTableStreamArn": {
@@ -1657,7 +1665,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/GetAttCodeSnippetTableStreamArn",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.CfnOutput",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "GetAttCodeSnippetTableName": {
@@ -1665,7 +1673,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/GetAttCodeSnippetTableName",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.CfnOutput",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "CodeSnippetIAMRole": {
@@ -1677,7 +1685,7 @@
                             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/CodeSnippetIAMRole/ImportCodeSnippetIAMRole",
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.Resource",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "Resource": {
@@ -1795,13 +1803,13 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_iam.CfnRole",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_iam.Role",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "ImmutableRoleCodeSnippetIAMRole": {
@@ -1809,7 +1817,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/ImmutableRoleCodeSnippetIAMRole",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.Resource",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "CodeSnippetDataSource": {
@@ -1868,13 +1876,13 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnDataSource",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_appsync.DynamoDbDataSource",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "QuerygetCodeSnippetauth0Function": {
@@ -1890,7 +1898,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/QuerygetCodeSnippetauth0Function/Templateresolvers--Query.getCodeSnippet.auth.1.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -1898,13 +1906,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/QuerygetCodeSnippetauth0Function/Templateresolvers--Query.getCodeSnippet.auth.1.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "QuerygetCodeSnippetauth0Function.AppSyncFunction": {
@@ -1929,7 +1937,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -1951,7 +1959,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/QuerygetCodeSnippetpostAuth0Function/Templateresolvers--Query.getCodeSnippet.postAuth.1.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -1959,13 +1967,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/QuerygetCodeSnippetpostAuth0Function/Templateresolvers--Query.getCodeSnippet.postAuth.1.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "QuerygetCodeSnippetpostAuth0Function.AppSyncFunction": {
@@ -1990,7 +1998,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -2012,7 +2020,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/QueryGetCodeSnippetDataResolverFn/Templateresolvers--Query.getCodeSnippet.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -2020,13 +2028,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/QueryGetCodeSnippetDataResolverFn/Templateresolvers--Query.getCodeSnippet.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "Templateresolvers--Query.getCodeSnippet.res.vtl": {
@@ -2038,7 +2046,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/QueryGetCodeSnippetDataResolverFn/Templateresolvers--Query.getCodeSnippet.res.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -2046,13 +2054,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/QueryGetCodeSnippetDataResolverFn/Templateresolvers--Query.getCodeSnippet.res.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "QueryGetCodeSnippetDataResolverFn.AppSyncFunction": {
@@ -2082,7 +2090,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -2189,7 +2197,7 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_appsync.CfnResolver",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "QuerylistCodeSnippetsauth0Function": {
@@ -2205,7 +2213,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/QuerylistCodeSnippetsauth0Function/Templateresolvers--Query.listCodeSnippets.auth.1.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -2213,13 +2221,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/QuerylistCodeSnippetsauth0Function/Templateresolvers--Query.listCodeSnippets.auth.1.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "QuerylistCodeSnippetsauth0Function.AppSyncFunction": {
@@ -2244,7 +2252,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -2266,7 +2274,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/QuerylistCodeSnippetspostAuth0Function/Templateresolvers--Query.listCodeSnippets.postAuth.1.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -2274,13 +2282,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/QuerylistCodeSnippetspostAuth0Function/Templateresolvers--Query.listCodeSnippets.postAuth.1.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "QuerylistCodeSnippetspostAuth0Function.AppSyncFunction": {
@@ -2305,7 +2313,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -2327,7 +2335,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/QueryListCodeSnippetsDataResolverFn/Templateresolvers--Query.listCodeSnippets.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -2335,13 +2343,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/QueryListCodeSnippetsDataResolverFn/Templateresolvers--Query.listCodeSnippets.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "Templateresolvers--Query.listCodeSnippets.res.vtl": {
@@ -2353,7 +2361,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/QueryListCodeSnippetsDataResolverFn/Templateresolvers--Query.listCodeSnippets.res.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -2361,13 +2369,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/QueryListCodeSnippetsDataResolverFn/Templateresolvers--Query.listCodeSnippets.res.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "QueryListCodeSnippetsDataResolverFn.AppSyncFunction": {
@@ -2397,7 +2405,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -2504,7 +2512,7 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_appsync.CfnResolver",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "MutationcreateCodeSnippetinit0Function": {
@@ -2520,7 +2528,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationcreateCodeSnippetinit0Function/Templateresolvers--Mutation.createCodeSnippet.init.1.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -2528,13 +2536,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationcreateCodeSnippetinit0Function/Templateresolvers--Mutation.createCodeSnippet.init.1.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "MutationcreateCodeSnippetinit0Function.AppSyncFunction": {
@@ -2559,7 +2567,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -2581,7 +2589,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationcreateCodeSnippetauth0Function/Templateresolvers--Mutation.createCodeSnippet.auth.1.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -2589,13 +2597,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationcreateCodeSnippetauth0Function/Templateresolvers--Mutation.createCodeSnippet.auth.1.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "MutationcreateCodeSnippetauth0Function.AppSyncFunction": {
@@ -2620,7 +2628,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -2642,7 +2650,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationcreateCodeSnippetpostAuth0Function/Templateresolvers--Mutation.createCodeSnippet.postAuth.1.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -2650,13 +2658,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationcreateCodeSnippetpostAuth0Function/Templateresolvers--Mutation.createCodeSnippet.postAuth.1.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "MutationcreateCodeSnippetpostAuth0Function.AppSyncFunction": {
@@ -2681,7 +2689,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -2703,7 +2711,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationCreateCodeSnippetDataResolverFn/Templateresolvers--Mutation.createCodeSnippet.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -2711,13 +2719,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationCreateCodeSnippetDataResolverFn/Templateresolvers--Mutation.createCodeSnippet.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "Templateresolvers--Mutation.createCodeSnippet.res.vtl": {
@@ -2729,7 +2737,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationCreateCodeSnippetDataResolverFn/Templateresolvers--Mutation.createCodeSnippet.res.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -2737,13 +2745,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationCreateCodeSnippetDataResolverFn/Templateresolvers--Mutation.createCodeSnippet.res.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "MutationCreateCodeSnippetDataResolverFn.AppSyncFunction": {
@@ -2773,7 +2781,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -2886,7 +2894,7 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_appsync.CfnResolver",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "MutationupdateCodeSnippetinit0Function": {
@@ -2902,7 +2910,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationupdateCodeSnippetinit0Function/Templateresolvers--Mutation.updateCodeSnippet.init.1.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -2910,13 +2918,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationupdateCodeSnippetinit0Function/Templateresolvers--Mutation.updateCodeSnippet.init.1.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "MutationupdateCodeSnippetinit0Function.AppSyncFunction": {
@@ -2941,7 +2949,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -2963,7 +2971,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationupdateCodeSnippetauth0Function/Templateresolvers--Mutation.updateCodeSnippet.auth.1.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -2971,13 +2979,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationupdateCodeSnippetauth0Function/Templateresolvers--Mutation.updateCodeSnippet.auth.1.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "Templateresolvers--Mutation.updateCodeSnippet.auth.1.res.vtl": {
@@ -2989,7 +2997,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationupdateCodeSnippetauth0Function/Templateresolvers--Mutation.updateCodeSnippet.auth.1.res.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -2997,13 +3005,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationupdateCodeSnippetauth0Function/Templateresolvers--Mutation.updateCodeSnippet.auth.1.res.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "MutationupdateCodeSnippetauth0Function.AppSyncFunction": {
@@ -3033,7 +3041,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -3055,7 +3063,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationupdateCodeSnippetpostAuth0Function/Templateresolvers--Mutation.updateCodeSnippet.postAuth.1.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -3063,13 +3071,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationupdateCodeSnippetpostAuth0Function/Templateresolvers--Mutation.updateCodeSnippet.postAuth.1.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "MutationupdateCodeSnippetpostAuth0Function.AppSyncFunction": {
@@ -3094,7 +3102,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -3116,7 +3124,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationUpdateCodeSnippetDataResolverFn/Templateresolvers--Mutation.updateCodeSnippet.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -3124,13 +3132,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationUpdateCodeSnippetDataResolverFn/Templateresolvers--Mutation.updateCodeSnippet.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "Templateresolvers--Mutation.updateCodeSnippet.res.vtl": {
@@ -3142,7 +3150,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationUpdateCodeSnippetDataResolverFn/Templateresolvers--Mutation.updateCodeSnippet.res.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -3150,13 +3158,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationUpdateCodeSnippetDataResolverFn/Templateresolvers--Mutation.updateCodeSnippet.res.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "MutationUpdateCodeSnippetDataResolverFn.AppSyncFunction": {
@@ -3186,7 +3194,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -3299,7 +3307,7 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_appsync.CfnResolver",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "MutationdeleteCodeSnippetauth0Function": {
@@ -3315,7 +3323,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationdeleteCodeSnippetauth0Function/Templateresolvers--Mutation.deleteCodeSnippet.auth.1.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -3323,13 +3331,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationdeleteCodeSnippetauth0Function/Templateresolvers--Mutation.deleteCodeSnippet.auth.1.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "Templateresolvers--Mutation.deleteCodeSnippet.auth.1.res.vtl": {
@@ -3341,7 +3349,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationdeleteCodeSnippetauth0Function/Templateresolvers--Mutation.deleteCodeSnippet.auth.1.res.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -3349,13 +3357,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationdeleteCodeSnippetauth0Function/Templateresolvers--Mutation.deleteCodeSnippet.auth.1.res.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "MutationdeleteCodeSnippetauth0Function.AppSyncFunction": {
@@ -3385,7 +3393,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -3407,7 +3415,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationdeleteCodeSnippetpostAuth0Function/Templateresolvers--Mutation.deleteCodeSnippet.postAuth.1.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -3415,13 +3423,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationdeleteCodeSnippetpostAuth0Function/Templateresolvers--Mutation.deleteCodeSnippet.postAuth.1.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "MutationdeleteCodeSnippetpostAuth0Function.AppSyncFunction": {
@@ -3446,7 +3454,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -3468,7 +3476,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationDeleteCodeSnippetDataResolverFn/Templateresolvers--Mutation.deleteCodeSnippet.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -3476,13 +3484,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationDeleteCodeSnippetDataResolverFn/Templateresolvers--Mutation.deleteCodeSnippet.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "Templateresolvers--Mutation.deleteCodeSnippet.res.vtl": {
@@ -3494,7 +3502,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationDeleteCodeSnippetDataResolverFn/Templateresolvers--Mutation.deleteCodeSnippet.res.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -3502,13 +3510,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/MutationDeleteCodeSnippetDataResolverFn/Templateresolvers--Mutation.deleteCodeSnippet.res.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "MutationDeleteCodeSnippetDataResolverFn.AppSyncFunction": {
@@ -3538,7 +3546,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -3645,7 +3653,7 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_appsync.CfnResolver",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "SubscriptiononCreateCodeSnippetauth0Function": {
@@ -3661,7 +3669,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptiononCreateCodeSnippetauth0Function/Templateresolvers--Subscription.onCreateCodeSnippet.auth.1.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -3669,13 +3677,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptiononCreateCodeSnippetauth0Function/Templateresolvers--Subscription.onCreateCodeSnippet.auth.1.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "SubscriptiononCreateCodeSnippetauth0Function.AppSyncFunction": {
@@ -3700,7 +3708,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -3722,7 +3730,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptiononCreateCodeSnippetpostAuth0Function/Templateresolvers--Subscription.onCreateCodeSnippet.postAuth.1.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -3730,13 +3738,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptiononCreateCodeSnippetpostAuth0Function/Templateresolvers--Subscription.onCreateCodeSnippet.postAuth.1.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "SubscriptiononCreateCodeSnippetpostAuth0Function.AppSyncFunction": {
@@ -3761,7 +3769,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -3783,7 +3791,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptionOnCreateCodeSnippetDataResolverFn/Templateresolvers--Subscription.onCreateCodeSnippet.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -3791,13 +3799,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptionOnCreateCodeSnippetDataResolverFn/Templateresolvers--Subscription.onCreateCodeSnippet.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "Templateresolvers--Subscription.onCreateCodeSnippet.res.vtl": {
@@ -3809,7 +3817,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptionOnCreateCodeSnippetDataResolverFn/Templateresolvers--Subscription.onCreateCodeSnippet.res.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -3817,13 +3825,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptionOnCreateCodeSnippetDataResolverFn/Templateresolvers--Subscription.onCreateCodeSnippet.res.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "SubscriptionOnCreateCodeSnippetDataResolverFn.AppSyncFunction": {
@@ -3850,7 +3858,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -3930,7 +3938,7 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_appsync.CfnResolver",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "SubscriptiononUpdateCodeSnippetauth0Function": {
@@ -3946,7 +3954,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptiononUpdateCodeSnippetauth0Function/Templateresolvers--Subscription.onUpdateCodeSnippet.auth.1.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -3954,13 +3962,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptiononUpdateCodeSnippetauth0Function/Templateresolvers--Subscription.onUpdateCodeSnippet.auth.1.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "SubscriptiononUpdateCodeSnippetauth0Function.AppSyncFunction": {
@@ -3985,7 +3993,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -4007,7 +4015,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptiononUpdateCodeSnippetpostAuth0Function/Templateresolvers--Subscription.onUpdateCodeSnippet.postAuth.1.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -4015,13 +4023,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptiononUpdateCodeSnippetpostAuth0Function/Templateresolvers--Subscription.onUpdateCodeSnippet.postAuth.1.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "SubscriptiononUpdateCodeSnippetpostAuth0Function.AppSyncFunction": {
@@ -4046,7 +4054,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -4068,7 +4076,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptionOnUpdateCodeSnippetDataResolverFn/Templateresolvers--Subscription.onUpdateCodeSnippet.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -4076,13 +4084,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptionOnUpdateCodeSnippetDataResolverFn/Templateresolvers--Subscription.onUpdateCodeSnippet.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "Templateresolvers--Subscription.onUpdateCodeSnippet.res.vtl": {
@@ -4094,7 +4102,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptionOnUpdateCodeSnippetDataResolverFn/Templateresolvers--Subscription.onUpdateCodeSnippet.res.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -4102,13 +4110,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptionOnUpdateCodeSnippetDataResolverFn/Templateresolvers--Subscription.onUpdateCodeSnippet.res.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "SubscriptionOnUpdateCodeSnippetDataResolverFn.AppSyncFunction": {
@@ -4135,7 +4143,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -4215,7 +4223,7 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_appsync.CfnResolver",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "SubscriptiononDeleteCodeSnippetauth0Function": {
@@ -4231,7 +4239,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptiononDeleteCodeSnippetauth0Function/Templateresolvers--Subscription.onDeleteCodeSnippet.auth.1.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -4239,13 +4247,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptiononDeleteCodeSnippetauth0Function/Templateresolvers--Subscription.onDeleteCodeSnippet.auth.1.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "SubscriptiononDeleteCodeSnippetauth0Function.AppSyncFunction": {
@@ -4270,7 +4278,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -4292,7 +4300,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptiononDeleteCodeSnippetpostAuth0Function/Templateresolvers--Subscription.onDeleteCodeSnippet.postAuth.1.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -4300,13 +4308,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptiononDeleteCodeSnippetpostAuth0Function/Templateresolvers--Subscription.onDeleteCodeSnippet.postAuth.1.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "SubscriptiononDeleteCodeSnippetpostAuth0Function.AppSyncFunction": {
@@ -4331,7 +4339,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -4353,7 +4361,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptionOnDeleteCodeSnippetDataResolverFn/Templateresolvers--Subscription.onDeleteCodeSnippet.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -4361,13 +4369,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptionOnDeleteCodeSnippetDataResolverFn/Templateresolvers--Subscription.onDeleteCodeSnippet.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "Templateresolvers--Subscription.onDeleteCodeSnippet.res.vtl": {
@@ -4379,7 +4387,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptionOnDeleteCodeSnippetDataResolverFn/Templateresolvers--Subscription.onDeleteCodeSnippet.res.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -4387,13 +4395,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/SubscriptionOnDeleteCodeSnippetDataResolverFn/Templateresolvers--Subscription.onDeleteCodeSnippet.res.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "SubscriptionOnDeleteCodeSnippetDataResolverFn.AppSyncFunction": {
@@ -4420,7 +4428,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -4500,7 +4508,7 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_appsync.CfnResolver",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "CodeSnippetOwnerDataResolverFn": {
@@ -4516,7 +4524,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/CodeSnippetOwnerDataResolverFn/Templateresolvers--CodeSnippet.owner.req.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -4524,13 +4532,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/CodeSnippetOwnerDataResolverFn/Templateresolvers--CodeSnippet.owner.req.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "Templateresolvers--CodeSnippet.owner.res.vtl": {
@@ -4542,7 +4550,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/CodeSnippetOwnerDataResolverFn/Templateresolvers--CodeSnippet.owner.res.vtl/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -4550,13 +4558,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/CodeSnippetOwnerDataResolverFn/Templateresolvers--CodeSnippet.owner.res.vtl/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "CodeSnippetOwnerDataResolverFn.AppSyncFunction": {
@@ -4583,7 +4591,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_appsync.CfnFunctionConfiguration",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -4651,7 +4659,7 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_appsync.CfnResolver",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "CDKMetadata": {
@@ -4663,7 +4671,7 @@
                             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/CDKMetadata/Default",
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.CfnResource",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "Condition": {
@@ -4671,7 +4679,7 @@
                             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/CDKMetadata/Condition",
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.CfnCondition",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
@@ -4685,7 +4693,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/reference-to-amplifyamplifyvitereacttemplatehicksandbox4470aeb2eddataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource94650054Outputs.amplifyamplifyvitereacttemplatehicksandbox4470aeb2eddataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEvent90AFD6ACArn",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.CfnParameter",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "reference-to-amplifyamplifyvitereacttemplatehicksandbox4470aeb2eddataamplifyDataGraphQLAPI733506A5ApiId": {
@@ -4693,7 +4701,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/reference-to-amplifyamplifyvitereacttemplatehicksandbox4470aeb2eddataamplifyDataGraphQLAPI733506A5ApiId",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.CfnParameter",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "reference-to-amplifyamplifyvitereacttemplatehicksandbox4470aeb2eddataamplifyDataGraphQLAPINONEDSC44F8A1AName": {
@@ -4701,7 +4709,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/reference-to-amplifyamplifyvitereacttemplatehicksandbox4470aeb2eddataamplifyDataGraphQLAPINONEDSC44F8A1AName",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.CfnParameter",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "reference-to-amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthNestedStackauthNestedStackResourceAD70330EOutputs.amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthamplifyAuthauthenticatedUserRoleA4F3C1A9Ref": {
@@ -4709,7 +4717,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/reference-to-amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthNestedStackauthNestedStackResourceAD70330EOutputs.amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthamplifyAuthauthenticatedUserRoleA4F3C1A9Ref",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.CfnParameter",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "reference-to-amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthNestedStackauthNestedStackResourceAD70330EOutputs.amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthamplifyAuthunauthenticatedUserRoleFA209D13Ref": {
@@ -4717,7 +4725,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/reference-to-amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthNestedStackauthNestedStackResourceAD70330EOutputs.amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthamplifyAuthunauthenticatedUserRoleFA209D13Ref",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.CfnParameter",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "reference-to-amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthNestedStackauthNestedStackResourceAD70330EOutputs.amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthamplifyAuthIdentityPool07E20BC8Ref": {
@@ -4725,13 +4733,13 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/CodeSnippet/reference-to-amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthNestedStackauthNestedStackResourceAD70330EOutputs.amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthamplifyAuthIdentityPool07E20BC8Ref",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.CfnParameter",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.NestedStack",
-                      "version": "2.163.1"
+                      "version": "2.170.0"
                     }
                   },
                   "CodeSnippet.NestedStack": {
@@ -4818,7 +4826,7 @@
                                   {
                                     "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
                                   },
-                                  "/22f53f1a5578548f89a53996cc052d518c4fb34adbe87dfe291f0c7757cf1e61.json"
+                                  "/cf284eb086ba08bceb617e0da66ef3fb10d7c3d8eae1485642d138fcb4e99cad.json"
                                 ]
                               ]
                             }
@@ -4826,7 +4834,7 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.CfnStack",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       }
                     },
@@ -4902,7 +4910,7 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3.CfnBucket",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "Policy": {
@@ -4966,13 +4974,13 @@
                                 },
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.CfnBucketPolicy",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3.BucketPolicy",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "AutoDeleteObjectsCustomResource": {
@@ -4984,19 +4992,19 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/AutoDeleteObjectsCustomResource/Default",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.CfnResource",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.CustomResource",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_s3.Bucket",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "AmplifyCodegenAssetsDeployment": {
@@ -5016,7 +5024,7 @@
                                     "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsDeployment/AwsCliLayer/Code/Stage",
                                     "constructInfo": {
                                       "fqn": "aws-cdk-lib.AssetStaging",
-                                      "version": "2.163.1"
+                                      "version": "2.170.0"
                                     }
                                   },
                                   "AssetBucket": {
@@ -5024,13 +5032,13 @@
                                     "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsDeployment/AwsCliLayer/Code/AssetBucket",
                                     "constructInfo": {
                                       "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                      "version": "2.163.1"
+                                      "version": "2.170.0"
                                     }
                                   }
                                 },
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "Resource": {
@@ -5043,20 +5051,20 @@
                                       "s3Bucket": {
                                         "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
                                       },
-                                      "s3Key": "f24ba5e516d9d80b64bc7b0f406eedd12c36b20e7461f3e7719b7ffbdad72410.zip"
+                                      "s3Key": "ea1279affdbbd03723376f2cb8aa904a518f63be245f63d0e2537390e34097dd.zip"
                                     },
                                     "description": "/opt/awscli/aws"
                                   }
                                 },
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_lambda.CfnLayerVersion",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.lambda_layer_awscli.AwsCliLayer",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "CustomResourceHandler": {
@@ -5064,7 +5072,7 @@
                             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsDeployment/CustomResourceHandler",
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_lambda.SingletonFunction",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "Asset1": {
@@ -5076,7 +5084,7 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsDeployment/Asset1/Stage",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.AssetStaging",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               },
                               "AssetBucket": {
@@ -5084,13 +5092,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsDeployment/Asset1/AssetBucket",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "CustomResource-1536MiB": {
@@ -5102,13 +5110,13 @@
                                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsDeployment/CustomResource-1536MiB/Default",
                                 "constructInfo": {
                                   "fqn": "aws-cdk-lib.CfnResource",
-                                  "version": "2.163.1"
+                                  "version": "2.170.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.CustomResource",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           },
                           "DestinationBucket": {
@@ -5116,13 +5124,13 @@
                             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsDeployment/DestinationBucket",
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_s3_deployment.BucketDeployment",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       }
                     },
@@ -5136,13 +5144,13 @@
                     "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/L2GraphqlApi",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_appsync.GraphqlApiBase",
-                      "version": "2.163.1"
+                      "version": "2.170.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-amplify/graphql-api-construct.AmplifyGraphqlApi",
-                  "version": "1.15.1"
+                  "version": "1.18.2"
                 }
               },
               "DynamoDBModelTableReadIOPS": {
@@ -5150,7 +5158,7 @@
                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/DynamoDBModelTableReadIOPS",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnParameter",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               },
               "DynamoDBModelTableWriteIOPS": {
@@ -5158,7 +5166,7 @@
                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/DynamoDBModelTableWriteIOPS",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnParameter",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               },
               "DynamoDBBillingMode": {
@@ -5166,7 +5174,7 @@
                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/DynamoDBBillingMode",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnParameter",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               },
               "DynamoDBEnablePointInTimeRecovery": {
@@ -5174,7 +5182,7 @@
                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/DynamoDBEnablePointInTimeRecovery",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnParameter",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               },
               "DynamoDBEnableServerSideEncryption": {
@@ -5182,7 +5190,7 @@
                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/DynamoDBEnableServerSideEncryption",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnParameter",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               },
               "LatestNodeRuntimeMap": {
@@ -5190,7 +5198,7 @@
                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/LatestNodeRuntimeMap",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnMapping",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               },
               "Custom::S3AutoDeleteObjectsCustomResourceProvider": {
@@ -5202,7 +5210,7 @@
                     "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/Custom::S3AutoDeleteObjectsCustomResourceProvider/Staging",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.AssetStaging",
-                      "version": "2.163.1"
+                      "version": "2.170.0"
                     }
                   },
                   "Role": {
@@ -5210,7 +5218,7 @@
                     "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.CfnResource",
-                      "version": "2.163.1"
+                      "version": "2.170.0"
                     }
                   },
                   "Handler": {
@@ -5218,13 +5226,13 @@
                     "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.CfnResource",
-                      "version": "2.163.1"
+                      "version": "2.170.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CustomResourceProviderBase",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               },
               "Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB": {
@@ -5240,7 +5248,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/ServiceRole/ImportServiceRole",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.Resource",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "Resource": {
@@ -5289,7 +5297,7 @@
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_iam.CfnRole",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "DefaultPolicy": {
@@ -5395,19 +5403,19 @@
                             },
                             "constructInfo": {
                               "fqn": "aws-cdk-lib.aws_iam.CfnPolicy",
-                              "version": "2.163.1"
+                              "version": "2.170.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_iam.Policy",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_iam.Role",
-                      "version": "2.163.1"
+                      "version": "2.170.0"
                     }
                   },
                   "Code": {
@@ -5419,7 +5427,7 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/Code/Stage",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.AssetStaging",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       },
                       "AssetBucket": {
@@ -5427,13 +5435,13 @@
                         "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/Code/AssetBucket",
                         "constructInfo": {
                           "fqn": "aws-cdk-lib.aws_s3.BucketBase",
-                          "version": "2.163.1"
+                          "version": "2.170.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
-                      "version": "2.163.1"
+                      "version": "2.170.0"
                     }
                   },
                   "Resource": {
@@ -5482,13 +5490,13 @@
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_lambda.CfnFunction",
-                      "version": "2.163.1"
+                      "version": "2.170.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_lambda.Function",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               },
               "AMPLIFY_DATA_GRAPHQL_ENDPOINTParameter": {
@@ -5517,13 +5525,13 @@
                     },
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.aws_ssm.CfnParameter",
-                      "version": "2.163.1"
+                      "version": "2.170.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.aws_ssm.StringParameter",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               },
               "CDKMetadata": {
@@ -5535,7 +5543,7 @@
                     "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/CDKMetadata/Default",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.CfnResource",
-                      "version": "2.163.1"
+                      "version": "2.170.0"
                     }
                   },
                   "Condition": {
@@ -5543,7 +5551,7 @@
                     "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/CDKMetadata/Condition",
                     "constructInfo": {
                       "fqn": "aws-cdk-lib.CfnCondition",
-                      "version": "2.163.1"
+                      "version": "2.170.0"
                     }
                   }
                 },
@@ -5557,7 +5565,7 @@
                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/reference-to-amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthNestedStackauthNestedStackResourceAD70330EOutputs.amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthamplifyAuthUserPool2D58DAAFRef",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnParameter",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               },
               "reference-to-amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthNestedStackauthNestedStackResourceAD70330EOutputs.amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthamplifyAuthauthenticatedUserRoleA4F3C1A9Ref": {
@@ -5565,7 +5573,7 @@
                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/reference-to-amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthNestedStackauthNestedStackResourceAD70330EOutputs.amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthamplifyAuthauthenticatedUserRoleA4F3C1A9Ref",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnParameter",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               },
               "reference-to-amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthNestedStackauthNestedStackResourceAD70330EOutputs.amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthamplifyAuthunauthenticatedUserRoleFA209D13Ref": {
@@ -5573,7 +5581,7 @@
                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/reference-to-amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthNestedStackauthNestedStackResourceAD70330EOutputs.amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthamplifyAuthunauthenticatedUserRoleFA209D13Ref",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnParameter",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               },
               "reference-to-amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthNestedStackauthNestedStackResourceAD70330EOutputs.amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthamplifyAuthIdentityPool07E20BC8Ref": {
@@ -5581,7 +5589,7 @@
                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/reference-to-amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthNestedStackauthNestedStackResourceAD70330EOutputs.amplifyamplifyvitereacttemplatehicksandbox4470aeb2edauthamplifyAuthIdentityPool07E20BC8Ref",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnParameter",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               },
               "amplifyamplifyvitereacttemplatehicksandbox4470aeb2eddataamplifyDataGraphQLAPI733506A5ApiId": {
@@ -5589,7 +5597,7 @@
                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyamplifyvitereacttemplatehicksandbox4470aeb2eddataamplifyDataGraphQLAPI733506A5ApiId",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnOutput",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               },
               "amplifyamplifyvitereacttemplatehicksandbox4470aeb2eddataamplifyDataGraphQLAPI733506A5GraphQLUrl": {
@@ -5597,7 +5605,7 @@
                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyamplifyvitereacttemplatehicksandbox4470aeb2eddataamplifyDataGraphQLAPI733506A5GraphQLUrl",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnOutput",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               },
               "amplifyamplifyvitereacttemplatehicksandbox4470aeb2eddataamplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiB220D5AEADestinationBucketArn": {
@@ -5605,7 +5613,7 @@
                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyamplifyvitereacttemplatehicksandbox4470aeb2eddataamplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiB220D5AEADestinationBucketArn",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnOutput",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               },
               "amplifyamplifyvitereacttemplatehicksandbox4470aeb2eddataamplifyDataGraphQLAPIDefaultApiKey787A26E3ApiKey": {
@@ -5613,13 +5621,13 @@
                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyamplifyvitereacttemplatehicksandbox4470aeb2eddataamplifyDataGraphQLAPIDefaultApiKey787A26E3ApiKey",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnOutput",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "aws-cdk-lib.NestedStack",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "data.NestedStack": {
@@ -5684,7 +5692,7 @@
                           {
                             "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
                           },
-                          "/ad8f4554ac4327fd252e2454d96e4c1d0d5893acbcac5f371440cfd7e078710d.json"
+                          "/9c96c97787961208aaa4947fd42510b8440577d5efafac3f6b5f204fd80031b1.json"
                         ]
                       ]
                     }
@@ -5692,7 +5700,7 @@
                 },
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnStack",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               }
             },
@@ -5706,7 +5714,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/awsAppsyncApiId",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "awsAppsyncApiEndpoint": {
@@ -5714,7 +5722,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/awsAppsyncApiEndpoint",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "awsAppsyncAuthenticationType": {
@@ -5722,7 +5730,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/awsAppsyncAuthenticationType",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "awsAppsyncRegion": {
@@ -5730,7 +5738,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/awsAppsyncRegion",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "amplifyApiModelSchemaS3Uri": {
@@ -5738,7 +5746,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/amplifyApiModelSchemaS3Uri",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "awsAppsyncApiKey": {
@@ -5746,7 +5754,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/awsAppsyncApiKey",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "awsAppsyncAdditionalAuthenticationTypes": {
@@ -5754,7 +5762,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/awsAppsyncAdditionalAuthenticationTypes",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "CDKMetadata": {
@@ -5766,7 +5774,7 @@
                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnResource",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               },
               "Condition": {
@@ -5774,7 +5782,7 @@
                 "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/CDKMetadata/Condition",
                 "constructInfo": {
                   "fqn": "aws-cdk-lib.CfnCondition",
-                  "version": "2.163.1"
+                  "version": "2.170.0"
                 }
               }
             },
@@ -5788,7 +5796,7 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/BootstrapVersion",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnParameter",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           },
           "CheckBootstrapVersion": {
@@ -5796,13 +5804,13 @@
             "path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/CheckBootstrapVersion",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnRule",
-              "version": "2.163.1"
+              "version": "2.170.0"
             }
           }
         },
         "constructInfo": {
           "fqn": "aws-cdk-lib.Stack",
-          "version": "2.163.1"
+          "version": "2.170.0"
         }
       },
       "Tree": {
@@ -5816,7 +5824,7 @@
     },
     "constructInfo": {
       "fqn": "aws-cdk-lib.App",
-      "version": "2.163.1"
+      "version": "2.170.0"
     }
   }
 }

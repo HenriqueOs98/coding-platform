@@ -20,10 +20,9 @@
           "created-by": "amplify"
         },
         "validateOnSynth": false,
-        "notificationArns": [],
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/43cd6bfc5c3dd7191e8c34bbbfbf5e216c63bde3804024a095d0bf17060fb32b.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/da2fe5d310142f3a0ae443d5a37bb5a83cc51dee978a01b8b45f28f008bfc516.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -262,6 +261,12 @@
           {
             "type": "aws:cdk:logicalId",
             "data": "oauthClientId"
+          }
+        ],
+        "/amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/groups": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "groups"
           }
         ],
         "/amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/GraphQLAPI/Resource": [

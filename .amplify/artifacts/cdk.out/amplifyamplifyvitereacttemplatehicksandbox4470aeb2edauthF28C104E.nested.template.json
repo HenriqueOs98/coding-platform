@@ -1,5 +1,5 @@
 {
- "Description": "{\"createdOn\":\"Linux\",\"createdBy\":\"AmplifySandbox\",\"createdWith\":\"1.3.1\",\"stackType\":\"auth-Cognito\",\"metadata\":{}}",
+ "Description": "{\"createdOn\":\"Linux\",\"createdBy\":\"AmplifySandbox\",\"createdWith\":\"1.5.0\",\"stackType\":\"auth-Cognito\",\"metadata\":{}}",
  "Resources": {
   "amplifyAuthUserPool4BA7F805": {
    "Type": "AWS::Cognito::UserPool",
@@ -96,6 +96,8 @@
      "Ref": "amplifyAuthUserPool4BA7F805"
     }
    },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/auth/amplifyAuth/UserPoolAppClient/Resource"
    }
@@ -142,6 +144,8 @@
     ],
     "SupportedLoginProviders": {}
    },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/auth/amplifyAuth/IdentityPool"
    }
@@ -186,6 +190,8 @@
      }
     ]
    },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/auth/amplifyAuth/authenticatedUserRole/Resource"
    }
@@ -230,6 +236,8 @@
      }
     ]
    },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/auth/amplifyAuth/unauthenticatedUserRole/Resource"
    }
@@ -284,6 +292,8 @@
     "amplifyAuthIdentityPool3FDE84CC",
     "amplifyAuthUserPoolAppClient2626C6F8"
    ],
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/auth/amplifyAuth/IdentityPoolRoleAttachment"
    }
@@ -291,7 +301,7 @@
   "CDKMetadata": {
    "Type": "AWS::CDK::Metadata",
    "Properties": {
-    "Analytics": "v2:deflate64:H4sIAAAAAAAA/02PQQvCMAyFf4v3LroJ3mUnLyITzzLbqNm6BtZMkdL/bseY7vS+vJfwSAH5bgv5qn77TJs2s3SDcEQvaM5S61al4Bo0PxwJQ7h47E/MVpV39+MZSkvoZBn9nYNJQPKZj5dzxRb3ktqeXTKjorqDMJrj4qgxqgo9D72erAWX7AwJsYvKsUFo/PpVpIdgs2o8UdYPqaZDqCb9ArjXkN/vAAAA"
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/02PQQ+CMAyFf4v3UREPng0nL8ZgPBvcqhbGmrCiMcv+uyME5fS+vtfmpQVsdjnkq/rtM23azNINwhG9oDlLrVuVgmvQ/HAkDOHisT8xW1Xe3Y9nKC2hk2X0dw4mAclnPl7OFVvcS2p7dsmMiuoOwmiOi6PGqCr0PPR6shZcsjMkxC4qxwah8etXsYVNeqnxRFk/pJoOoZr0C45tM+bvAAAA"
    },
    "Metadata": {
     "aws:cdk:path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/auth/CDKMetadata/Default"

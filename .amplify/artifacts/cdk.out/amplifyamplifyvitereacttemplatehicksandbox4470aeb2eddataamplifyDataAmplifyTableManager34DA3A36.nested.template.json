@@ -91,6 +91,8 @@
      }
     ]
    },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/AmplifyManagedTableIsCompleteRole/Resource"
    }
@@ -186,6 +188,8 @@
      }
     ]
    },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/AmplifyManagedTableOnEventRole/Resource"
    }
@@ -212,6 +216,8 @@
      }
     ]
    },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/AmplifyManagedTableOnEventRole/DefaultPolicy/Resource"
    }
@@ -223,7 +229,7 @@
      "S3Bucket": {
       "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
      },
-     "S3Key": "ceafeabd15da961c098d25de257c4480ca482e43c1681000eedc2706dacae760.zip"
+     "S3Key": "ca9699b9a2845c45e80cba1111f95ae2ac773af7d87163ae9c808ec547e38e00.zip"
     },
     "Description": "AmplifyManagedTable - onEvent (amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/TableManagerCustomProvider)",
     "Environment": {
@@ -261,9 +267,11 @@
     "AmplifyManagedTableOnEventRoleDefaultPolicyF6DABCB6",
     "AmplifyManagedTableOnEventRoleB4E71DEA"
    ],
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/TableManagerCustomProvider/framework-onEvent/Resource",
-    "aws:asset:path": "asset.ceafeabd15da961c098d25de257c4480ca482e43c1681000eedc2706dacae760",
+    "aws:asset:path": "asset.ca9699b9a2845c45e80cba1111f95ae2ac773af7d87163ae9c808ec547e38e00",
     "aws:asset:is-bundled": false,
     "aws:asset:property": "Code"
    }
@@ -275,7 +283,7 @@
      "S3Bucket": {
       "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
      },
-     "S3Key": "ceafeabd15da961c098d25de257c4480ca482e43c1681000eedc2706dacae760.zip"
+     "S3Key": "ca9699b9a2845c45e80cba1111f95ae2ac773af7d87163ae9c808ec547e38e00.zip"
     },
     "Description": "AmplifyManagedTable - isComplete (amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/TableManagerCustomProvider)",
     "Handler": "amplify-table-manager-handler.isComplete",
@@ -305,9 +313,11 @@
    "DependsOn": [
     "AmplifyManagedTableIsCompleteRoleF825222C"
    ],
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/TableManagerCustomProvider/framework-isComplete/Resource",
-    "aws:asset:path": "asset.ceafeabd15da961c098d25de257c4480ca482e43c1681000eedc2706dacae760",
+    "aws:asset:path": "asset.ca9699b9a2845c45e80cba1111f95ae2ac773af7d87163ae9c808ec547e38e00",
     "aws:asset:is-bundled": false,
     "aws:asset:property": "Code"
    }
@@ -342,6 +352,8 @@
      }
     ]
    },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Role/Resource"
    }
@@ -387,6 +399,8 @@
      }
     ]
    },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Role/DefaultPolicy/Resource"
    }
@@ -420,6 +434,8 @@
     "AmplifyTableWaiterStateMachineRoleDefaultPolicy89F3836A",
     "AmplifyTableWaiterStateMachineRole470BE899"
    ],
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Resource"
    }
@@ -427,7 +443,7 @@
   "CDKMetadata": {
    "Type": "AWS::CDK::Metadata",
    "Properties": {
-    "Analytics": "v2:deflate64:H4sIAAAAAAAA/zWOQQqDMBBFz9J9nFaF7qvQZSn2ABKTqYzGBJykpQTv3qi4ev/zYP4UkF9LyE/yy5nSY2aog/hA9qhfXqpRJNFGkhPExhkU9dtufDpD6rfWPS3CyKnTEuI9WOXJ2dUdeRFctpIZPcNtRepQBTWiryTjIhpkF2aFYrNpuSfbb2OHSLl2VtN+zjqNMPD5U6Tn4XIamCibg/U0ITQ7/wPcugfbAAAA"
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/zWOQQqDMBBFz9J9nFpddF2FLkuxB5CYTGU0JuAkLSV490bF1fufB/OngMs1h/wkv5wpPWaGOogPZI/65aUaRRJtJDlBbJxBUb/txqczpH5r3dMijJw6LSHeg1WenF3dkRfBZSuZ0TPcVqQOVVAj+koyLqJBdmFWKDablnuy/TZ2iJRrZzXt56zTCAOfP0UJl/T+wETZHKynCaHZ+QdkHTqS2wAAAA=="
    },
    "Metadata": {
     "aws:cdk:path": "amplify-amplifyvitereacttemplate-hick-sandbox-4470aeb2ed/data/amplifyData/AmplifyTableManager/CDKMetadata/Default"
