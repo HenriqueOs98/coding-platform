@@ -237,7 +237,7 @@ function TutorialList({
       </div>
 
       {/* Tutorial Content */}
-      <div className="flex-grow overflow-y-auto">
+      <div className="flex-grow overflow-y-auto h-[400px] sm:h-auto">
         <div 
           className="prose prose-invert max-w-none space-y-6" 
           dangerouslySetInnerHTML={{ 
@@ -414,7 +414,7 @@ function App() {
                   handleTutorialSelect(tutorials[prevIndex]);
                 }
               }}
-              containerClassName="h-[300px] sm:h-full" // Adjusted height for mobile
+              containerClassName="h-[500px] sm:h-full" // Increased height for mobile
             />
           </div>
           
