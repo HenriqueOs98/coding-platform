@@ -21,6 +21,7 @@
     "@oak/acorn": "npm:@jsr/oak__acorn",
     "@tailwindcss/typography": "^0.5.15",
     "@types/dompurify": "^3.2.0",
+    "@types/next": "^9.0.0",
     "@uiw/react-codemirror": "^4.23.6",
     "aws-amplify": "^6.6.6",
     "dompurify": "^3.2.1",

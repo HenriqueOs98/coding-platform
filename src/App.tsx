@@ -18,6 +18,7 @@ interface TutorialProgress {
 }
 
 interface CodeEditorProps {
+
   code: string;
   onChange: (code: string) => void;
   onRun: () => void;
@@ -283,7 +284,7 @@ function TutorialList({
 
 // Main App Component
 function App() {
-  const { user } = useAuthenticator();
+  const { user, signOut} = useAuthenticator();
   const [tutorials, setTutorials] = useState<Tutorial[]>([]);
   const [code, setCode] = useState('');
   const [selectedTutorial, setSelectedTutorial] = useState<Tutorial | null>(null);
@@ -423,7 +424,10 @@ function App() {
           <div className="flex-1 flex flex-col">
             <header className="p-4 flex justify-between items-center bg-gray-800 border-b border-gray-700">
               <h1 className="text-xl md:text-2xl font-bold text-white">Learn JavaScript</h1>
-              <button className="px-3 py-1 bg-red-600 text-white text-sm rounded-md hover:bg-red-700">
+              <button 
+                onClick={signOut}
+                className="px-3 py-1 bg-red-600 text-white text-sm rounded-md hover:bg-red-700"
+              >
                 Sign out
               </button>
             </header>
