@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Groq from 'groq-sdk';
-import { defineAuth, secret } from '@aws-amplify/backend';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -24,7 +23,7 @@ export function ChatButton() {
 
     try {
         const groq = new Groq({ 
-                   apiKey: secret("API_KEY").toString(),
+                   apiKey: "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",
                     dangerouslyAllowBrowser: true
                   });
       
