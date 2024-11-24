@@ -292,13 +292,18 @@ function App() {
   const [completedTutorials, setCompletedTutorials] = useState<string[]>([]);
   const [worker, setWorker] = useState<Worker | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [isSubscribed, setIsSubscribed] = useState(false);
 
   useEffect(() => {
     const loadTutorials = async () => {
       setIsLoading(true);
       try {
+        // Get subscription status from user attributes
+        const isUserSubscribed = user?.attributes?.['custom:isSubscribed'] === 'true';
+        setIsSubscribed(isUserSubscribed);
+
         const tutorialService = TutorialService.getInstance();
-        const loadedTutorials = await tutorialService.getTutorials();
+        const loadedTutorials = await tutorialService.getTutorials(isUserSubscribed);
         setTutorials(loadedTutorials);
         
         if (!selectedTutorial && loadedTutorials.length > 0) {
@@ -313,9 +318,15 @@ function App() {
     };
 
     loadTutorials();
-  }, []);
+  }, [user]);
 
-  const handleTutorialSelect = (tutorial: Tutorial) => {
+  const handleTutorialSelect = async (tutorial: Tutorial) => {
+    if (tutorial.id !== '1' && !isSubscribed) {
+      // Show subscription required message
+      alert('Please subscribe to access this tutorial');
+      return;
+    }
+
     setSelectedTutorial(tutorial);
     setCode(tutorial.initialCode);
     setOutput([]);

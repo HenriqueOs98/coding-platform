@@ -1,24 +1,25 @@
-import { type ClientSchema, a, defineData,defineAuth } from '@aws-amplify/backend';
+import { type ClientSchema, a, defineData, defineAuth } from '@aws-amplify/backend';
 
 const schema = a.schema({
-  Todo: a.model({
-    content: a.string(),
+  User: a.model({
+    email: a.string(),
+    isSubscribed: a.boolean(),
+    subscriptionEndDate: a.string(),
   }).authorization(allow => [allow.owner()]),
 });
 
-export type Schema = ClientSchema<typeof schema>;
-
-export const data = defineData({
-  schema,
-  authorizationModes: {
-    // This tells the data client in your app (generateClient())
-    // to sign API requests with the user authentication token.
-    defaultAuthorizationMode: 'userPool',
-  },
-});
-//comentario
 export const auth = defineAuth({
   loginWith: {
     email: true,
+  },
+  userAttributes: {
+    "custom:isSubscribed": {
+      mutable: true,
+      dataType: "Boolean"
+    },
+    "custom:subscriptionEndDate": {
+      mutable: true,
+      dataType: "DateTime"
+    },
   },
 });

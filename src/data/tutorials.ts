@@ -80,15 +80,22 @@ export class TutorialService {
     return TutorialService.instance;
   }
 
-  public async getTutorials(): Promise<Tutorial[]> {
-    // In the future, this will fetch from a database
-    // For now, return static tutorials
-    return this.tutorials;
+  public async getTutorials(isSubscribed: boolean = false): Promise<Tutorial[]> {
+    // Filter tutorials based on subscription status
+    return this.tutorials.filter(tutorial => {
+      if (tutorial.id === '1') return true; // First tutorial always available
+      return isSubscribed; // Other tutorials require subscription
+    });
   }
 
-  public async getTutorialById(id: string): Promise<Tutorial | undefined> {
-    // In the future, this will fetch a single tutorial from the database
-    return this.tutorials.find(t => t.id === id);
+  public async getTutorialById(id: string, isSubscribed: boolean = false): Promise<Tutorial | undefined> {
+    const tutorial = this.tutorials.find(t => t.id === id);
+    if (!tutorial) return undefined;
+    
+    // Check access
+    if (tutorial.id === '1') return tutorial;
+    if (!isSubscribed) return undefined;
+    return tutorial;
   }
 
   public async loadTutorials(): Promise<void> {
