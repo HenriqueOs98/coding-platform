@@ -5,6 +5,7 @@ import { javascript } from '@codemirror/lang-javascript';
 import { oneDark } from '@codemirror/theme-one-dark';
 import DOMPurify from 'dompurify';
 import { TutorialService, Tutorial } from './data/tutorials';
+import { ChatButton } from './components/ChatButton';
 
 
 
@@ -449,6 +450,7 @@ function App() {
           </div>
         </div>
       )}
+      <ChatButton />
     </main>
   );
 }

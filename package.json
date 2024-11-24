@@ -24,6 +24,7 @@
     "@uiw/react-codemirror": "^4.23.6",
     "aws-amplify": "^6.6.6",
     "dompurify": "^3.2.1",
+    "groq-sdk": "^0.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
