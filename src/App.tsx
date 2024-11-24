@@ -6,6 +6,9 @@ import { oneDark } from '@codemirror/theme-one-dark';
 import DOMPurify from 'dompurify';
 import { TutorialService, Tutorial } from './data/tutorials';
 import { ChatButton } from './components/ChatButton';
+import { SubscriptionPrompt } from './components/SubscriptionPrompt';
+import { generateClient } from 'aws-amplify/api';
+import { type Schema } from '../amplify/data/resource';
 
 
 
@@ -293,6 +296,8 @@ function App() {
   const [worker, setWorker] = useState<Worker | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isSubscribed, setIsSubscribed] = useState(false);
+  const [showSubscriptionPrompt, setShowSubscriptionPrompt] = useState(false);
+  const client = generateClient<Schema>();
 
   useEffect(() => {
     const loadTutorials = async () => {
@@ -347,9 +352,18 @@ function App() {
         setOutput(prev => {
           const newOutput = [...prev, e.data.message];
           if (selectedTutorial && newOutput.join('\n').trim() === selectedTutorial.solution.trim()) {
-            setCompletedTutorials(prev => 
-              prev.includes(selectedTutorial.id) ? prev : [...prev, selectedTutorial.id]
-            );
+            setCompletedTutorials(prev => {
+              const newCompleted = prev.includes(selectedTutorial.id) ? 
+                prev : 
+                [...prev, selectedTutorial.id];
+              
+              // Show subscription prompt after completing first tutorial
+              if (selectedTutorial.id === '1' && !prev.includes('1') && !isSubscribed) {
+                setShowSubscriptionPrompt(true);
+              }
+              
+              return newCompleted;
+            });
           }
           return newOutput;
         });
@@ -399,6 +413,32 @@ function App() {
   useEffect(() => {
     return () => worker?.terminate();
   }, [worker]);
+
+  const handleSubscribe = async () => {
+    try {
+      if (!user?.username) {
+        throw new Error('User not authenticated');
+      }
+
+      // Update user attributes to mark as subscribed
+      await client.models.User.update({
+        id: user.username,
+        isSubscribed: true,
+        subscriptionEndDate: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString(), // 30 days from now
+      });
+
+      // Refresh tutorials with subscription access
+      const tutorialService = TutorialService.getInstance();
+      const loadedTutorials = await tutorialService.getTutorials(true);
+      setTutorials(loadedTutorials);
+      setIsSubscribed(true);
+      setShowSubscriptionPrompt(false);
+
+    } catch (error) {
+      console.error('Failed to process subscription:', error);
+      alert('Failed to process subscription. Please try again.');
+    }
+  };
 
   return (
     <main className="min-h-screen bg-gray-900">
@@ -466,6 +506,11 @@ function App() {
         </div>
       )}
       <ChatButton />
+      <SubscriptionPrompt 
+        isOpen={showSubscriptionPrompt}
+        onClose={() => setShowSubscriptionPrompt(false)}
+        onSubscribe={handleSubscribe}
+      />
     </main>
   );
 }
