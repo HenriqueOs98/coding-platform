@@ -16,7 +16,7 @@ export const data = defineData({
     defaultAuthorizationMode: 'userPool',
   },
 });
-
+//comentario
 export const auth = defineAuth({
   loginWith: {
     email: true,
