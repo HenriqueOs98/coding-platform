@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { useAuthenticator } from '@aws-amplify/ui-react';
 import CodeMirror from '@uiw/react-codemirror';
 import { javascript } from '@codemirror/lang-javascript';
 import { oneDark } from '@codemirror/theme-one-dark';
@@ -7,7 +6,6 @@ import DOMPurify from 'dompurify';
 import { TutorialService, Tutorial } from './data/tutorials';
 import { ChatButton } from './components/ChatButton';
 import { SubscriptionPrompt } from './components/SubscriptionPrompt';
-import { generateClient } from 'aws-amplify/api';
 
 
 
