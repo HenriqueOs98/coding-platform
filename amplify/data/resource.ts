@@ -1,34 +1,5 @@
-import { type ClientSchema, a, defineData } from "@aws-amplify/backend";
 
-const schema = a.schema({
-  User: a.model({
-    email: a.string(),
-    isSubscribed: a.boolean().default(false),
-    subscriptionEndDate: a.string(),
-  }).authorization(allow => [allow.owner()]),
-  
 
-  CodeSnippet: a.model({
-    language: a.string(),
-    code: a.string(),
-    isValid: a.boolean(),
-    validationMessage: a.string(),
-    userId: a.string(),
-  }).authorization(allow => [allow.owner()]),
-
-});
-
-export type Schema = ClientSchema<typeof schema>;
-
-export const data = defineData({
-  schema,
-  authorizationModes: {
-    defaultAuthorizationMode: 'userPool',
-    apiKeyAuthorizationMode: {
-      expiresInDays: 30,
-    },
-  },
-});
 /*== STEP 2 ===============================================================
 Go to your frontend source code. From your client-side code, generate a
 Data client to make CRUDL requests to your table. (THIS SNIPPET WILL ONLY
