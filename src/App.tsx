@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import CodeMirror from '@uiw/react-codemirror';
 import { javascript } from '@codemirror/lang-javascript';
 import { oneDark } from '@codemirror/theme-one-dark';
-import DOMPurify from 'dompurify';
 import { TutorialService, Tutorial } from './data/tutorials';
 import { ChatButton } from './components/ChatButton';
 import { SubscriptionPrompt } from './components/SubscriptionPrompt';
+import { useAuthenticator } from './mocks/Authenticator';
 
 
 
@@ -242,9 +242,7 @@ function TutorialList({
       <div className="flex-grow overflow-y-auto h-[400px] sm:h-auto">
         <div 
           className="prose prose-invert max-w-none space-y-6" 
-          dangerouslySetInnerHTML={{ 
-            __html: DOMPurify.sanitize(currentTutorial?.description || '') 
-          }}
+
         />
       </div>
       
