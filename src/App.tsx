@@ -8,7 +8,6 @@ import { TutorialService, Tutorial } from './data/tutorials';
 import { ChatButton } from './components/ChatButton';
 import { SubscriptionPrompt } from './components/SubscriptionPrompt';
 import { generateClient } from 'aws-amplify/api';
-import { type Schema } from '../amplify/data/resource';
 
 
 
@@ -297,21 +296,16 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [showSubscriptionPrompt, setShowSubscriptionPrompt] = useState(false);
-  const client = generateClient<Schema>();
 
   useEffect(() => {
     const loadTutorials = async () => {
       setIsLoading(true);
       try {
         // Get subscription status from user attributes
-        console.log(user?.attributes.['custom:isSubscribed'])
 
-        const isUserSubscribed = user?.attributes?.['custom:isSubscribed'] === 'true';
-        setIsSubscribed(isUserSubscribed);
-        console.log(user?.attributes.['custom:isSubscribed'])
 
         const tutorialService = TutorialService.getInstance();
-        const loadedTutorials = await tutorialService.getTutorials(isUserSubscribed);
+        const loadedTutorials = await tutorialService.getTutorials();
         setTutorials(loadedTutorials);
         
         if (!selectedTutorial && loadedTutorials.length > 0) {
@@ -423,12 +417,7 @@ function App() {
         throw new Error('User not authenticated');
       }
 
-      // Update user attributes to mark as subscribed
-      await client.models.User.update({
-        id: user.username,
-        isSubscribed: true,
-        subscriptionEndDate: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString(), // 30 days from now
-      });
+
 
       // Refresh tutorials with subscription access
       const tutorialService = TutorialService.getInstance();
