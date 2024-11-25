@@ -1,6 +1,0 @@
-{
-  "type": "module",
-  "dependencies": {
-    "@types/next": "^9.0.0"
-  }
-}

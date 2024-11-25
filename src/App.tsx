@@ -304,8 +304,11 @@ function App() {
       setIsLoading(true);
       try {
         // Get subscription status from user attributes
+        console.log(user?.attributes.['custom:isSubscribed'])
+
         const isUserSubscribed = user?.attributes?.['custom:isSubscribed'] === 'true';
         setIsSubscribed(isUserSubscribed);
+        console.log(user?.attributes.['custom:isSubscribed'])
 
         const tutorialService = TutorialService.getInstance();
         const loadedTutorials = await tutorialService.getTutorials(isUserSubscribed);
