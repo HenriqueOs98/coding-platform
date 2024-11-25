@@ -1,0 +1,14 @@
+[build]
+  command = "deno task build"
+  publish = "dist"
+
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+[build.environment]
+  DENO_VERSION = "1.41.0"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 
