@@ -34,6 +34,18 @@
       "Mutable": true,
       "Name": "email",
       "Required": true
+     },
+     {
+      "AttributeDataType": "String",
+      "Mutable": true,
+      "Name": "isSubscribed",
+      "StringAttributeConstraints": {}
+     },
+     {
+      "AttributeDataType": "String",
+      "Mutable": true,
+      "Name": "subscriptionEndDate",
+      "StringAttributeConstraints": {}
      }
     ],
     "SmsVerificationMessage": "The verification code to your new account is {####}",
