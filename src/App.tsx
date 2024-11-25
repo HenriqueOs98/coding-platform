@@ -297,13 +297,11 @@ function App() {
     const loadTutorials = async () => {
       setIsLoading(true);
       try {
-        // Get subscription status from user attributes
-
-
         const tutorialService = TutorialService.getInstance();
         const loadedTutorials = await tutorialService.getTutorials();
         setTutorials(loadedTutorials);
         
+        // Only set initial tutorial if none selected
         if (!selectedTutorial && loadedTutorials.length > 0) {
           setSelectedTutorial(loadedTutorials[0]);
           setCode(loadedTutorials[0].initialCode);
@@ -314,9 +312,9 @@ function App() {
         setIsLoading(false);
       }
     };
-
+  
     loadTutorials();
-  }, [user]);
+  }, []); // Empty dependency array since this should only run once
 
   const handleTutorialSelect = async (tutorial: Tutorial) => {
     if (tutorial.id !== '1' && !isSubscribed) {
@@ -378,34 +376,36 @@ function App() {
     });
   };
 
-  useEffect(() => {
-    if (user?.username) {
-      const savedProgress = localStorage.getItem(`${STORAGE_KEY_PREFIX}${user.username}`);
-      if (savedProgress) {
-        const progress: TutorialProgress = JSON.parse(savedProgress);
-        setCompletedTutorials(progress.completedTutorials);
-        const lastTutorial = tutorials.find(t => t.id === progress.currentTutorialId);
-        if (lastTutorial) {
-          handleTutorialSelect(lastTutorial);
-        }
+// Modify the progress loading useEffect:
+useEffect(() => {
+  if (!user?.username || tutorials.length === 0) return;
+
+  const savedProgress = localStorage.getItem(`${STORAGE_KEY_PREFIX}${user.username}`);
+  if (savedProgress) {
+    const progress: TutorialProgress = JSON.parse(savedProgress);
+    setCompletedTutorials(progress.completedTutorials);
+    
+    if (!selectedTutorial) {
+      const lastTutorial = tutorials.find(t => t.id === progress.currentTutorialId);
+      if (lastTutorial) {
+        setSelectedTutorial(lastTutorial);
+        setCode(lastTutorial.initialCode);
       }
     }
-  }, [user, tutorials]);
+  }
+}, [user?.username, tutorials]); // Only depend on user and tutorials
 
-  useEffect(() => {
-    if (user?.username && selectedTutorial) {
-      const progress: TutorialProgress = {
-        userId: user.username,
-        completedTutorials,
-        currentTutorialId: selectedTutorial.id
-      };
-      localStorage.setItem(`${STORAGE_KEY_PREFIX}${user.username}`, JSON.stringify(progress));
-    }
-  }, [completedTutorials, selectedTutorial, user]);
+// Update the progress saving useEffect:
+useEffect(() => {
+  if (!user?.username || !selectedTutorial) return;
 
-  useEffect(() => {
-    return () => worker?.terminate();
-  }, [worker]);
+  const progress: TutorialProgress = {
+    userId: user.username,
+    completedTutorials,
+    currentTutorialId: selectedTutorial.id
+  };
+  localStorage.setItem(`${STORAGE_KEY_PREFIX}${user.username}`, JSON.stringify(progress));
+}, [user?.username, completedTutorials, selectedTutorial?.id]); // Only necessary dependencies
 
   const handleSubscribe = async () => {
     try {
