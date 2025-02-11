@@ -1,0 +1,109 @@
+# PRACTICE: Inspecting HTTP Requests in the DevTools
+
+When troubleshooting web applications, it's often necessary to inspect the HTTP requests being made by the browser. The browser's Developer Tools (DevTools) provide a powerful way to view and analyze these requests. 
+
+By mastering the HTTP request inspection capabilities in the DevTools, you'll be able to better understand the inner workings of your web application, diagnose issues, and optimize network performance.
+
+Let’s go through the process of inspecting an HTTP request, and explain how the various sections of the DevTools panel can help you better understand the inner workings of your web application.
+
+### Opening the DevTools
+
+To begin, you'll need to open the DevTools panel. Depending on your operating system and browser, there are a few different ways to do this. 
+
+Since every browser has different DevTools, I’ll show you the Chrome version.
+
+To display the DevTools, you can press the `F12` key. 
+
+Alternatively, you can right-click on the page and select "Inspect" from the context menu. Or through the menu `View → Developer → Developer Tools`.
+
+![Screenshot-2024-11-05T05.46.47PM.png](PRACTICE%20Inspecting%20HTTP%20Requests%20in%20the%20DevTools%201902767ad7e38197a6c1fee1643e098f/Screenshot-2024-11-05T05.46.47PM.png)
+
+### Navigating to the Network Tab
+
+Once the DevTools panel is open, by default the browser shows the Elements tab. This will be very useful when inspecting HTML and CSS, but for now you'll want to navigate to the "Network" tab. 
+
+![Screenshot-2024-11-05T05.51.43PM.png](PRACTICE%20Inspecting%20HTTP%20Requests%20in%20the%20DevTools%201902767ad7e38197a6c1fee1643e098f/Screenshot-2024-11-05T05.51.43PM.png)
+
+This tab will show you a list of all the network requests that have been made by the page. 
+
+When you open it, it’s going to show an empty screen.
+
+Reload the page and you’ll see the HTTP requests made when loading the page appear in this list.
+
+![Screenshot-2024-11-05T05.51.29PM.png](PRACTICE%20Inspecting%20HTTP%20Requests%20in%20the%20DevTools%201902767ad7e38197a6c1fee1643e098f/Screenshot-2024-11-05T05.51.29PM.png)
+
+The list shows all the requests. The first in the list is the request made to the URL we loaded, in this case `https://flaviocopes.com`. You can see it has type `document`.
+
+The other requests were made when the browser loaded the page, and found it requested more resources, including fonts, CSS files, images and JavaScript files.
+
+You can filter requests by type by clicking those buttons, if you want:
+
+![Screenshot-2024-11-05T05.56.59PM.png](PRACTICE%20Inspecting%20HTTP%20Requests%20in%20the%20DevTools%201902767ad7e38197a6c1fee1643e098f/Screenshot-2024-11-05T05.56.59PM.png)
+
+### Inspecting a Specific Request
+
+To inspect a specific request, simply click on it in the list. This will bring up a lot of detailed information about that request on the right side of the DevTools panel.
+
+### Examining Request and Response Headers
+
+In the "Headers" section, you can view the request and response headers. These headers contain important metadata about the request, such as the HTTP method, the URL, and various other pieces of information.
+
+![Screenshot-2024-11-05T05.57.32PM.png](PRACTICE%20Inspecting%20HTTP%20Requests%20in%20the%20DevTools%201902767ad7e38197a6c1fee1643e098f/Screenshot-2024-11-05T05.57.32PM.png)
+
+### Viewing the Request Payload
+
+If the request has a request body, such as in the case of a POST request, you can view the payload data in the "Payload" section.
+
+### Analyzing the Request Timeline
+
+The "Timing" section provides a breakdown of the request timeline, showing you details like the DNS lookup time, the TCP connection time, the SSL negotiation time, and more. This can be incredibly useful for diagnosing performance issues.
+
+![Screenshot-2024-11-05T05.58.54PM.png](PRACTICE%20Inspecting%20HTTP%20Requests%20in%20the%20DevTools%201902767ad7e38197a6c1fee1643e098f/Screenshot-2024-11-05T05.58.54PM.png)
+
+### Previewing the Response Content
+
+The "Preview" section allows you to preview the content of the response, which can be especially helpful for textual payloads like HTML, JSON, or XML.
+
+![Screenshot-2024-11-05T05.59.19PM.png](PRACTICE%20Inspecting%20HTTP%20Requests%20in%20the%20DevTools%201902767ad7e38197a6c1fee1643e098f/Screenshot-2024-11-05T05.59.19PM.png)
+
+### Viewing the Full Response
+
+The "Response" section displays the full response content, including any headers or body data. 
+
+![Screenshot-2024-11-05T05.59.47PM.png](PRACTICE%20Inspecting%20HTTP%20Requests%20in%20the%20DevTools%201902767ad7e38197a6c1fee1643e098f/Screenshot-2024-11-05T05.59.47PM.png)
+
+### Filtering and Searching Requests
+
+In addition to inspecting individual requests, the DevTools also provide powerful filtering and search capabilities. You can use the search bar and various filter options at the top of the "Network" tab to quickly find specific requests based on criteria like the URL, HTTP method, status code, or file type.
+
+### Replaying Requests
+
+If you need to re-send a request, you can right-click on it in the list and select "Copy as cURL" or "Copy response". This will allow you to replay the request using a tool like cURL or paste the response into another application.
+
+![Screenshot-2024-11-05T06.01.34PM.png](PRACTICE%20Inspecting%20HTTP%20Requests%20in%20the%20DevTools%201902767ad7e38197a6c1fee1643e098f/Screenshot-2024-11-05T06.01.34PM.png)
+
+### Persisting Requests Across Page Loads
+
+It's worth noting that by default, the DevTools only show requests made during the current page session. To persist the requests across page loads, you can enable the "Preserve log" option in the DevTools settings.
+
+![Screenshot-2024-11-05T06.02.19PM.png](PRACTICE%20Inspecting%20HTTP%20Requests%20in%20the%20DevTools%201902767ad7e38197a6c1fee1643e098f/Screenshot-2024-11-05T06.02.19PM.png)
+
+### Disabling the Cache
+
+When debugging web applications, it's often important to ensure that you're not seeing cached responses from previous page loads. You can disable the cache in the DevTools by clicking the "Disable cache" checkbox in the Network tab.
+
+![Screenshot-2024-11-05T06.06.17PM.png](PRACTICE%20Inspecting%20HTTP%20Requests%20in%20the%20DevTools%201902767ad7e38197a6c1fee1643e098f/Screenshot-2024-11-05T06.06.17PM.png)
+
+With the cache disabled, the DevTools will always fetch fresh responses from the server, allowing you to accurately inspect the network requests and responses.
+
+### Throttling Network Conditions
+
+To simulate different network conditions, the DevTools provide a "Throttling" feature. This can be useful for testing how your application performs on slow or unreliable network connections.
+
+1. In the DevTools "Network" tab, locate the "Throttling" dropdown menu.
+2. Select a predefined network condition, such as "Slow 3G" or "Offline", or create a custom throttling profile.
+
+![Screenshot-2024-11-05T06.06.41PM.png](PRACTICE%20Inspecting%20HTTP%20Requests%20in%20the%20DevTools%201902767ad7e38197a6c1fee1643e098f/Screenshot-2024-11-05T06.06.41PM.png)
+
+When you select a throttling profile, the DevTools will emulate the chosen network conditions, allowing you to see how your application behaves under those constraints.
+

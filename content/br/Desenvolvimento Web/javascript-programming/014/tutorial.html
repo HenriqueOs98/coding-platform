@@ -1,0 +1,169 @@
+<article>
+    <h2>Introdução ao Async/Await no JavaScript</h2>
+    <p>
+      Trabalhar com código assíncrono pode ser desafiador. Antes do <code>async/await</code>, usávamos callbacks, o que frequentemente resultava no que chamamos de "callback hell" ou "pirâmide da desgraça", com funções aninhadas dentro de funções. Promises melhoraram isso, mas ainda podem ser difíceis de ler. Felizmente, com versões mais recentes do JavaScript, temos o <code>async/await</code>, que torna o código mais legível e fácil de entender.
+    </p>
+  
+    <section>
+      <h2>Exemplo Prático com Async/Await</h2>
+      <p>
+        Vamos criar um exemplo prático onde buscamos uma imagem aleatória de um gato utilizando <code>async/await</code>. Veja o HTML necessário:
+      </p>
+      <pre class="code-block">
+        📄 HTML para o exemplo:
+        <code>
+  <button id="cat-btn">Mostrar Gato</button>
+  <div id="cat-target"></div>
+        </code>
+      </pre>
+      <p>Agora, o código JavaScript:</p>
+      <pre class="code-block">
+        📄 Exemplo de Async/Await:
+        <code>
+  const CAT_URL = "https://api.thecatapi.com/v1/images/search";
+  
+  const gatos = document.getElementById("cat-target");
+  
+  async function adicionarGato() {
+    try {
+      const resposta = await fetch(CAT_URL); // Faz a requisição
+      const dados = await resposta.json(); // Converte a resposta para JSON
+      const img = document.createElement("img");
+      img.src = dados[0].url; // URL da imagem do gato
+      img.alt = "Imagem de um gato fofo";
+      gatos.appendChild(img);
+    } catch (erro) {
+      console.error("Erro ao buscar a imagem do gato:", erro);
+    }
+  }
+  
+  document.getElementById("cat-btn").addEventListener("click", adicionarGato);
+        </code>
+      </pre>
+      <p>
+        Neste exemplo, ao clicar no botão, uma imagem aleatória de um gato será exibida na página. Vamos entender o que está acontecendo:
+      </p>
+      <ul>
+        <li>
+          <code>async</code>: Declara que a função é assíncrona, permitindo o uso de <code>await</code> dentro dela.
+        </li>
+        <li>
+          <code>await</code>: Pausa a execução da função até que a Promise seja resolvida. Isso torna o código mais linear e fácil de ler.
+        </li>
+        <li>
+          <code>try/catch</code>: Captura erros que possam ocorrer durante a execução da função assíncrona.
+        </li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>Como Funciona o Async/Await?</h2>
+      <p>
+        O <code>await</code> é usado para "esperar" que uma Promise seja resolvida antes de continuar a execução do código. Isso significa que, na linha onde usamos <code>await</code>, a função pausa sua execução até que a Promise retorne um valor. Vamos ver um exemplo simples:
+      </p>
+      <pre class="code-block">
+        📄 Exemplo Simples:
+        <code>
+  async function obterNome() {
+    return "Maria";
+  }
+  
+  console.log("Uma Promise:", obterNome());
+  
+  obterNome().then(function (nome) {
+    console.log("O nome real:", nome);
+  });
+        </code>
+      </pre>
+      <p>
+        Apesar de não usarmos <code>await</code> dentro da função <code>obterNome</code>, ela ainda retorna uma Promise porque foi declarada como <code>async</code>. Isso é importante para entender como <code>async</code> e <code>await</code> funcionam.
+      </p>
+    </section>
+  
+    <section>
+      <h2>Exemplo com Requisição de Dados</h2>
+      <p>
+        Vamos criar um exemplo onde buscamos uma piada aleatória utilizando uma API pública. Veja o HTML necessário:
+      </p>
+      <pre class="code-block">
+        📄 HTML para o exemplo:
+        <code>
+  <button id="joke-btn">Mostrar Piada</button>
+  <p id="joke-target"></p>
+        </code>
+      </pre>
+      <p>Agora, o código JavaScript:</p>
+      <pre class="code-block">
+        📄 Exemplo de Requisição com Async/Await:
+        <code>
+  const JOKE_URL = "https://icanhazdadjoke.com/";
+  
+  const piadaElemento = document.getElementById("joke-target");
+  
+  async function mostrarPiada() {
+    try {
+      const resposta = await fetch(JOKE_URL, {
+        headers: { Accept: "application/json" },
+      });
+      const dados = await resposta.json();
+      piadaElemento.textContent = dados.joke; // Exibe a piada no parágrafo
+    } catch (erro) {
+      console.error("Erro ao buscar a piada:", erro);
+      piadaElemento.textContent = "Não foi possível carregar a piada.";
+    }
+  }
+  
+  document.getElementById("joke-btn").addEventListener("click", mostrarPiada);
+        </code>
+      </pre>
+      <p>
+        Neste exemplo, ao clicar no botão, uma piada aleatória será exibida no parágrafo. O uso de <code>async/await</code> torna o código mais legível e fácil de entender.
+      </p>
+    </section>
+  
+    <section>
+      <h2>Desafio Prático</h2>
+      <p>Agora é sua vez! Complete o desafio abaixo para praticar o que aprendeu:</p>
+      <ul>
+        <li>Crie um botão que, ao ser clicado, faça uma requisição para uma API pública de fatos sobre números (<a href="http://numbersapi.com/" target="_blank">Numbers API</a>).</li>
+        <li>Exiba o fato retornado em um elemento HTML na página.</li>
+        <li>Adicione um tratamento de erro para exibir uma mensagem caso a API não responda.</li>
+      </ul>
+      <p>Critérios de sucesso:</p>
+      <ul>
+        <li>O fato deve ser exibido em um parágrafo na página.</li>
+        <li>O código deve ser funcional e livre de erros.</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>Dicas e Melhores Práticas</h2>
+      <ul>
+        <li>Use <code>try/catch</code> para capturar erros e evitar que o aplicativo quebre.</li>
+        <li>Valide os dados retornados pela API antes de utilizá-los.</li>
+        <li>Evite bloquear a interface do usuário com operações assíncronas demoradas.</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>Perguntas Frequentes</h2>
+      <details>
+        <summary>O que é <code>async/await</code>?</summary>
+        <p>
+          <code>async/await</code> é uma sintaxe do JavaScript que permite trabalhar com código assíncrono de forma mais legível, pausando a execução de uma função até que uma Promise seja resolvida.
+        </p>
+      </details>
+      <details>
+        <summary>Qual a diferença entre <code>async/await</code> e Promises?</summary>
+        <p>
+          Promises são a base do <code>async/await</code>. Enquanto Promises utilizam encadeamento com <code>then</code>, <code>async/await</code> permite escrever o código de forma mais linear e legível.
+        </p>
+      </details>
+      <details>
+        <summary>Posso usar <code>await</code> fora de uma função <code>async</code>?</summary>
+        <p>
+          Não, o <code>await</code> só pode ser usado dentro de funções declaradas como <code>async</code>.
+        </p>
+      </details>
+    </section>
+  </article>

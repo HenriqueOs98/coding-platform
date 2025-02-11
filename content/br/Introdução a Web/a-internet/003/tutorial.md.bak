@@ -1,0 +1,94 @@
+# Introduction to HTML
+
+HTML is the *message* that’s exchanged between the Web Server and the Web Browser.
+
+It’s the core, most fundamental building block of Web Development.
+
+HTML stands for "Hyper Text Markup Language", which means it's a **markup language**.
+
+It’s not strictly a programming language, purists would say.
+
+In an HTML file, we basically write text, as we would in a plain text file, but we save it with the `.html` file extension.
+
+This file contains some content, think paragraphs or titles, organized with some *markup* that the browser uses to get information on how to visualize this content to the end user.
+
+Here's an example of HTML in action:
+
+```html
+<p>A paragraph of text</p>
+
+<ul>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ul>
+```
+
+This HTML snippet says that `A paragraph of text` is a **paragraph**. And then we have a **list** of 3 items.
+
+`p` stands for *paragraph*, `ul` stands for *unordered list*, and `li` stands for *list item*.
+
+For each of them, we have an **opening tag** (like `<p>`), the content, and a **closing tag** (like `</p>`).
+
+So `<opening tag> …content …. </closing tag>.`
+
+Let’s make this into a practical example.
+
+We’re going to use an online editor because I think it makes things so much faster. It just works, you can easily share what you do, get help when you’re stuck, etc.
+
+There are many online tools you can use.
+
+One tool I suggest is **Codepen**.
+
+It’s a site that helps you experiment with creating Web pages easily, see the work of others, easily share your work, etc. 
+
+On Codepen you can create a *pen* and see the result of your HTML without having to do things on your computer (and this means you can work on this from a tablet or a smartphone too)
+
+Go to [https://codepen.io](https://codepen.io/) and create your free account.
+
+I made a short video presentation that complements the lesson:
+
+[Codepen intro.mp4](Introduction%20to%20HTML%201902767ad7e381229588f9eac998b9e9/Codepen_intro.mp4)
+
+Here’s the HTML example I listed above in action on Codepen:
+
+![Untitled](Introduction%20to%20HTML%201902767ad7e381229588f9eac998b9e9/Untitled.png)
+
+See? We have 3 boxes - HTML, CSS, and JS.
+
+And below we have the result as if we executed those 3 components in the browser.
+
+It’s a quick way to test and experiment with Web technologies.
+
+In the example, the browser interpreted the page, and automatically applied some special styling to the list, because it *knows* what an unordered list is, and it applies a default style.
+
+It also added some spacing around the paragraph, that's different from the spacing between each list item.
+
+I can share the link to the ”pen”: [https://codepen.io/flaviocopes/pen/ZEjbPEW](https://codepen.io/flaviocopes/pen/ZEjbPEW)
+
+This is another cool feature of Codepen, you can share your work by sharing a link. People can see that project, run it, and also fork it to add their changes (they also have collaboration tools, but we’re not going to use them).
+
+And also embed a pen anywhere, for example, I’ll embed the pen here so you can click “**Run pen**” and see the result live on this page:
+
+[https://codepen.io/flaviocopes/pen/ZEjbPEW](https://codepen.io/flaviocopes/pen/ZEjbPEW)
+
+Awesome! 
+
+Now I want to tell you something about HTML you should know.
+
+HTML is not *presentational*. **It’s not concerned with how things *look*. 
+
+Instead, it’s concerned with what things ***mean***. 
+
+You don't tell "make this paragraph red" in HTML. 
+
+That’s a **presentational aspect**.
+
+HTML is just concerned with content.
+
+It just adds some predefined styles here and there, like for example with the list. But that’s it. There’s no customization you can do on how it looks, in HTML.
+
+This will be the job of CSS, but that’s a story for another lesson.
+
+Before going on, bookmark/download the HTML Handbook from [https://flaviocopes.com/books/](https://flaviocopes.com/books/) - it will be a useful resource.
+

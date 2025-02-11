@@ -1,0 +1,59 @@
+{
+  "id": "007",
+  "tutorial_id": "007",
+  "course_id": "1",
+  "title": "Prática: Conteúdo da Tag Head",
+  "description": "",
+  "order_index": 1,
+  "last_one": true,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "head",
+        "title"
+      ],
+      "requiredAttributes": {
+        "link": [
+          "rel",
+          "href"
+        ],
+        "meta": [
+          "charset",
+          "name",
+          "content"
+        ],
+        "script": [
+          "src"
+        ]
+      },
+      "requiredNesting": [
+        {
+          "parent": "html",
+          "child": "head"
+        },
+        {
+          "parent": "head",
+          "child": "title"
+        }
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "link": 1,
+        "meta": 2
+      },
+      "maxTags": {}
+    },
+    "css": {
+      "requiredSelectors": [],
+      "requiredProperties": [],
+      "requiredValues": {},
+      "forbiddenProperties": []
+    },
+    "javascript": {
+      "requiredFunctions": [],
+      "requiredEventListeners": [],
+      "requiredVariables": [],
+      "forbiddenStatements": []
+    }
+  }
+}

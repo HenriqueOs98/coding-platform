@@ -1,0 +1,223 @@
+# CSS, positioning
+
+Positioning is what makes us determine where elements appear on the screen, and how they appear.
+
+We have the property `position` which can have one of those 5 values:
+
+- `static`
+- `relative`
+- `absolute`
+- `fixed`
+- `sticky`
+
+Let’s see how they work.
+
+### Static positioning
+
+This is the default value for an element. Static positioned elements are displayed in the normal page flow.
+
+### Relative positioning
+
+If you set `position: relative` on an element, you are now able to position it with an offset, using the properties
+
+- top
+- right
+- bottom
+- left
+
+which are called **offset properties**. They accept a length value or a percentage.
+
+Take [this example I made on Replit](https://replit.com/@flaviocopes/Bootcamp-2023-Module-1-CSS-Positioning-Playground).
+
+I create a parent container, a child container, and an inner box with some text:
+
+```html
+<div class="parent">
+  <div class="child">
+    <div class="box">
+      <p>Test</p>
+    </div>
+  </div>
+</div>
+```
+
+with some CSS to give some colors and padding:
+
+```css
+.parent {
+  background-color: #af47ff;
+  padding: 30px;
+  width: 300px;
+}
+
+.child {
+  background-color: #ff4797;
+  padding: 30px;
+}
+
+.box {
+  background-color: #f3ff47;
+  padding: 30px;
+  border: 2px solid #333;
+  border-style: dotted;
+  font-family: courier;
+  text-align: center;
+  font-size: 2rem;
+}
+```
+
+here's the result so far:
+
+[https://replit.com/@flaviocopes/Bootcamp-2023-Module-1-CSS-Positioning-Playground](https://replit.com/@flaviocopes/Bootcamp-2023-Module-1-CSS-Positioning-Playground)
+
+You can try and add any of the properties I mentioned before (`top`, `right`, `bottom`, `left`) to `.box`, and nothing will happen. 
+
+Because by default the positioning is set to `static`.
+
+And those properties don’t do anything in this scenario.
+
+Now if we set `position: relative` to `.box`, at first apparently nothing changes. 
+
+But now the element is now able to move using the `top`, `right`, `bottom`, `left` properties, and now you can alter the position of it *relatively to the element containing it*.
+
+For example a negative value for `top` will make the box move up relatively to its container.
+
+```css
+.box {
+  position: relative;
+  top: -60px;
+}
+```
+
+Here’s this code in action:
+
+![Untitled](CSS,%20positioning%201902767ad7e381a089b3fc2549ec47b7/Untitled.png)
+
+Another example:
+
+```css
+.box {
+  position: relative;
+  top: -60px;
+  left: 180px;
+}
+```
+
+![Untitled](CSS,%20positioning%201902767ad7e381a089b3fc2549ec47b7/Untitled%201.png)
+
+Notice how the space that is occupied by the box remains unchanged in the container, like it was still in its place.
+
+Another property that will now work is `z-index` to alter the z-axis placement. We'll talk about it later on.
+
+### Absolute positioning
+
+Setting `position: absolute` on an element will remove it from the document's flow, and it will not longer follow the original page positioning flow.
+
+Remember in relative positioning that we noticed the space originally occupied by an element was preserved even if it was moved around?
+
+With absolute positioning, as soon as we set `position: absolute` on `.box`, its original space is now collapsed, and only the origin (the starting X and Y coordinates) remain the same.
+
+```css
+.box {
+  position: absolute;
+}
+```
+
+[https://replit.com/@flaviocopes/Bootcamp-2023-Mod-1-CSS-Positioning-Absolute-Positioning](https://replit.com/@flaviocopes/Bootcamp-2023-Mod-1-CSS-Positioning-Absolute-Positioning)
+
+We can now move the box around as we please, using the `top`, `right`, `bottom`, `left` properties:
+
+```css
+.box {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+```
+
+![Untitled](CSS,%20positioning%201902767ad7e381a089b3fc2549ec47b7/Untitled%202.png)
+
+or
+
+```css
+.box {
+  position: absolute;
+  top: 140px;
+  left: 50px;
+}
+```
+
+![Untitled](CSS,%20positioning%201902767ad7e381a089b3fc2549ec47b7/Untitled%203.png)
+
+The coordinates are relative to the closest container that is not `static` (which, remember, is the default).
+
+This means that if we add `position: relative` to the `.child` element, and we set `top` and `left` to 0, the box will not be positioned at the top left margin of the *window*, but rather it will be positioned at the 0, 0 coordinates of `.child`:
+
+```css
+.child {
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+```
+
+![Untitled](CSS,%20positioning%201902767ad7e381a089b3fc2549ec47b7/Untitled%204.png)
+
+Here's what happens if `.child` is static (the default):
+
+```css
+.child {
+  /* ... */
+  position: static;
+}
+
+.box {
+  /* ... */
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+```
+
+![Untitled](CSS,%20positioning%201902767ad7e381a089b3fc2549ec47b7/Untitled%205.png)
+
+Like for relative positioning, you can use `z-index` to alter the z-axis placement.
+
+### Fixed positioning
+
+Like with absolute positioning, when an element is assigned `position: fixed` it's removed from the flow of the page.
+
+The difference with absolute positioning is this: elements are now always positioned relative to the window, instead of the first non-static container.
+
+```css
+.box {
+  position: fixed;
+}
+```
+
+![Untitled](CSS,%20positioning%201902767ad7e381a089b3fc2549ec47b7/Untitled%206.png)
+
+```css
+.box {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+```
+
+![Untitled](CSS,%20positioning%201902767ad7e381a089b3fc2549ec47b7/Untitled%207.png)
+
+Another big difference is that **elements are not affected by scrolling**. Once you put a sticky element somewhere, scrolling the page does not remove it from the visible part of the page.
+
+### Sticky positioning
+
+`sticky` is nice because the element stays in position, until the page scrolls down. When the element is about to be hidden, it’s actually always kept visible.
+
+I made this example:
+
+[https://replit.com/@flaviocopes/Bootcamp-2023-Mod-1-CSS-Positioning-Sticky](https://replit.com/@flaviocopes/Bootcamp-2023-Mod-1-CSS-Positioning-Sticky)
+

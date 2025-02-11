@@ -1,0 +1,26 @@
+# The IP protocol
+
+The **Internet Protocol**, also called **IP**, is the foundation of the Internet.
+
+It's job is to form a communication channel from computer to computer over a vast network.
+
+This protocol defines the concept of a **datagram**.
+
+A datagram is a way to organize the data that is sent between two nodes in the network.
+
+It's composed by 2 parts: a **header**, and a **payload**. The payload is the information to transfer. The header contains metadata about the payload, including the size, the identification number of the fragment, a checksum, the source IP address and the destination IP address.
+
+Let's talk about the identification. When a computer want to send data to another computer, data is cut by the sender into many little IP fragments. Numbering them allows the receiver to rebuild the original message, because there's one big property of the IP protocol we need to mention: it's connectionless.
+
+IP packets are sent from the sender and they can independently take different routes to reach the destination.
+
+This does not depend on any of the 2 actors.
+
+Intermediate nodes of the network can independently decide where to route IP packets, and this is one of the fundamentals of the Internet network resilience. If one route fails, other routes can be used to reach the destination.
+
+We'll not go into the details of how this routing takes place, but be aware that there are rules for this.
+
+If one packet does not reach the destination, or does not reach it in time, the destination will discard the whole IP datagram received, which must be re-sent.
+
+Each node on the network is identified by an address,  which we call the IP address.
+

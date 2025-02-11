@@ -1,0 +1,104 @@
+{
+  "id": "024",
+  "tutorial_id": "024",
+  "course_id": "2",
+  "title": "Prática: Criar uma Landing Page com CSS",
+  "description": "",
+  "order_index": 1,
+  "last_one": true,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "header",
+        "nav",
+        "section",
+        "h1",
+        "h2",
+        "p",
+        "div",
+        "a",
+        "button",
+        "span"
+      ],
+      "requiredAttributes": {
+        "a": [
+          "href"
+        ],
+        "link": [
+          "rel",
+          "href"
+        ]
+      },
+      "requiredNesting": [
+        {
+          "parent": "header",
+          "child": "nav"
+        },
+        {
+          "parent": "nav",
+          "child": "a"
+        },
+        {
+          "parent": "section",
+          "child": "h2"
+        },
+        {
+          "parent": "section",
+          "child": "p"
+        },
+        {
+          "parent": "section",
+          "child": "div"
+        },
+        {
+          "parent": "div",
+          "child": "span"
+        }
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "a": 5,
+        "section": 1
+      },
+      "maxTags": {}
+    },
+    "css": {
+      "requiredSelectors": [
+        ".logo",
+        ".menu",
+        ".hero",
+        ".marcas",
+        ".botao",
+        ".cta",
+        ".planos",
+        ".plano"
+      ],
+      "requiredProperties": [
+        "display",
+        "justify-content",
+        "align-items",
+        "padding",
+        "background",
+        "color",
+        "text-decoration",
+        "font-size",
+        "font-family",
+        "margin",
+        "border-radius",
+        "box-shadow"
+      ],
+      "requiredValues": {
+        ".hero": {
+          "text-align": "center"
+        },
+        ".menu a": {
+          "text-decoration": "none"
+        },
+        ".botao": {
+          "background": "#48bb78"
+        }
+      },
+      "forbiddenProperties": []
+    }
+  }
+}

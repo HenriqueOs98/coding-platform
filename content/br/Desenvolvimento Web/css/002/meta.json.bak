@@ -1,0 +1,17 @@
+{
+  "id": "002",
+  "tutorial_id": "002",
+  "course_id": "2",
+  "title": "Ferramentas de Desenvolvedor para CSS",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "css": {
+      "requiredSelectors": [],
+      "requiredProperties": [],
+      "requiredValues": {},
+      "forbiddenProperties": []
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "001",
+  "tutorial_id": "001",
+  "course_id": "2",
+  "title": "Fundamentos do CSS",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "h1",
+        "head",
+        "style",
+        "link"
+      ],
+      "requiredAttributes": {
+        "link": [
+          "href",
+          "rel"
+        ]
+      },
+      "requiredNesting": [
+        "head > style",
+        "head > link"
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "h1": 1
+      },
+      "maxTags": {}
+    },
+    "css": {
+      "requiredSelectors": [
+        "h1"
+      ],
+      "requiredProperties": [
+        "color",
+        "font-family",
+        "text-shadow",
+        "background",
+        "padding",
+        "font-size",
+        "border"
+      ],
+      "requiredValues": {},
+      "forbiddenProperties": []
+    }
+  }
+}

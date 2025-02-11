@@ -1,0 +1,64 @@
+{
+  "id": "4",
+  "group": "web-fundamentals",
+  "title": "HTTP",
+  "description": "Aprenda sobre o protocolo HTTP",
+  "difficulty": "beginner",
+  "order": 4,
+  "tutorials": [
+    {
+      "id": "001",
+      "slug": "001",
+      "title": "Uma Requisição HTTP",
+      "order": 1
+    },
+    {
+      "id": "002",
+      "slug": "002",
+      "title": "Métodos HTTP",
+      "order": 2
+    },
+    {
+      "id": "003",
+      "slug": "003",
+      "title": "Códigos de Status HTTP",
+      "order": 3
+    },
+    {
+      "id": "004",
+      "slug": "004",
+      "title": "Comunicação Cliente-Servidor HTTP",
+      "order": 4
+    },
+    {
+      "id": "005",
+      "slug": "005",
+      "title": "Cabeçalhos de Requisição HTTP",
+      "order": 5
+    },
+    {
+      "id": "006",
+      "slug": "006",
+      "title": "Cabeçalhos de Resposta HTTP",
+      "order": 6
+    },
+    {
+      "id": "007",
+      "slug": "007",
+      "title": "HTTPS",
+      "order": 7
+    },
+    {
+      "id": "008",
+      "slug": "008",
+      "title": "HTTP/2 e HTTP/3",
+      "order": 8
+    },
+    {
+      "id": "009",
+      "slug": "009",
+      "title": "Prática: Inspecionando Requisições HTTP nas Ferramentas Dev",
+      "order": 9
+    }
+  ]
+}

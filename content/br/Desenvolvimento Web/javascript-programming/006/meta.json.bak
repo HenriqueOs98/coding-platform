@@ -1,0 +1,21 @@
+{
+  "id": "006",
+  "tutorial_id": "006",
+  "course_id": "javascript-programming",
+  "title": "Funções: Conceitos Básicos",
+  "description": "",
+  "order_index": 6,
+  "validation": {
+    "expectedOutput": [],
+    "requiredStatements": []
+  },
+  "is_active": true,
+  "translations": {
+    "pt": {
+      "title": "Funções: Conceitos Básicos"
+    },
+    "en": {
+      "title": "Funções: Conceitos Básicos"
+    }
+  }
+}

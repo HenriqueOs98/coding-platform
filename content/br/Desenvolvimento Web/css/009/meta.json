@@ -1,0 +1,98 @@
+{
+  "id": "009",
+  "tutorial_id": "009",
+  "course_id": "2",
+  "title": "Prática: Estilizando Estrutura de Página Simples",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "html",
+        "body",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "p"
+      ],
+      "requiredAttributes": {
+        "link": [
+          "href",
+          "rel"
+        ]
+      },
+      "requiredNesting": [
+        [
+          "html",
+          "body"
+        ],
+        [
+          "body",
+          "h1"
+        ],
+        [
+          "body",
+          "h2"
+        ],
+        [
+          "body",
+          "h3"
+        ],
+        [
+          "body",
+          "h4"
+        ],
+        [
+          "body",
+          "h5"
+        ],
+        [
+          "body",
+          "h6"
+        ],
+        [
+          "body",
+          "p"
+        ],
+        [
+          "head",
+          "link"
+        ]
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "h1": 1,
+        "h2": 1,
+        "h3": 1,
+        "h4": 1,
+        "h5": 1,
+        "h6": 1,
+        "p": 1
+      },
+      "maxTags": {}
+    },
+    "css": {
+      "requiredSelectors": [
+        "h1",
+        "h2",
+        "h3",
+        "body"
+      ],
+      "requiredProperties": [
+        "font-family"
+      ],
+      "requiredValues": {
+        "font-family": [
+          "system-ui",
+          "Roboto",
+          "Montserrat"
+        ]
+      },
+      "forbiddenProperties": []
+    }
+  }
+}

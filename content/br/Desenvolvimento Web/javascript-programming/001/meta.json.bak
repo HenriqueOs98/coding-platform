@@ -1,0 +1,74 @@
+{
+  "id": "001",
+  "tutorial_id": "001",
+  "course_id": "javascript-programming",
+  "title": "Começando com JavaScript",
+  "description": "",
+  "order_index": 1,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "html",
+        "head",
+        "title",
+        "body",
+        "script"
+      ],
+      "requiredAttributes": {
+        "html": [
+          "lang"
+        ],
+        "script": [
+          "src"
+        ]
+      },
+      "requiredNesting": [
+        {
+          "parent": "head",
+          "child": "title"
+        },
+        {
+          "parent": "body",
+          "child": "script"
+        }
+      ],
+      "forbiddenTags": [
+        "frame",
+        "frameset",
+        "style"
+      ],
+      "minTags": 6,
+      "maxTags": 8
+    },
+    "javascript": {
+      "requiredFunctions": [
+        "console.log"
+      ],
+      "requiredVariables": [
+        "precoPaoFrances",
+        "quantidadePaesPorFornada",
+        "vendasDiarias",
+        "precoPaoDoce",
+        "quantidadeVendidaPorDia",
+        "faturamentoDiario"
+      ],
+      "requiredKeywords": [
+        "const"
+      ],
+      "forbiddenKeywords": [
+        "var"
+      ],
+      "expectedConsoleOutput": [
+        "50",
+        "Custo diário com farinha: 112.5",
+        "Faturamento diário com pão doce: 50"
+      ],
+      "expectedVariableValues": {
+        "vendasDiarias": 50,
+        "custoFarinhaDiario": 112.5,
+        "faturamentoDiario": 50
+      }
+    }
+  },
+  "is_active": true
+}

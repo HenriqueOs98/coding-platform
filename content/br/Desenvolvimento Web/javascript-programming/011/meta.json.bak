@@ -1,0 +1,76 @@
+{
+  "id": "011",
+  "tutorial_id": "011",
+  "course_id": "javascript-programming",
+  "title": "Métodos de Array",
+  "description": "",
+  "order_index": 11,
+  "validation": {
+    "javascript": {
+      "requiredFunctions": [
+        "push",
+        "pop",
+        "unshift",
+        "shift",
+        "join",
+        "forEach",
+        "filter",
+        "find",
+        "sort",
+        "map",
+        "reduce",
+        "includes",
+        "some"
+      ],
+      "requiredVariables": [
+        "numeros",
+        "frutas",
+        "misto",
+        "tecnologias",
+        "alunos",
+        "gerenciadorTarefas",
+        "tarefas"
+      ],
+      "requiredKeywords": [
+        "const",
+        "let",
+        "for",
+        "if",
+        "=>",
+        "return"
+      ],
+      "forbiddenKeywords": [
+        "var"
+      ],
+      "expectedConsoleOutput": [
+        "1",
+        "banana",
+        "valor",
+        "5",
+        "3",
+        "JavaScript - Python - CSS",
+        "Ana: 8.5",
+        "Bruno: 7.8",
+        "Carla: 9.2"
+      ],
+      "expectedVariableValues": {
+        "tecnologias": [
+          "JavaScript",
+          "Python",
+          "CSS"
+        ],
+        "ultimo": "React",
+        "primeiro": "TypeScript"
+      }
+    }
+  },
+  "is_active": true,
+  "translations": {
+    "pt": {
+      "title": "Métodos de Array"
+    },
+    "en": {
+      "title": "Métodos de Array"
+    }
+  }
+}

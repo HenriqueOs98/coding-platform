@@ -1,0 +1,52 @@
+{
+  "id": "011",
+  "tutorial_id": "011",
+  "course_id": "2",
+  "title": "Prática: Estilizando Texto",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "p",
+        "span"
+      ],
+      "requiredAttributes": {},
+      "requiredNesting": [
+        [
+          "p",
+          "span"
+        ]
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "span": 1
+      },
+      "maxTags": {}
+    },
+    "css": {
+      "requiredSelectors": [
+        ".destaque",
+        ".curva",
+        ".super-destaque"
+      ],
+      "requiredProperties": [
+        "font-weight",
+        "font-style",
+        "color",
+        "text-shadow"
+      ],
+      "requiredValues": {
+        "font-weight": [
+          "700",
+          "900"
+        ],
+        "font-style": [
+          "oblique"
+        ]
+      },
+      "forbiddenProperties": []
+    }
+  }
+}

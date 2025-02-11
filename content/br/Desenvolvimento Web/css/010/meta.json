@@ -1,0 +1,119 @@
+{
+  "id": "010",
+  "tutorial_id": "010",
+  "course_id": "2",
+  "title": "Prática: Estilizando Post de Blog",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "html",
+        "head",
+        "body",
+        "nav",
+        "ol",
+        "li",
+        "a",
+        "main",
+        "h1",
+        "h2",
+        "div",
+        "p",
+        "footer"
+      ],
+      "requiredAttributes": {
+        "link": [
+          "href",
+          "rel"
+        ],
+        "a": [
+          "href"
+        ]
+      },
+      "requiredNesting": [
+        [
+          "nav",
+          "ol"
+        ],
+        [
+          "ol",
+          "li"
+        ],
+        [
+          "li",
+          "a"
+        ],
+        [
+          "main",
+          "h1"
+        ],
+        [
+          "main",
+          "h2"
+        ],
+        [
+          "main",
+          "div"
+        ],
+        [
+          "div",
+          "p"
+        ],
+        [
+          "footer",
+          "p"
+        ]
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "li": 2
+      },
+      "maxTags": {}
+    },
+    "css": {
+      "requiredSelectors": [
+        "body",
+        "h1",
+        "h2",
+        "nav ol",
+        "nav li",
+        "nav a",
+        "nav li:not(:last-child)::after",
+        "main",
+        "footer"
+      ],
+      "requiredProperties": [
+        "font-family",
+        "list-style",
+        "padding-left",
+        "display",
+        "margin-right",
+        "text-decoration",
+        "color",
+        "content",
+        "margin-left",
+        "max-width",
+        "margin",
+        "padding",
+        "line-height",
+        "font-size",
+        "border-top"
+      ],
+      "requiredValues": {
+        "font-family": [
+          "system-ui",
+          "'IBM Plex Sans', sans-serif"
+        ],
+        "list-style": [
+          "none"
+        ],
+        "text-decoration": [
+          "none"
+        ]
+      },
+      "forbiddenProperties": []
+    }
+  }
+}

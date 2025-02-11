@@ -1,0 +1,46 @@
+{
+  "id": "016",
+  "tutorial_id": "016",
+  "course_id": "2",
+  "title": "CSS: Propriedade Display",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "div",
+        "a",
+        "li",
+        "ul"
+      ],
+      "requiredAttributes": {},
+      "requiredNesting": [
+        "ul li"
+      ],
+      "forbiddenTags": [],
+      "minTags": 0,
+      "maxTags": 0
+    },
+    "css": {
+      "requiredSelectors": [
+        ".menu-item",
+        ".lista-menu li"
+      ],
+      "requiredProperties": [
+        "display"
+      ],
+      "requiredValues": {
+        "display": [
+          "block",
+          "inline",
+          "none",
+          "flex",
+          "grid",
+          "inline-block"
+        ]
+      },
+      "forbiddenProperties": []
+    }
+  }
+}

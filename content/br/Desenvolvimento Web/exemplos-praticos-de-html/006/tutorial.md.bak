@@ -1,0 +1,132 @@
+# PRACTICE: Links
+
+Links are a key part of a Website.
+
+Here's a link to my website:
+
+```html
+<a href="https://flaviocopes.com">flaviocopes.com</a>
+```
+
+Links can be relative to the site, by omitting the domain:
+
+```html
+<a href="/blog">blog</a>
+```
+
+Try this example:
+
+```html
+<html>
+  <body>
+    <h2>Links</h2>
+    <ul>
+      <li>
+        <a href="<https://flaviocopes.com>">flaviocopes.com</a>
+      </li>
+      <li>
+        <a href="/blog">blog</a>
+      </li>
+      <li>
+        <a href="mailto:flavio@flaviocopes.com">email flavio</a>
+      </li>
+    </ul>
+  </body>
+</html>
+```
+
+![Screen Shot 2020-04-14 at 17.36.09.png](PRACTICE%20Links%201902767ad7e381ee9174c2260377c933/Screen_Shot_2020-04-14_at_17.36.09.png)
+
+Links can also point to resources on the same page, using the `#` symbol:
+
+```html
+<a href="#first-chapter">First chapter</a>
+```
+
+In this case, an anchor element without `href` attribute must be present:
+
+```html
+<a id="first-chapter"></a>
+```
+
+Once you click the `a` with the `href` attribute, the browser will then move to the `a` element with the `id` attribute it points to.
+
+Try this example:
+
+```html
+<html>
+  <body>
+    <h2>Links</h2>
+    <ul>
+      <li>
+        <a href="#first-chapter">First chapter</a>
+      </li>
+      <li>
+        <a href="#second-chapter">Second chapter</a>
+      </li>
+      <li>
+        <a href="#third-chapter">Third chapter</a>
+      </li>
+    </ul>
+    <main>
+      <a id="first-chapter"><h3>First chapter</h3></a>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl
+        tellus, aliquam sed justo sed, gravida convallis lorem. Maecenas vitae
+        elementum nisl. Donec nulla mauris, vehicula nec lacinia vitae,
+        ullamcorper ut tortor. Sed et cursus tellus, at luctus libero.
+        Suspendisse potenti. Vestibulum vehicula accumsan erat non fermentum.
+        Maecenas id neque eu tellus volutpat feugiat.
+      </p>
+      <a id="second-chapter"><h3>Second chapter</h3></a>
+      <p>
+        In tempus pharetra aliquam. Morbi sem lectus, rhoncus ac sagittis vel,
+        posuere non sem. Aenean eget elit vitae justo blandit imperdiet. Morbi
+        vehicula purus id mi vulputate blandit. Nulla id lobortis leo.
+        Pellentesque ultrices eros ut leo laoreet, id egestas justo tempus.
+        Proin at dui ut magna placerat porta ac posuere sem. Phasellus lobortis
+        nec ipsum non maximus. Maecenas maximus, lacus non aliquet euismod, nisl
+        augue mollis arcu, sed viverra arcu leo eget nunc. Proin justo velit,
+        congue a elementum eget, venenatis rutrum ligula.
+      </p>
+      <a id="third-chapter"><h3>Third chapter</h3></a>
+      <p>
+        Vestibulum quis convallis velit, ut lacinia mi. Vivamus at porta risus.
+        Ut fringilla in ante a volutpat. Nunc eleifend ornare tellus ac
+        sollicitudin. Quisque ac est eget sem fringilla mattis et dictum nibh.
+        Curabitur fermentum urna id purus placerat, nec posuere enim faucibus.
+        Nulla egestas hendrerit viverra. Maecenas tempus nulla sit amet eros
+        dapibus sodales. Integer imperdiet hendrerit vestibulum. Nunc imperdiet
+        erat eget ipsum placerat laoreet ac vitae elit. Quisque quis metus non
+        dolor pharetra rutrum. Maecenas sit amet elit quis orci maximus pulvinar
+        varius sit amet nisl. Pellentesque vel cursus purus, interdum maximus
+        enim. Nullam egestas ex sit amet nisl ornare pellentesque. Nulla ut
+        libero vitae ligula tincidunt porta. Nunc rhoncus sollicitudin
+        elementum.
+      </p>
+      <p>
+        Morbi et odio nunc. Donec sit amet odio dapibus, rhoncus nulla eu,
+        rhoncus est. Nulla facilisi. Nulla a eros congue velit facilisis commodo
+        vel eu lorem. Fusce placerat, tellus eget convallis vehicula, turpis
+        eros fringilla dui, vel eleifend elit felis at ex. Aliquam vitae viverra
+        dolor. Cras vestibulum convallis cursus. Maecenas eleifend condimentum
+        scelerisque.
+      </p>
+    </main>
+  </body>
+</html>
+
+```
+
+If your page content is long enough (or the page size is small enough so it goes below the fold), clicking a link will move you to the correct position:
+
+![Screen Shot 2020-04-14 at 17.41.05.png](PRACTICE%20Links%201902767ad7e381ee9174c2260377c933/Screen_Shot_2020-04-14_at_17.41.05.png)
+
+Links can also perform actions outside of the Web browser: here's a link that uses the `mailto` protocol to send an email with your default email application:
+
+```html
+<a href="mailto:flavio@flaviocopes.com">email flavio</a>
+```
+
+Other applications can register their own protocols for internal use, to do something in an app when clicking a link in a browser.
+

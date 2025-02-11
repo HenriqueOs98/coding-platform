@@ -1,0 +1,160 @@
+<article>
+    <h2>Introdução ao JSON e Manipulação de Dados no JavaScript</h2>
+    <p>
+      Neste tutorial, você aprenderá o que é JSON, como utilizá-lo para trocar dados entre o frontend e o backend, e como manipulá-lo no JavaScript. Vamos explorar conceitos básicos, exemplos práticos e boas práticas para trabalhar com JSON.
+    </p>
+  
+    <section>
+      <h2>O que é JSON?</h2>
+      <p>
+        JSON (JavaScript Object Notation) é um formato leve de troca de dados que se parece muito com objetos JavaScript. Ele é amplamente utilizado para comunicação entre o frontend e o backend, permitindo que ambos "falem a mesma língua". Pense no JSON como um "alfabeto comum" que padroniza a troca de mensagens entre sistemas.
+      </p>
+      <p>Veja um exemplo de JSON:</p>
+      <pre class="code-block">
+        📄 Exemplo de JSON:
+        <code>
+  {
+    "nome": "João",
+    "idade": 25,
+    "profissao": "Engenheiro",
+    "endereco": {
+      "cidade": "São Paulo",
+      "estado": "SP"
+    }
+  }
+        </code>
+      </pre>
+      <p>
+        Este JSON representa um objeto com informações sobre uma pessoa. Ele pode ser facilmente interpretado por sistemas que utilizam JavaScript.
+      </p>
+    </section>
+  
+    <section>
+      <h2>Convertendo JSON em Objetos JavaScript</h2>
+      <p>
+        Quando recebemos dados de um servidor, eles geralmente vêm no formato de string JSON. Para utilizá-los no JavaScript, precisamos convertê-los em objetos. Isso pode ser feito com o método <code>JSON.parse</code>.
+      </p>
+      <pre class="code-block">
+        📄 Exemplo de Conversão:
+        <code>
+  const respostaDoServidor = `{"nome": "João", "idade": 25, "profissao": "Engenheiro", "endereco": {"cidade": "São Paulo", "estado": "SP"}}`;
+  
+  console.log(respostaDoServidor); // string JSON
+  
+  const objetoResposta = JSON.parse(respostaDoServidor);
+  
+  console.log(objetoResposta.nome); // "João"
+  console.log(objetoResposta.endereco.cidade); // "São Paulo"
+  console.log(objetoResposta); // Objeto completo
+        </code>
+      </pre>
+      <p>
+        O método <code>JSON.parse</code> transforma a string JSON em um objeto JavaScript que pode ser manipulado diretamente.
+      </p>
+    </section>
+  
+    <section>
+      <h2>Escape Characters no JSON</h2>
+      <p>
+        Ao trabalhar com strings JSON, você pode encontrar caracteres de escape, como <code>\</code>. Eles são usados para evitar conflitos com aspas ou outros caracteres especiais. Por exemplo:
+      </p>
+      <pre class="code-block">
+        📄 Exemplo de Escape Characters:
+        <code>
+  const aspas = "\""; // Representa uma aspas dupla
+  const barraInvertida = "\\"; // Representa uma barra invertida
+        </code>
+      </pre>
+      <p>
+        Esses caracteres são essenciais para garantir que o JSON seja interpretado corretamente.
+      </p>
+    </section>
+  
+    <section>
+      <h2>Convertendo Objetos JavaScript em JSON</h2>
+      <p>
+        Para enviar dados do frontend para o backend, precisamos converter objetos JavaScript em strings JSON. Isso pode ser feito com o método <code>JSON.stringify</code>.
+      </p>
+      <pre class="code-block">
+        📄 Exemplo de Stringify:
+        <code>
+  const livro = {
+    titulo: "Dom Casmurro",
+    autor: "Machado de Assis",
+    ano: 1899,
+    genero: "Romance",
+  };
+  
+  const stringLivro = JSON.stringify(livro);
+  console.log(stringLivro);
+        </code>
+      </pre>
+      <p>
+        O método <code>JSON.stringify</code> transforma o objeto em uma string JSON, pronta para ser enviada ao servidor.
+      </p>
+    </section>
+  
+    <section>
+      <h2>Formatando JSON para Depuração</h2>
+      <p>
+        Para visualizar objetos JSON de forma legível, podemos usar o método <code>JSON.stringify</code> com parâmetros adicionais. Veja como formatar um objeto com indentação:
+      </p>
+      <pre class="code-block">
+        📄 Exemplo de Formatação:
+        <code>
+  const aluno = {
+    nome: "Maria",
+    idade: 20,
+    curso: "Ciência da Computação",
+    universidade: "USP",
+  };
+  
+  const elemento = document.getElementById("bloco-codigo");
+  elemento.innerText = JSON.stringify(aluno, null, 2);
+        </code>
+      </pre>
+      <p>
+        Aqui, o número <code>2</code> define o nível de indentação. Isso é útil para depuração e exibição de dados em um formato legível.
+      </p>
+    </section>
+  
+    <section class="challenge-section">
+      <h2>Desafio Prático</h2>
+      <p>Agora é sua vez! Complete o desafio abaixo para praticar o que aprendeu:</p>
+      <ul>
+        <li>Crie um objeto JavaScript com informações sobre um filme (título, diretor, ano de lançamento e gênero).</li>
+        <li>Converta o objeto em uma string JSON usando <code>JSON.stringify</code>.</li>
+        <li>Exiba o JSON formatado em um elemento HTML usando <code>innerText</code>.</li>
+      </ul>
+      <p>Critérios de sucesso:</p>
+      <ul>
+        <li>O JSON deve ser exibido com indentação de 4 espaços.</li>
+        <li>O código deve ser funcional e livre de erros.</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>Dicas e Melhores Práticas</h2>
+      <ul>
+        <li>Sempre valide o JSON antes de utilizá-lo para evitar erros de sintaxe.</li>
+        <li>Use <code>JSON.stringify</code> com indentação para facilitar a leitura durante a depuração.</li>
+        <li>Evite enviar dados desnecessários no JSON para reduzir o tamanho da resposta.</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>Perguntas Frequentes</h2>
+      <details>
+        <summary>O que é JSON?</summary>
+        <p>JSON é um formato de troca de dados baseado em texto, usado para representar objetos e arrays de forma legível por humanos e máquinas.</p>
+      </details>
+      <details>
+        <summary>Qual a diferença entre JSON e objetos JavaScript?</summary>
+        <p>JSON é uma string que segue uma estrutura específica, enquanto objetos JavaScript são estruturas de dados nativas do JavaScript.</p>
+      </details>
+      <details>
+        <summary>Como lidar com erros ao usar <code>JSON.parse</code>?</summary>
+        <p>Certifique-se de que a string JSON seja válida. Use ferramentas de validação de JSON para identificar problemas.</p>
+      </details>
+    </section>
+  </article>

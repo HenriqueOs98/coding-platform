@@ -1,0 +1,128 @@
+<article class="tutorial-content">
+    <h2>Funções em JavaScript</h2>
+    <div class="tutorial-body">
+        <section>
+            <h2>O que são Funções?</h2>
+            <p>Funções são blocos de código reutilizáveis que podemos chamar várias vezes com diferentes valores. Pense nelas como pequenas máquinas que recebem entrada (parâmetros) e produzem uma saída (retorno).</p>
+
+            <div class="code-block">
+                <pre><code>// Função simples que soma 5
+function addFive(number) {
+    return number + 5;
+}
+
+console.log(addFive(10));  // 15
+console.log(addFive(20));  // 25
+console.log(addFive(-5));  // 0</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <h2>Parâmetros e Retorno</h2>
+            <p>Funções podem receber vários parâmetros e retornar um resultado usando return.</p>
+
+            <div class="code-block">
+                <pre><code>function criarSaudacao(nome, periodo) {
+    if (periodo === "manhã") {
+        return `Bom dia, ${nome}!`;
+    } else if (periodo === "tarde") {
+        return `Boa tarde, ${nome}!`;
+    } else {
+        return `Boa noite, ${nome}!`;
+    }
+}
+
+console.log(criarSaudacao("Ana", "manhã")); // "Bom dia, Ana!"
+console.log(criarSaudacao("João", "noite")); // "Boa noite, João!"</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <h2>Diferentes Formas de Escrever Funções</h2>
+            <p>JavaScript oferece várias sintaxes para criar funções:</p>
+
+            <div class="code-block">
+                <pre><code>// 1. Declaração de função tradicional
+function somar(a, b) {
+    return a + b;
+}
+
+// 2. Expressão de função
+const multiplicar = function(a, b) {
+    return a * b;
+};
+
+// 3. Arrow function
+const subtrair = (a, b) => {
+    return a - b;
+};
+
+// Arrow function compacta (retorno implícito)
+const dividir = (a, b) => a / b;
+
+console.log(somar(5, 3));      // 8
+console.log(multiplicar(4, 2)); // 8
+console.log(subtrair(10, 5));  // 5
+console.log(dividir(10, 2));   // 5</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <h2>Funções com Múltiplos Parâmetros</h2>
+            <p>Funções podem receber quantos parâmetros forem necessários:</p>
+
+            <div class="code-block">
+                <pre><code>function calcularMedia(...numeros) {
+    let soma = 0;
+    for (let numero of numeros) {
+        soma += numero;
+    }
+    return soma / numeros.length;
+}
+
+console.log(calcularMedia(10, 20, 30));     // 20
+console.log(calcularMedia(2, 4, 6, 8, 10)); // 6</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <h2>Funções como Blocos de Construção</h2>
+            <p>Podemos usar funções dentro de outras funções:</p>
+
+            <div class="code-block">
+                <pre><code>function calcularImposto(valor) {
+    return valor * 0.2; // 20% de imposto
+}
+
+function calcularPrecoFinal(preco) {
+    const imposto = calcularImposto(preco);
+    const precoFinal = preco + imposto;
+    return precoFinal;
+}
+
+console.log(calcularPrecoFinal(100)); // 120</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <h2>Dicas Importantes</h2>
+            <ul>
+                <li>Use nomes descritivos para suas funções e parâmetros</li>
+                <li>Cada função deve ter uma única responsabilidade</li>
+                <li>Evite efeitos colaterais: prefira funções que retornam valores em vez de modificar dados externos</li>
+                <li>Tente manter suas funções pequenas e focadas</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Exercícios Práticos</h2>
+            <p>Tente criar funções para:</p>
+            <ul>
+                <li>Calcular a área de um círculo dado o raio</li>
+                <li>Verificar se um número é par ou ímpar</li>
+                <li>Formatar um nome (primeira letra maiúscula)</li>
+                <li>Calcular o desconto de um produto</li>
+            </ul>
+        </section>
+    </div>
+</article>

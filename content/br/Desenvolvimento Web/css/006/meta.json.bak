@@ -1,0 +1,38 @@
+{
+  "id": "006",
+  "tutorial_id": "006",
+  "course_id": "2",
+  "title": "Unidades",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "css": {
+      "requiredSelectors": [
+        "html"
+      ],
+      "requiredProperties": [
+        "font-size",
+        "width"
+      ],
+      "requiredValues": {
+        "html": {
+          "font-size": [
+            "62.5%"
+          ]
+        },
+        ".container": {
+          "width": [
+            "px"
+          ]
+        },
+        ".card": {
+          "width": [
+            "%"
+          ]
+        }
+      },
+      "forbiddenProperties": []
+    }
+  }
+}

@@ -1,0 +1,52 @@
+# PRACTICE: Images
+
+You load images using the `img` tag.
+
+The `src` attributes points to a URL where the image can be found.
+
+Try loading this on Codepen. We use an image from [Unsplash](https://unsplash.com/):
+
+```html
+<html>
+  <body>
+    <h2>Images</h2>
+    <img
+      src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+    />
+  </body>
+</html>
+
+```
+
+The image is very big, and it does exceed the screen size:
+
+![Screen Shot 2020-04-14 at 17.03.52.png](PRACTICE%20Images%201902767ad7e3819c9cf6cb4f39724f59/Screen_Shot_2020-04-14_at_17.03.52.png)
+
+Add the width attribute to scale the image down:
+
+```html
+<img
+  src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+  width="500"
+/>
+
+```
+
+![Screen Shot 2020-04-14 at 17.04.24.png](PRACTICE%20Images%201902767ad7e3819c9cf6cb4f39724f59/Screen_Shot_2020-04-14_at_17.04.24.png)
+
+Note that the scaling is done in the browser, so the image is still big, but scaled for the user.
+
+It's a good idea to make sure you serve images at the size you need them, to avoid your users the need to download a huge image.
+
+Height is automatically set for you maintaining the width/height ratio, unless you add it:
+
+![Screen Shot 2020-04-14 at 17.04.24 2.png](PRACTICE%20Images%201902767ad7e3819c9cf6cb4f39724f59/Screen_Shot_2020-04-14_at_17.04.24_2.png)
+
+Add an `alt` attribute to images to describe the image for people that either access the page using a screen reader, because visually impaired, or simply have images disabled, or when the image URL is wrong or no longer valid:
+
+![Screen Shot 2020-04-14 at 17.08.02.png](PRACTICE%20Images%201902767ad7e3819c9cf6cb4f39724f59/Screen_Shot_2020-04-14_at_17.08.02.png)
+
+A `title` attribute will show a tooltip when hovering the image with the mouse:
+
+![Screen Shot 2020-04-14 at 17.07.21.png](PRACTICE%20Images%201902767ad7e3819c9cf6cb4f39724f59/Screen_Shot_2020-04-14_at_17.07.21.png)
+

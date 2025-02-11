@@ -1,0 +1,12 @@
+{
+    "id": "1-welcome-to-programe.tech",
+    "course_id": "introduction-to-web-programming",
+    "title": "Bem-vindo ao Programe.tech",
+    "description": "Aprenda os conceitos básicos de Inteligência Artificial Generativa e crie sua primeira aplicação web que interage com IA",
+    "order_index": 1,
+    "validation": {
+        "expectedOutput": ["Aplicação web interagindo com IA"],
+        "requiredStatements": ["fetch", "addEventListener", "async/await"]
+    },
+    "is_active": true
+} 

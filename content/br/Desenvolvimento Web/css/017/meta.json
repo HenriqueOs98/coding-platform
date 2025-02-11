@@ -1,0 +1,62 @@
+{
+  "id": "017",
+  "tutorial_id": "017",
+  "course_id": "2",
+  "title": "CSS: Posicionamento",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "div"
+      ],
+      "requiredAttributes": {
+        "class": [
+          "moldura",
+          "cartao",
+          "etiqueta",
+          "chat-suporte",
+          "cabecalho-tabela"
+        ]
+      },
+      "requiredNesting": [
+        [
+          "div.moldura",
+          "div.cartao",
+          "div.etiqueta"
+        ]
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "div": 3
+      },
+      "maxTags": {}
+    },
+    "css": {
+      "requiredSelectors": [
+        ".etiqueta",
+        ".chat-suporte",
+        ".cabecalho-tabela"
+      ],
+      "requiredProperties": [
+        "position",
+        "top",
+        "left",
+        "right",
+        "bottom",
+        "z-index"
+      ],
+      "requiredValues": {
+        "position": [
+          "static",
+          "relative",
+          "absolute",
+          "fixed",
+          "sticky"
+        ]
+      },
+      "forbiddenProperties": []
+    }
+  }
+}

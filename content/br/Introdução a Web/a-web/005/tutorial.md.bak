@@ -1,0 +1,14 @@
+# Web Sites and Web Applications
+
+A Web App is an application that runs inside the browser.
+
+The browser was originally born as a way to display documents written in the Hyper Text Markup Language (HTML).
+
+In 1995, JavaScript was developed and added to the Netscape Navigator browser, and quickly expanded.
+
+After an early stage, where JavaScript and browsers were far, far less capable of what we can do today, we had a lot more power.
+
+Apps like Google Maps and GMail, among many others, paved the way to an entire ecosystem.
+
+Today the Web is an application platform. Powerful and complex apps run directly inside the browser. The browser is not just a document visualization tool: it's a runtime, a platform that executes other programs.
+

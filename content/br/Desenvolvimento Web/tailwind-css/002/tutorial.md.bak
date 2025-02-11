@@ -1,0 +1,65 @@
+# PRACTICE: Styling an HTML page with Tailwind
+
+Let’s try a simple exercise now. 
+
+Remember the demo we did with CSS?
+
+We had this HTML file:
+
+```html
+<html>
+	<body>
+		<div>
+			<h1>Buy this great tool</h1>
+			<p>Trusted by hundreds of companies</p>
+			<ul>
+				<li>Google</li>
+				<li>Apple</li>
+				<li>Meta</li>
+			</ul>
+			<button>Find out more</button>
+	</div>
+	</body>
+</html>
+```
+
+As we did with CSS, we want to make the site look good, like on the right ⤵️
+
+![Untitled](PRACTICE%20Styling%20an%20HTML%20page%20with%20Tailwind%201902767ad7e38146afcddcc6a20b971c/Untitled.png)
+
+![Untitled](PRACTICE%20Styling%20an%20HTML%20page%20with%20Tailwind%201902767ad7e38146afcddcc6a20b971c/Untitled%201.png)
+
+But this time, we’ll use Tailwind CSS.
+
+To use Tailwind we need to configure it for our project.
+
+Since we’ve used Codepen so far, here’s how to use Tailwind on Codepen.
+
+Create an empty pen. Click the ⚙️ button in the HTML panel:
+
+![Untitled](PRACTICE%20Styling%20an%20HTML%20page%20with%20Tailwind%201902767ad7e38146afcddcc6a20b971c/Untitled%202.png)
+
+See the `Stuff for <head>` box?
+
+![Untitled](PRACTICE%20Styling%20an%20HTML%20page%20with%20Tailwind%201902767ad7e38146afcddcc6a20b971c/Untitled%203.png)
+
+Paste this into that:
+
+```css
+<script src="https://cdn.tailwindcss.com"></script>
+```
+
+![Untitled](PRACTICE%20Styling%20an%20HTML%20page%20with%20Tailwind%201902767ad7e38146afcddcc6a20b971c/Untitled%204.png)
+
+Click the **Save & Close** button. 
+
+Try adding some code and Tailwind should be working, like in this simple example:
+
+![Untitled](PRACTICE%20Styling%20an%20HTML%20page%20with%20Tailwind%201902767ad7e38146afcddcc6a20b971c/Untitled%205.png)
+
+For convenience, I created a [starting template](https://codepen.io/flaviocopes/pen/MWBJWXZ?editors=1100).
+
+[Here is the project I created](https://codepen.io/flaviocopes/pen/poZRoZx?editors=1000). Play around with it, and compare it with the “plain CSS” version.
+
+[https://codepen.io/flaviocopes/pen/poZRoZx?editors=1000](https://codepen.io/flaviocopes/pen/poZRoZx?editors=1000)
+

@@ -1,0 +1,38 @@
+{
+  "id": "003",
+  "tutorial_id": "003",
+  "course_id": "2",
+  "title": "Cores",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "css": {
+      "requiredSelectors": [
+        "p",
+        "div",
+        "header",
+        "button",
+        ".card"
+      ],
+      "requiredProperties": [
+        "color",
+        "background-color"
+      ],
+      "requiredValues": {
+        "color": [
+          "named colors (e.g. azul, branco, vermelho)",
+          "rgb values (e.g. rgb(255, 215, 0))",
+          "hexadecimal values (e.g. #ff69b4)"
+        ],
+        "background-color": [
+          "named colors (e.g. azul, branco, vermelho)",
+          "rgb values (e.g. rgb(255, 215, 0))",
+          "hexadecimal values (e.g. #ff69b4)",
+          "rgba values (e.g. rgba(34, 139, 34, 0.7))"
+        ]
+      },
+      "forbiddenProperties": []
+    }
+  }
+}

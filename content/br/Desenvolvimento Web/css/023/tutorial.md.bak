@@ -1,0 +1,154 @@
+# Responsive design
+
+Responsive design is a way to make sure the design is always perfect on any screen device.
+
+We can achieve this using some techniques we can apply both in plain CSS and in Tailwind.
+
+It’s super important to have responsive websites because a website designed for the desktop will be unusable on mobile, and vice versa.
+
+It’s a user experience improvement.
+
+But also, Google is known to crawl websites as mobile phones do, and allegedly penalizes non-responsive sites.
+
+So it’s also a business metric, considering Google traffic can “make or break” a business.
+
+In summary, responsive design is useful because it provides a better user experience, helps to improve a website's search engine ranking, and allows a website to be accessed by a wider range of users.
+
+What I believe is the more effective way of implementing a responsive design is thinking of a website as mobile (small screen) first, and adding support for larger screens with **media queries**.
+
+Media queries allow you to apply different styles to a website depending on the characteristics of the device that is being used to view it. 
+
+## In plain CSS
+
+You create a media query using the `@media` rule. then you set some conditions.
+
+For example, this `min-width` condition will apply some rules only if the width of the page is *at least* `640px`:
+
+```css
+@media (min-width: 640px) {
+
+}
+```
+
+Inside the curly brackets we’re going to have CSS selectors and their rules:
+
+```css
+@media (min-width: 640px) {
+  div {
+    width: 50%;
+  }
+}
+```
+
+A media query is basically a container for CSS. 
+
+You write some CSS outside the media query, that’s applied in every case. 
+
+Then you have a media query and CSS written inside it is applied only if the media query is satisfied by the current window size. 
+
+It’s important to know that this is applied on page load, but also dynamically applied as you resize the window.
+
+This other `max-width` condition will apply some rules only if the width of the page is *at a maximum of* `640px`:
+
+```css
+@media (max-width: 640px) {
+
+}
+```
+
+You can include multiple media queries in your stylesheet, each with its own set of conditions and styles. 
+
+This allows you to create different styles for different screen sizes.
+
+Technically you can also use media queries to target other device characteristics, not just screen size. But this is how we use them for responsive design.
+
+## With Tailwind CSS
+
+With Tailwind CSS, it’s the same principle. But instead of writing a media query, we add a class to the HTML.
+
+For example, suppose we want to build a responsive Grid layout.
+
+We want it to have 1 column on small screens, 2 columns on the screen or laptop, and 3 columns on a big desktop screen.
+
+Here’s what we do. 
+
+Let’s start with the [Tailwind CSS starting template](https://codepen.io/flaviocopes/pen/MWBJWXZ?editors=1100) on Codepen.
+
+Fork that.
+
+We define the HTML adding the `grid` class to enable the Grid layout:
+
+```html
+<div class="grid">
+  <p>Column</p>
+  <p>Column</p>
+  <p>Column</p>
+  <p>Column</p>
+  <p>Column</p>
+  <p>Column</p>
+  <p>Column</p>
+</div>
+```
+
+This automatically uses a 1 column layout.
+
+![Untitled](Responsive%20design%201902767ad7e3810597a9d325ddf9f208/Untitled.png)
+
+Now we add the `sm:grid-cols-2` to apply two columns starting from screens of `sm` size:
+
+```html
+<div class="grid sm:grid-cols-2">
+  <p>Column</p>
+  <p>Column</p>
+  <p>Column</p>
+  <p>Column</p>
+  <p>Column</p>
+  <p>Column</p>
+  <p>Column</p>
+</div>
+```
+
+You will see 2 columns if the window is large enough:
+
+![Untitled](Responsive%20design%201902767ad7e3810597a9d325ddf9f208/Untitled%201.png)
+
+Now add 
+
+```html
+<div class="grid sm:grid-cols-2 md:grid-cols-3">
+  <p>Column</p>
+  <p>Column</p>
+  <p>Column</p>
+  <p>Column</p>
+  <p>Column</p>
+  <p>Column</p>
+  <p>Column</p>
+</div>
+```
+
+You will see 3 columns making the window larger:
+
+![Untitled](Responsive%20design%201902767ad7e3810597a9d325ddf9f208/Untitled%202.png)
+
+[Full example on Codepen](https://codepen.io/flaviocopes/pen/rNrjayV?editors=1000)
+
+We have the following prefixes, called **breakpoints**: 
+
+| Prefix | Minimum width |
+| --- | --- |
+| `sm` | 640px |
+| `md` | 768px |
+| `lg` | 1024px |
+| `xl` | 1280px |
+| `2xl` | 1536px |
+
+Those prefixes can be applied to *any* Tailwind class.
+
+It’s important to realize any Tailwind class by default is applied to all sizes.
+
+Using a breakpoint prefix will only apply that class to screen sizes bigger than the one specified in the table.
+
+So `bg-black` applies that background all the time, `sm:bg-black` only applies the black background if the screen is bigger than `640px`. 
+
+[Responsive design.mp4](Responsive%20design%201902767ad7e3810597a9d325ddf9f208/Responsive_design.mp4)
+

@@ -1,0 +1,21 @@
+{
+  "id": "005",
+  "tutorial_id": "005",
+  "course_id": "javascript-programming",
+  "title": "Exercícios Práticos",
+  "description": "",
+  "order_index": 5,
+  "validation": {
+    "expectedOutput": [],
+    "requiredStatements": []
+  },
+  "is_active": true,
+  "translations": {
+    "pt": {
+      "title": "Exercícios Práticos"
+    },
+    "en": {
+      "title": "Exercícios Práticos"
+    }
+  }
+}

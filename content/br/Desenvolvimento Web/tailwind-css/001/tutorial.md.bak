@@ -1,0 +1,165 @@
+# Introducing Tailwind CSS
+
+So far we’ve seen how to use CSS to style a Web Page.
+
+Now I want to introduce you to a different *abstraction level* of styling pages with CSS, using Tailwind CSS (I’ll also call it simply *Tailwind*).
+
+Tailwind is a way to apply CSS by using HTML *classes.*
+
+Instead of writing CSS to style a page:
+
+```html
+<html>
+	<head>
+		<style>
+		  p {
+		    color: black;
+		  }
+		</style>
+	</head>
+	<body>
+		<p>test</p>
+	</body>
+</html>
+```
+
+With Tailwind CSS use the `class` attribute on the `p` tag and we’ll use the class `text-black`.
+
+```html
+<html>
+	<body>
+		<p class="text-black">test</p>
+	</body>
+</html>
+```
+
+Basically with CSS you have a **selector** that targets one (or more) elements on the page, like we had `p {}` in the example above, to target some specific element with styling.
+
+With Tailwind CSS you get rid of selectors, and apply styling directly.
+
+CSS lets you also use inline styles: `<p style="color: black">...</p>`, and Tailwind CSS might look similar, but it’s actually very different in how it feels like (and in how it technically works).
+
+Do we want the font to be centered? We use the `text-center` class:
+
+```html
+<p class="text-black **text-center**">test</p>	
+```
+
+`text-center` sets the CSS rule `text-align: center`
+
+One very simple way to experiment with Tailwind is to use [Tailwind Play](http://play.tailwindcss.com), it’s a playground where you can experiment with Tailwind.
+
+Here’s the before and after:
+
+![Screenshot-2024-10-07T06.47.52PM.png](Introducing%20Tailwind%20CSS%201902767ad7e3815ca9c5fe7e0170435e/Screenshot-2024-10-07T06.47.52PM.png)
+
+![Screenshot-2024-10-07T06.48.16PM.png](Introducing%20Tailwind%20CSS%201902767ad7e3815ca9c5fe7e0170435e/Screenshot-2024-10-07T06.48.16PM.png)
+
+
+
+Want some padding on top? Use `pt-10`. This sets the CSS property `padding-top: 2.5rem` to give some spacing on top.
+
+```html
+<p class="text-black text-center **pt-10**">test</p>	
+```
+
+![Screenshot-2024-10-07T06.48.40PM.png](Introducing%20Tailwind%20CSS%201902767ad7e3815ca9c5fe7e0170435e/Screenshot-2024-10-07T06.48.40PM.png)
+
+In Tailwind each class is tied to just one CSS instruction. Each class does one thing, conceptually. 
+
+This is a distinct separation compared to frameworks like Bootstrap, in case you’re familiar with it, where a class like `btn` will do many things, and to override that sometimes you’ll have to write your own CSS file.
+
+What I like about Tailwind, mostly, is that **we write the style in the HTML directly**. So you don’t have to manage style that belongs to different parts of the UI all in a single CSS file, for example, which might become unmanageable over time.
+
+I find that using Tailwind really helps me a lot to design a page, and I'm not alone. Tailwind is becoming more and more popular, and for this reason, in this Bootcamp, we'll use it a lot.
+
+
+
+Sure, the HTML gets a bit cluttered by classes, as you can need quite a few of them sometimes. But the benefits are valuable. This is why more and more people jump to using Tailwind and it’s been widely adopted all over the industry.
+
+I think it’s a game changer for designing in the browser. You can easily copy/paste HTML and it automatically gets the proper style.
+
+And one of the main benefits is maintainability. The HTML directly describes the presentation, which is great with components-based UI layout design, which is.. what we’ll focus on for the entire bootcamp.
+
+You can find the Tailwind CSS official documentation at [https://tailwindcss.com/docs](https://tailwindcss.com/docs).
+
+I will NOT repeat all of what that documentation says. 
+
+Keep that website in a bookmark, and look up any Tailwind class we'll use, using the search functionality on the website.
+
+This is the way you'll learn how to use it.
+
+Start right now by searching `text-black` and `text-center`, for example.
+
+Here I will introduce a few useful classes we’re probably going to use. 
+
+## Colors
+
+We’ve seen how to color text using `text-black`. Black and white (`text-white`) are kind of unique because they have this “only” color.
+
+Other colors have shades, going from 100 to 900: `text-red-500` for example applies the color using the `color` CSS property, setting it to a red value with an intensity of `500` (try `text-red-200` or `text-red-800` too).
+
+The other color you’ll use is the background color. You use `bg-black`, `bg-green-600`, and so on.
+
+You can also apply custom colors using the syntax `bg-[#00FFCC]`.
+
+[Link to docs](https://tailwindcss.com/docs/customizing-colors)
+
+## Aligning text
+
+Use `text-left` `text-center` `text-right`
+
+For example, to align text to the right you can use the **`text-right`** class:
+
+```html
+<p class="text-right">
+  This text is aligned to the right
+</p>
+```
+
+[Link to docs](https://tailwindcss.com/docs/text-align)
+
+## Font size
+
+Use `text-xs`, `text-sm`, `text-base`, `text-lg`, `text-xl`, `text-2xl` and more
+
+[Link to docs](https://tailwindcss.com/docs/font-size)
+
+## Font weight
+
+Use `font-thin`, `font-light`, `font-medium`, `font-bold`, and more
+
+[Link to docs](https://tailwindcss.com/docs/font-weight)
+
+## Line height
+
+Use `leading-tight`, `leading-snug`, `leading-relaxed` and more to increase line height
+
+[Link to docs](https://tailwindcss.com/docs/line-height)
+
+## Text decoration
+
+`underline`, `no-underline`, `line-through`
+
+[Link to docs](https://tailwindcss.com/docs/text-decoration)
+
+## Text transform
+
+`uppercase`, `lowercase`, `capitalize`...
+
+[Link to docs](https://tailwindcss.com/docs/text-transform)
+
+## Font families
+
+Use `font-sans`, `font-serif`, `font-mono`...
+
+[Link to docs](https://tailwindcss.com/docs/font-family)
+
+There’s a lot more. 
+
+Look around on the docs to see all the various classes you could use.
+
+We’ll later learn to use them as we need them in practice.
+
+[Introducing Tailwind CSS.mp4](Introducing%20Tailwind%20CSS%201902767ad7e3815ca9c5fe7e0170435e/Introducing_Tailwind_CSS.mp4)
+

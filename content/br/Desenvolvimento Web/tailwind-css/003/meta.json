@@ -1,0 +1,47 @@
+{
+  "id": "003",
+  "tutorial_id": "003",
+  "course_id": "3",
+  "title": "practice-building-layouts-with-tailwind",
+  "description": "",
+  "order_index": 1,
+  "last_one": true,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "div",
+        "p"
+      ],
+      "requiredAttributes": {
+        "class": [
+          "bg-verde-400",
+          "p-8",
+          "border-2",
+          "border-preto",
+          "text-center",
+          "grid",
+          "gap-4",
+          "grid-cols-2",
+          "flex",
+          "justify-around",
+          "items-center",
+          "h-[300px]"
+        ]
+      },
+      "requiredNesting": [
+        "div > p"
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "p": 4
+      },
+      "maxTags": {}
+    },
+    "css": {
+      "requiredSelectors": [],
+      "requiredProperties": [],
+      "requiredValues": {},
+      "forbiddenProperties": []
+    }
+  }
+}

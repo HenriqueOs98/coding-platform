@@ -1,0 +1,45 @@
+{
+  "id": "006",
+  "tutorial_id": "006",
+  "course_id": "javascript-programming",
+  "title": "Funções: Conceitos Básicos",
+  "description": "",
+  "order_index": 6,
+  "validation": {
+    "javascript": {
+      "requiredFunctions": [
+        "addFive",
+        "criarSaudacao",
+        "somar",
+        "multiplicar",
+        "subtrair",
+        "dividir",
+        "calcularMedia",
+        "calcularImposto",
+        "calcularPrecoFinal"
+      ],
+      "requiredVariables": [
+        "nome",
+        "periodo",
+        "a",
+        "b",
+        "numeros",
+        "valor",
+        "preco"
+      ],
+      "forbiddenStatements": [
+        "eval",
+        "alert"
+      ]
+    }
+  },
+  "is_active": true,
+  "translations": {
+    "pt": {
+      "title": "Funções: Conceitos Básicos"
+    },
+    "en": {
+      "title": "Funções: Conceitos Básicos"
+    }
+  }
+}

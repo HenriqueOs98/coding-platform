@@ -1,0 +1,58 @@
+{
+  "id": "008",
+  "tutorial_id": "008",
+  "course_id": "3",
+  "title": "tabelas",
+  "description": "",
+  "order_index": 8,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "table",
+        "tr",
+        "th",
+        "td"
+      ],
+      "requiredAttributes": {
+        "th": [
+          "scope"
+        ]
+      },
+      "requiredNesting": [
+        [
+          "table",
+          "tr"
+        ],
+        [
+          "tr",
+          "th"
+        ],
+        [
+          "tr",
+          "td"
+        ]
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "tr": 2,
+        "th": 1,
+        "td": 1
+      },
+      "maxTags": {}
+    },
+    "css": {
+      "requiredSelectors": [
+        "th",
+        "td"
+      ],
+      "requiredProperties": [
+        "padding",
+        "border",
+        "background-color"
+      ],
+      "requiredValues": {},
+      "forbiddenProperties": []
+    }
+  }
+}

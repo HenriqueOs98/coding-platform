@@ -1,0 +1,60 @@
+{
+  "id": "006",
+  "tutorial_id": "006",
+  "course_id": "3",
+  "title": "tags-de-cabecalho",
+  "description": "",
+  "order_index": 6,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "head",
+        "title"
+      ],
+      "requiredAttributes": {
+        "link": [
+          "href",
+          "rel"
+        ],
+        "meta": [
+          "name",
+          "content"
+        ],
+        "script": [
+          "src"
+        ]
+      },
+      "requiredNesting": [
+        [
+          "html",
+          "head"
+        ],
+        [
+          "head",
+          "title"
+        ]
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "meta": 1,
+        "link": 1
+      },
+      "maxTags": {
+        "title": 1
+      }
+    },
+    "css": {
+      "requiredSelectors": [],
+      "requiredProperties": [],
+      "requiredValues": {},
+      "forbiddenProperties": []
+    },
+    "javascript": {
+      "requiredFunctions": [],
+      "requiredEventListeners": [],
+      "requiredVariables": [],
+      "forbiddenStatements": []
+    }
+  }
+}

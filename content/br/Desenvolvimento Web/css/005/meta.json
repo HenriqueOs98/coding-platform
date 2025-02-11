@@ -1,0 +1,43 @@
+{
+  "id": "005",
+  "tutorial_id": "005",
+  "course_id": "2",
+  "title": "Cascata",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "p"
+      ],
+      "requiredAttributes": {
+        "class": true
+      },
+      "requiredNesting": [],
+      "forbiddenTags": [],
+      "minTags": {
+        "p": 1
+      },
+      "maxTags": {}
+    },
+    "css": {
+      "requiredSelectors": [
+        ".nome-pet",
+        "p",
+        "p.nome-pet"
+      ],
+      "requiredProperties": [
+        "color"
+      ],
+      "requiredValues": {
+        "color": [
+          "laranja",
+          "verde",
+          "roxo"
+        ]
+      },
+      "forbiddenProperties": []
+    }
+  }
+}

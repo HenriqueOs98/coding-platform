@@ -1,0 +1,21 @@
+{
+  "id": "010",
+  "tutorial_id": "010",
+  "course_id": "javascript-programming",
+  "title": "A palavra-chave this",
+  "description": "",
+  "order_index": 10,
+  "validation": {
+    "expectedOutput": [],
+    "requiredStatements": []
+  },
+  "is_active": true,
+  "translations": {
+    "pt": {
+      "title": "A palavra-chave this"
+    },
+    "en": {
+      "title": "A palavra-chave this"
+    }
+  }
+}

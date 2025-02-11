@@ -1,0 +1,82 @@
+{
+  "id": "2",
+  "group": "development-tools",
+  "title": "Git",
+  "description": "Aprenda a usar o Git para controle de versão",
+  "difficulty": "beginner",
+  "order": 2,
+  "tutorials": [
+    {
+      "id": "001",
+      "slug": "001",
+      "title": "Introdução ao Git",
+      "order": 1
+    },
+    {
+      "id": "002",
+      "slug": "002",
+      "title": "Instalando Git",
+      "order": 2
+    },
+    {
+      "id": "003",
+      "slug": "003",
+      "title": "Configurando Credenciais Git",
+      "order": 3
+    },
+    {
+      "id": "004",
+      "slug": "004",
+      "title": "Inicializando um Repositório",
+      "order": 4
+    },
+    {
+      "id": "005",
+      "slug": "005",
+      "title": "Commitando Mudanças",
+      "order": 5
+    },
+    {
+      "id": "006",
+      "slug": "006",
+      "title": "Configurando Editor Padrão",
+      "order": 6
+    },
+    {
+      "id": "007",
+      "slug": "007",
+      "title": "Usando .gitignore",
+      "order": 7
+    },
+    {
+      "id": "008",
+      "slug": "008",
+      "title": "Trabalhando com Branches",
+      "order": 8
+    },
+    {
+      "id": "009",
+      "slug": "009",
+      "title": "Introdução ao GitHub",
+      "order": 9
+    },
+    {
+      "id": "010",
+      "slug": "010",
+      "title": "Trabalhando com Repositórios Remotos",
+      "order": 10
+    },
+    {
+      "id": "011",
+      "slug": "011",
+      "title": "Usando Interface Gráfica Git (GitHub Desktop)",
+      "order": 11
+    },
+    {
+      "id": "012",
+      "slug": "012",
+      "title": "Prática: Usando Git no VS Code",
+      "order": 12
+    }
+  ]
+}

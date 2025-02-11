@@ -1,0 +1,92 @@
+# PRACTICE: Styling a simple page structure
+
+Let's start from this
+
+```html
+<html>
+  <body>
+    <h1>h1 tag</h1>
+    <h2>h2 tag</h2>
+    <h3>h3 tag</h3>
+    <h4>h4 tag</h4>
+    <h5>h5 tag</h5>
+    <h6>h6 tag</h6>
+
+    <p>A paragraph</p>
+  </body>
+</html>
+
+```
+
+![Screen Shot 2020-04-16 at 10.12.20.png](PRACTICE%20Styling%20a%20simple%20page%20structure%201902767ad7e3814a9962c98cf1be39db/Screen_Shot_2020-04-16_at_10.12.20.png)
+
+The first thing I want to do is to change the font.
+
+We can do so at the tag level:
+
+```css
+h1 {
+  font-family: system-ui;
+}
+
+```
+
+![Screen Shot 2020-04-16 at 10.14.18.png](PRACTICE%20Styling%20a%20simple%20page%20structure%201902767ad7e3814a9962c98cf1be39db/Screen_Shot_2020-04-16_at_10.14.18.png)
+
+and this will just change that particular elements font, or at the body level to change all the page fonts:
+
+```css
+body {
+  font-family: system-ui;
+}
+
+```
+
+![Screen Shot 2020-04-16 at 10.14.23.png](PRACTICE%20Styling%20a%20simple%20page%20structure%201902767ad7e3814a9962c98cf1be39db/Screen_Shot_2020-04-16_at_10.14.23.png)
+
+`system-ui` applies the [system font](https://flaviocopes.com/css-system-fonts/), and it changes depending on the operating system.
+
+You can also load a specific font from Google fonts for example.
+
+Here I load the `Heebo` and `IBM Plex Sans` fonts and I assign them to specific elements:
+
+```html
+<html>
+  <head>
+    <link
+      href="<https://fonts.googleapis.com/css?family=Heebo:400,500,700|IBM+Plex+Sans:600,600i>"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>h1 tag</h1>
+    <h2>h2 tag</h2>
+    <h3>h3 tag</h3>
+    <h4>h4 tag</h4>
+    <h5>h5 tag</h5>
+    <h6>h6 tag</h6>
+
+    <p>A paragraph</p>
+  </body>
+</html>
+
+```
+
+```css
+body {
+  font-family: system-ui;
+}
+
+h2,
+h3 {
+  font-family: Heebo;
+}
+
+h1 {
+  font-family: IBM Plex Sans;
+}
+
+```
+
+![Screen Shot 2020-04-16 at 10.29.35.png](PRACTICE%20Styling%20a%20simple%20page%20structure%201902767ad7e3814a9962c98cf1be39db/Screen_Shot_2020-04-16_at_10.29.35.png)
+

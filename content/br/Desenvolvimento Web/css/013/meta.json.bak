@@ -1,0 +1,59 @@
+{
+  "id": "013",
+  "tutorial_id": "013",
+  "course_id": "2",
+  "title": "Prática: Estilizando Links",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "a",
+        "ul",
+        "li",
+        "h2"
+      ],
+      "requiredAttributes": {},
+      "requiredNesting": [
+        "ul > li > a"
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "a": 3
+      },
+      "maxTags": {}
+    },
+    "css": {
+      "requiredSelectors": [
+        "a",
+        "a:visited",
+        "a:hover"
+      ],
+      "requiredProperties": [
+        "color",
+        "text-decoration",
+        "transition",
+        "text-shadow"
+      ],
+      "requiredValues": {
+        "a": {
+          "color": "#2c3e50"
+        },
+        "a:visited": {
+          "color": "#e74c3c"
+        },
+        "a:hover": {
+          "color": "#3498db"
+        }
+      },
+      "forbiddenProperties": {
+        "a:visited": [
+          "background-color",
+          "border",
+          "font-size"
+        ]
+      }
+    }
+  }
+}

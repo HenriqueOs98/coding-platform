@@ -1,0 +1,195 @@
+# PRACTICE: A blog post markup
+
+Think about how would you create an HTML markup for a page you commonly find online, like a blog post.
+
+You start with the basic skeleton:
+
+```html
+<html>
+  <body></body>
+</html>
+
+```
+
+You add the title and subtitle:
+
+```html
+<html>
+  <body>
+    <h1>My nice blog post</h1>
+    <h2>A subtitle</h2>
+  </body>
+</html>
+
+```
+
+and the contents of the blog post:
+
+```html
+<html>
+  <body>
+    <h1>My nice blog post</h1>
+    <h2>A subtitle</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate
+      sollicitudin congue. Nunc malesuada fringilla sem eu efficitur.
+      Suspendisse potenti. Suspendisse mauris dolor, aliquam ut volutpat sed,
+      ultrices sit amet mauris. Donec rutrum ligula at nibh interdum, vel
+      hendrerit nisi dignissim.
+    </p>
+  </body>
+</html>
+
+```
+
+If you are wondering, the text is a random text from an old book, which is commonly referred to as "lorem ipsum". You can generate a few paragraphs of random text to fill your projects on [https://loremipsum.io/](https://loremipsum.io/).
+
+Let's also wrap the page content we have now in a `main` tag.
+
+![Screenshot 2020-04-14 at 14.33.42.png](PRACTICE%20A%20blog%20post%20markup%201902767ad7e381b48544f222cd6205c0/Screenshot_2020-04-14_at_14.33.42.png)
+
+Next we add a navigation bar at the top, and a footer:
+
+```html
+<html>
+  <body>
+    <nav>
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ol>
+    </nav>
+    <main>
+      <h1>My nice blog post</h1>
+      <h2>A subtitle</h2>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          vulputate sollicitudin congue. Nunc malesuada fringilla sem eu
+          efficitur. Suspendisse potenti. Suspendisse mauris dolor, aliquam ut
+          volutpat sed, ultrices sit amet mauris. Donec rutrum ligula at nibh
+          interdum, vel hendrerit nisi dignissim.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2020 Flavio</p>
+    </footer>
+  </body>
+</html>
+
+```
+
+Now our page is composed by
+
+- `nav`
+- `main`
+- `footer`
+
+and we can immediately infer the meaning of what's inside each tag:
+
+![Screenshot 2020-04-14 at 14.33.06.png](PRACTICE%20A%20blog%20post%20markup%201902767ad7e381b48544f222cd6205c0/Screenshot_2020-04-14_at_14.33.06.png)
+
+In many projects you will use `div` tags much more often.
+
+We could also write our page using `div` elements instead of `nav/main/footer`, and the appearance (by default) would be the same. It's just less meaningful.
+
+```html
+<html>
+  <body>
+    <div>
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ol>
+    </div>
+    <div>
+      <h1>My nice blog post</h1>
+      <h2>A subtitle</h2>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          vulputate sollicitudin congue. Nunc malesuada fringilla sem eu
+          efficitur. Suspendisse potenti. Suspendisse mauris dolor, aliquam ut
+          volutpat sed, ultrices sit amet mauris. Donec rutrum ligula at nibh
+          interdum, vel hendrerit nisi dignissim.
+        </p>
+      </div>
+    </div>
+    <div>
+      <p>&copy; 2020 Flavio</p>
+    </div>
+  </body>
+</html>
+
+```
+
+![Screenshot 2020-04-14 at 14.29.41.png](PRACTICE%20A%20blog%20post%20markup%201902767ad7e381b48544f222cd6205c0/Screenshot_2020-04-14_at_14.29.41.png)
+
+I recommend using semantic markup as much as possible.
+
+Finally, let's add some more lorem ipsum to make our page longer:
+
+```html
+<html>
+  <body>
+    <nav>
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ol>
+    </nav>
+    <main>
+      <h1>My nice blog post</h1>
+      <h2>A subtitle</h2>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          vulputate sollicitudin congue. Nunc malesuada fringilla sem eu
+          efficitur. Suspendisse potenti. Suspendisse mauris dolor, aliquam ut
+          volutpat sed, ultrices sit amet mauris. Donec rutrum ligula at nibh
+          interdum, vel hendrerit nisi dignissim. Cras tincidunt rhoncus
+          scelerisque. Vestibulum quis urna ac mauris laoreet volutpat vitae sit
+          amet nisi. Pellentesque ac odio vel ex iaculis dapibus in vitae
+          tortor. Pellentesque nec vulputate nulla, quis efficitur urna. Donec
+          eu mollis urna. Praesent tellus velit, rutrum non iaculis ut,
+          tristique eget lacus. Vivamus eget ipsum sem.
+        </p>
+        <p>
+          Fusce et libero vel nibh hendrerit aliquam et pellentesque magna.
+          Proin condimentum tempus convallis. Sed accumsan dolor vel pharetra
+          sagittis. Suspendisse bibendum est hendrerit orci porttitor mattis.
+          Maecenas volutpat ac lacus ut condimentum. Donec convallis nibh vel
+          neque venenatis, nec suscipit enim iaculis. Fusce porttitor finibus
+          aliquam. Mauris arcu dolor, rutrum quis nibh at, malesuada luctus
+          ipsum. Ut commodo cursus nibh auctor volutpat. Vestibulum condimentum
+          sodales libero, sit amet porta tellus mollis ac. Sed ultricies
+          porttitor lorem nec commodo.
+        </p>
+        <p>
+          Cras eros tellus, mollis a tellus vel, sollicitudin efficitur orci.
+          Maecenas et eleifend nulla. Cras hendrerit sapien eu porttitor
+          iaculis. In suscipit turpis in metus eleifend vestibulum. Nullam
+          tortor ligula, ultrices non justo a, facilisis bibendum nisl. Mauris
+          faucibus convallis dui, in vulputate est dictum sed. Phasellus
+          molestie ligula eget nisi gravida, ut molestie nunc dictum. Aenean
+          lectus nisi, pretium ac urna quis, tempus tristique nunc. Pellentesque
+          rutrum lorem in metus sodales, sit amet consectetur erat volutpat. In
+          in nunc ut urna aliquam convallis sed pulvinar lorem. Duis ac blandit
+          velit. Ut vestibulum condimentum fermentum. Suspendisse id tempor
+          ante, pretium fermentum odio. Aliquam ac ante aliquam, maximus velit
+          at, eleifend diam. Pellentesque auctor risus nunc, eu bibendum erat
+          lobortis eget.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2020 Flavio</p>
+    </footer>
+  </body>
+</html>
+
+```
+
+![Screenshot 2020-04-14 at 14.34.34.png](PRACTICE%20A%20blog%20post%20markup%201902767ad7e381b48544f222cd6205c0/Screenshot_2020-04-14_at_14.34.34.png)
+

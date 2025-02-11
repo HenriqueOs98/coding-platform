@@ -1,0 +1,299 @@
+# PRACTICE: Create a simple design using CSS
+
+Let’s try a simple exercise now.
+
+We have this HTML file:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title></title>
+</head>
+<body>
+  <div>
+    <h1>Buy this great tool</h1>
+    <p>Trusted by hundreds of companies</p>
+    <ul>
+      <li>Google</li>
+      <li>Apple</li>
+      <li>Meta</li>
+    </ul>
+    <button>Find out more</button>
+  </div>
+</body>
+</html>
+```
+
+This HTML looks like this in the browser:
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled.png)
+
+It’s not “bad” (we can call it *brutalist*) but it’s a little… poor.
+
+We can transform this using CSS into something better looking and pleasant to the eye, like this:
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%201.png)
+
+We can do so by adding some CSS.
+
+The information that those two images provide is the same but there is a big difference. 
+
+The second one looks very polished and very nice. 
+
+The first on the other hand looks like it was made in two seconds and it's not something that I want to trust. 
+
+A little bit of CSS can do wonders.
+
+We won’t change the HTML. Just the CSS.
+
+We’re going to use [Codepen](https://codepen.io).
+
+Go on Codepen and click the “Create pen” button:
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%202.png)
+
+This will give you a blank canvas:
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%203.png)
+
+Paste in the HTML box:
+
+```jsx
+<div>
+  <h1>Buy this great tool</h1>
+  <p>Trusted by hundreds of companies</p>
+  <ul>
+    <li>Google</li>
+    <li>Apple</li>
+    <li>Meta</li>
+  </ul>
+  <button>Find out more</button>
+</div>
+```
+
+On Codepen you just paste in the HTML box the HTML that is inside the `body` tag, ignoring the `head` tag content:
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%204.png)
+
+Now we’ll focus on the CSS panel.
+
+I'm going to start with setting the background. Remember that this is how we want the page to look. I'm going to immediately set the background color to use a shade of gray instead of white.
+
+When working with CSS, we first write the selector, `body` in this case, because we want to apply the background to the whole body:
+
+```css
+body {
+  
+}
+```
+
+and then inside the curly brackets we set some rules, in this case, `background-color`.
+
+Let’s set it to `gray` for example:
+
+```css
+body {
+  background-color: gray;
+}
+```
+
+and notice that Codepen gives you some suggestions while typing, it’s pretty handy:
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%205.png)
+
+Here’s the result so far:
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%206.png)
+
+The background color has been applied on the right, as you can see
+
+We want a lighter gray. For example, I want to use an RGB color combination as I explained in the colors lesson, like this:
+
+```css
+body {
+  background-color: rgb(229, 231, 235);
+}
+```
+
+Much nicer:
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%207.png)
+
+The other thing I want to do in the body is to change the family of the font. You can see that by default, the font is quite ugly so I'm going to change the font family to a particular value which is `system-ui`.
+
+Using this value as you can see, things change quite a bit. The page looks nicer. 
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%208.png)
+
+This value here sets the font to be the system default font, which will look different on different operating systems but the key thing is that it's always a font that looks nice.
+
+Of course, you can choose a specific font. For example `font-family: "Georgia";`
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%209.png)
+
+Or `font-family: "Courier";`
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%2010.png)
+
+And those are just the built-in fonts. You can use any other font you like.
+
+You can use any font you want, but for our example let’s stick to `system-ui`. It’s a good default.
+
+Now I want to center everything in the middle.
+
+Now, what I want to do here is I want to center the text in the middle. 
+
+We add `text-align: center;` to the body tag:
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%2011.png)
+
+Now, we want to add some spacing to the H1 element here, the title. So we're going to add some padding on top and some padding on the bottom so we select the H1 element.
+
+And we say `padding-top` is for example 30 pixels, and `padding-bottom` is 20 pixels:
+
+```css
+h1 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+```
+
+You can see the `h1` tag has more space around it:
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%2012.png)
+
+and you can open the browser DevTools to check that we now have the padding applied:
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%2013.png)
+
+
+
+Now let's style the button. 
+
+The button has some automatic styling that's given by the browser. In particular, you can see that we have a border.  We can remove the border. We select the button and we say `border: none`
+
+```css
+button {
+  border: none;
+}
+```
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%2014.png)
+
+As you can see, this removes the border.
+
+We want to apply a green background here.
+
+So we use the `background-color` property and we set this to the value `rgb(34, 197, 94)` 
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%2015.png)
+
+Okay. We set the color of the text `white` and we set some padding:
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%2016.png)
+
+And as you can see. We applied 10 pixels vertically and 20 horizontally. 
+
+I think it's pretty nice. 
+
+And finally, I want to uppercase the texts and we do so using `text-transform` passing the `uppercase` value.
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%2017.png)
+
+Now when I hover over this element with the mouse, I want to transform the cursor of the mouse into a pointer. So we can say `cursor: pointer`.
+
+As you can see if now I move over the button we have, the cursor changes to something that says you can click this.
+
+Okay. And I want to make the text a little bit bolder. So, I can say `font-weight: bold`.
+
+All right.
+
+```css
+button {
+  border: none;
+  background-color: rgb(34, 197, 94);
+  color: white;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+}
+```
+
+Now we need to style those companies’ names. 
+
+We want to display them with a gray font, so we add
+
+```css
+li {
+  color: gray
+}
+```
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%2018.png)
+
+We also want to remove the “dot” of the list which is added automatically by the browser because this is a list of items.
+
+To do so we add
+
+```css
+ul {
+  list-style-type: none;
+}
+```
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%2019.png)
+
+Now, if you inspect this, now you can see that the UL element has some padding applied by the browser. 
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%2020.png)
+
+This is because there is this property which is introduced by the **user agent style sheet** (the default browser’s CSS rules:
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%2021.png)
+
+So what I'm going to do now here is I'm going to say:
+
+```css
+ul {
+  padding: 0;
+}
+```
+
+so we remove all the padding introduced by the browser. 
+
+So now the elements as you can see are perfectly centered in the middle.
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%2022.png)
+
+But, we want elements to be displayed horizontally, not vertically.
+
+To do that we must change how the list items are displayed, by setting the display property which by default is `block` because this is a block element. And we set this to `inline`.
+
+So now you can see that the elements are displayed horizontally.
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%2023.png)
+
+Now we are missing some space vertically so I'm going to change this line `padding: 0` to `padding: 20px 0;` to add `20px` of padding vertically and `0` horizontally.
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%2024.png)
+
+Finally, we add some horizontal padding to the list of items, to make them better spaced out:
+
+```css
+li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+```
+
+![Untitled](PRACTICE%20Create%20a%20simple%20design%20using%20CSS%201902767ad7e38163a25dfb86de42557c/Untitled%2025.png)
+
+[Here’s the full code of this demo](https://codepen.io/flaviocopes/pen/abjpowY) on Codepen.
+
+[https://codepen.io/flaviocopes/pen/abjpowY](https://codepen.io/flaviocopes/pen/abjpowY)
+

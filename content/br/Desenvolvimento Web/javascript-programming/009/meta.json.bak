@@ -1,0 +1,68 @@
+{
+  "id": "009",
+  "tutorial_id": "009",
+  "course_id": "javascript-programming",
+  "title": "Objetos: Conceitos Básicos",
+  "description": "",
+  "order_index": 9,
+  "validation": {
+    "javascript": {
+      "requiredFunctions": [
+        "somar",
+        "subtrair",
+        "obterValor",
+        "aplicarDesconto",
+        "aumentarPreco",
+        "exibirInformacoes"
+      ],
+      "requiredVariables": [
+        "usuario",
+        "calculadora",
+        "empresa",
+        "produto"
+      ],
+      "requiredKeywords": [
+        "this",
+        "const",
+        "push",
+        "new",
+        "Date"
+      ],
+      "forbiddenKeywords": [],
+      "expectedConsoleOutput": [
+        "Ana Silva",
+        28,
+        "Rio de Janeiro",
+        8,
+        6,
+        "SP",
+        "João"
+      ],
+      "expectedVariableValues": {
+        "produto.preco": {
+          "after": [
+            "aplicarDesconto(10)",
+            "aumentarPreco(5)"
+          ],
+          "checks": "value changes based on percentage calculations"
+        },
+        "produto.historicoPrecos": {
+          "after": [
+            "aplicarDesconto",
+            "aumentarPreco"
+          ],
+          "checks": "array length increases with each price change"
+        }
+      }
+    }
+  },
+  "is_active": true,
+  "translations": {
+    "pt": {
+      "title": "Objetos: Conceitos Básicos"
+    },
+    "en": {
+      "title": "Objetos: Conceitos Básicos"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "022",
+  "tutorial_id": "022",
+  "course_id": "2",
+  "title": "Prática: Criar um Layout Usando Flexbox",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "div"
+      ],
+      "requiredAttributes": {
+        "class": [
+          "container",
+          "item"
+        ]
+      },
+      "requiredNesting": [
+        "div > div"
+      ],
+      "minTags": {
+        "div": 5
+      }
+    },
+    "css": {
+      "requiredSelectors": [
+        ".container",
+        ".item"
+      ],
+      "requiredProperties": [
+        "display",
+        "flex-direction",
+        "justify-content",
+        "align-items",
+        "flex-wrap"
+      ],
+      "requiredValues": {
+        "display": [
+          "flex"
+        ],
+        "flex-direction": [
+          "row",
+          "column",
+          "row-reverse",
+          "column-reverse"
+        ],
+        "justify-content": [
+          "space-between",
+          "center",
+          "space-around",
+          "flex-start"
+        ],
+        "align-items": [
+          "center",
+          "flex-start",
+          "flex-end"
+        ],
+        "flex-wrap": [
+          "wrap"
+        ]
+      }
+    }
+  }
+}

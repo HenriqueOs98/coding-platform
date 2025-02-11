@@ -1,0 +1,53 @@
+{
+  "id": "003",
+  "tutorial_id": "003",
+  "course_id": "1",
+  "title": "Prática: Formatação de Texto",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "strong",
+        "em",
+        "br",
+        "hr",
+        "blockquote",
+        "q",
+        "ul",
+        "ol",
+        "dl",
+        "dt",
+        "dd",
+        "li"
+      ],
+      "requiredAttributes": {},
+      "requiredNesting": [
+        {
+          "parent": "ul",
+          "child": "li"
+        },
+        {
+          "parent": "ol",
+          "child": "li"
+        },
+        {
+          "parent": "dl",
+          "child": [
+            "dt",
+            "dd"
+          ]
+        }
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "p": 1,
+        "ul": 1,
+        "ol": 1,
+        "blockquote": 1
+      },
+      "maxTags": {}
+    }
+  }
+}

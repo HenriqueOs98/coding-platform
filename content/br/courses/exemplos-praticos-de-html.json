@@ -1,0 +1,58 @@
+{
+  "id": "1",
+  "group": "web-development",
+  "title": "Exemplos Práticos de HTML",
+  "description": "Aprenda HTML através de exemplos práticos",
+  "difficulty": "beginner",
+  "order": 1,
+  "tutorials": [
+    {
+      "id": "000",
+      "slug": "000",
+      "title": "Bem vindo a Programe.tech",
+      "order": 0
+    },
+    {
+      "id": "001",
+      "slug": "001",
+      "title": "Prática: Estrutura de Página Simples para Testar Cabeçalhos e Tags Comuns",
+      "order": 1
+    },
+    {
+      "id": "002",
+      "slug": "002",
+      "title": "Prática: Marcação de Post de Blog",
+      "order": 2
+    },
+    {
+      "id": "003",
+      "slug": "003",
+      "title": "Prática: Formatação de Texto",
+      "order": 3
+    },
+    {
+      "id": "004",
+      "slug": "004",
+      "title": "Prática: Imagens",
+      "order": 4
+    },
+    {
+      "id": "005",
+      "slug": "005",
+      "title": "Prática: Tabelas",
+      "order": 5
+    },
+    {
+      "id": "006",
+      "slug": "006",
+      "title": "Prática: Links",
+      "order": 6
+    },
+    {
+      "id": "007",
+      "slug": "007",
+      "title": "Prática: Conteúdo da Tag Head",
+      "order": 7
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "002",
+  "tutorial_id": "002",
+  "course_id": "3",
+  "title": "tags-de-texto",
+  "description": "",
+  "order_index": 2,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "p",
+        "span",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "ul",
+        "ol",
+        "li"
+      ],
+      "requiredAttributes": {
+        "span": [
+          "style"
+        ]
+      },
+      "requiredNesting": [
+        {
+          "parent": "ul",
+          "child": "li"
+        },
+        {
+          "parent": "ol",
+          "child": "li"
+        },
+        {
+          "parent": "p",
+          "child": "span"
+        }
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "h1": 1
+      },
+      "maxTags": {
+        "h1": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+<article>
+    <h2>Entendendo o Contexto (this) em JavaScript</h2>
+    
+    <p>Neste tutorial, vamos explorar um dos conceitos mais importantes e frequentemente mal compreendidos do JavaScript: o contexto e a palavra-chave 'this'. Você aprenderá como o contexto funciona e como utilizá-lo de forma eficiente em seus objetos.</p>
+  
+    <section>
+      <h2>Conceitos Básicos de Contexto</h2>
+      <p>O contexto em JavaScript refere-se ao objeto ao qual o código está atualmente associado. A palavra-chave 'this' é usada para acessar esse contexto.</p>
+  
+      <div class="code-block">
+        <p>📄 basic-context.js</p>
+        <pre><code>
+  // Contexto global
+  console.log(this === window);  // true no navegador
+  
+  const objeto = {
+    nome: "Meu Objeto",
+    mostrarNome() {
+      console.log(this.nome);  // 'this' se refere ao objeto
+    }
+  };
+  
+  objeto.mostrarNome();  // Meu Objeto</code></pre>
+      </div>
+    </section>
+  
+    <section>
+      <h2>Métodos em Objetos</h2>
+      <p>Quando criamos métodos em objetos, 'this' se refere ao objeto que contém o método:</p>
+  
+      <div class="code-block">
+        <p>📄 object-methods.js</p>
+        <pre><code>
+  const usuario = {
+    nome: {
+      primeiro: "Maria",
+      ultimo: "Silva"
+    },
+    endereco: {
+      rua: "Rua Principal",
+      numero: 123,
+      cidade: "São Paulo",
+      estado: "SP"
+    },
+    formatarEndereco() {
+      return `${this.nome.primeiro} ${this.nome.ultimo}
+  ${this.endereco.numero} ${this.endereco.rua}
+  ${this.endereco.cidade}, ${this.endereco.estado}`;
+    }
+  };
+  
+  console.log(usuario.formatarEndereco());</code></pre>
+      </div>
+    </section>
+  
+    <section>
+      <h2>Contexto em Diferentes Situações</h2>
+      <p>O valor de 'this' pode mudar dependendo de como a função é chamada:</p>
+  
+      <div class="code-block">
+        <p>📄 context-examples.js</p>
+        <pre><code>
+  // Método de objeto
+  const contador = {
+    valor: 0,
+    incrementar() {
+      this.valor++;
+      return this.valor;
+    }
+  };
+  
+  console.log(contador.incrementar());  // 1
+  
+  // Função regular
+  function mostrarThis() {
+    console.log(this);  // window no navegador
+  }
+  
+  mostrarThis();
+  
+  // Função dentro de método
+  const logger = {
+    mensagens: [],
+    adicionar(msg) {
+      this.mensagens.push(msg);
+    },
+    mostrarTodas() {
+      // Usando arrow function para preservar o contexto
+      this.mensagens.forEach(msg => {
+        console.log(msg);
+      });
+    }
+  };</code></pre>
+      </div>
+    </section>
+  
+    <section class="challenge-section">
+      <h2>Desafio Prático</h2>
+      <p>Crie um objeto que representa uma calculadora com histórico:</p>
+      
+      <ul>
+        <li>Implemente métodos para operações básicas (soma, subtração, etc.)</li>
+        <li>Mantenha um histórico de operações realizadas</li>
+        <li>Use 'this' para acessar o estado interno do objeto</li>
+        <li>Implemente um método para exibir o histórico formatado</li>
+      </ul>
+  
+      <div class="code-block">
+        <p>📄 calculator-challenge.js</p>
+        <pre><code>
+  const calculadora = {
+    historico: [],
+    resultado: 0,
+    
+    registrarOperacao(operacao, valor) {
+      this.historico.push({
+        operacao,
+        valor,
+        resultadoAnterior: this.resultado
+      });
+    },
+  
+    somar(valor) {
+      this.resultado += valor;
+      this.registrarOperacao('soma', valor);
+      return this.resultado;
+    },
+  
+    subtrair(valor) {
+      this.resultado -= valor;
+      this.registrarOperacao('subtração', valor);
+      return this.resultado;
+    },
+  
+    mostrarHistorico() {
+      return this.historico.map(op => 
+        `${op.operacao}: ${op.valor} (anterior: ${op.resultadoAnterior})`
+      ).join('\n');
+    }
+  };</code></pre>
+      </div>
+    </section>
+  
+    <section>
+      <h2>Dicas e Melhores Práticas</h2>
+      <ul>
+        <li>Use arrow functions quando precisar preservar o contexto em callbacks</li>
+        <li>Evite referenciar 'this' fora de métodos de objetos</li>
+        <li>Mantenha uma referência a 'this' em uma variável se precisar usá-lo em um escopo interno</li>
+        <li>Entenda que o valor de 'this' é determinado no momento da chamada da função, não na sua definição</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>Perguntas Frequentes</h2>
+      
+      <details>
+        <summary>Por que 'this' às vezes é undefined?</summary>
+        <p>Isso pode acontecer quando uma função é chamada sem contexto ou quando você perde o contexto em callbacks. Use arrow functions ou bind() para manter o contexto desejado.</p>
+      </details>
+  
+      <details>
+        <summary>Qual a diferença entre função regular e arrow function em relação ao 'this'?</summary>
+        <p>Arrow functions não criam seu próprio contexto e mantêm o 'this' do escopo onde foram definidas. Funções regulares criam seu próprio contexto baseado em como são chamadas.</p>
+      </details>
+  
+      <details>
+        <summary>Como posso garantir que uma função sempre use um determinado 'this'?</summary>
+        <p>Você pode usar os métodos bind(), call() ou apply() para explicitamente definir o valor de 'this' para uma função. bind() cria uma nova função com 'this' fixo, enquanto call() e apply() executam a função imediatamente com o 'this' especificado.</p>
+      </details>
+    </section>
+  </article>

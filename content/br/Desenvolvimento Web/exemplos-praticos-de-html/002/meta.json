@@ -1,0 +1,61 @@
+{
+  "id": "002",
+  "tutorial_id": "002",
+  "course_id": "1",
+  "title": "Prática: Marcação de Post de Blog",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+"validation": {
+  "html": {
+    "requiredTags": [
+      "html",
+      "body",
+      "nav",
+      "main",
+      "footer"
+    ],
+    "requiredNesting": [
+      {
+        "parent": "html",
+        "child": "body"
+      },
+      {
+        "parent": "body",
+        "child": "nav"
+      },
+      {
+        "parent": "body",
+        "child": "main"
+      },
+      {
+        "parent": "body",
+        "child": "footer"
+      },
+      {
+        "parent": "main",
+        "child": "h1"
+      },
+      {
+        "parent": "main",
+        "child": "h2"
+      },
+      {
+        "parent": "div",
+        "child": "p"
+      }
+    ],
+    "forbiddenTags": [
+      "h7"
+    ],
+    "minTags": {
+      "h1": 1,
+      "h2": 1,
+      "p": 1
+    },
+    "maxTags": {
+      "h1": 1
+    }
+  }
+}
+}

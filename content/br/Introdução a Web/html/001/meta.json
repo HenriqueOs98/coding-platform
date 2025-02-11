@@ -1,0 +1,48 @@
+{
+  "id": "001",
+  "tutorial_id": "001",
+  "course_id": "3",
+  "title": "sua-primeira-pagina-html",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "!DOCTYPE html",
+        "html",
+        "head",
+        "body"
+      ],
+      "requiredAttributes": {},
+      "requiredNesting": [
+        [
+          "html",
+          [
+            "head",
+            "body"
+          ]
+        ],
+        [
+          "head",
+          []
+        ],
+        [
+          "body",
+          []
+        ]
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "html": 1,
+        "head": 1,
+        "body": 1
+      },
+      "maxTags": {
+        "html": 1,
+        "head": 1,
+        "body": 1
+      }
+    }
+  }
+}

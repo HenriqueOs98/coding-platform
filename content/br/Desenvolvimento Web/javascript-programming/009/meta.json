@@ -1,0 +1,40 @@
+{
+  "id": "009",
+  "tutorial_id": "009",
+  "course_id": "javascript-programming",
+  "title": "Objetos: Conceitos Básicos",
+  "description": "",
+  "order_index": 9,
+  "validation": {
+    "javascript": {
+      "requiredFunctions": [
+        "somar",
+        "subtrair",
+        "obterValor",
+        "aplicarDesconto",
+        "aumentarPreco",
+        "exibirInformacoes"
+      ],
+      "requiredVariables": [
+        "usuario",
+        "calculadora",
+        "empresa",
+        "produto"
+      ],
+      "requiredEventListeners": [],
+      "forbiddenStatements": [
+        "eval",
+        "with"
+      ]
+    }
+  },
+  "is_active": true,
+  "translations": {
+    "pt": {
+      "title": "Objetos: Conceitos Básicos"
+    },
+    "en": {
+      "title": "Objetos: Conceitos Básicos"
+    }
+  }
+}

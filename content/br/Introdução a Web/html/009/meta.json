@@ -1,0 +1,23 @@
+{
+  "id": "009",
+  "tutorial_id": "009",
+  "course_id": "3",
+  "title": "nota-sobre-formularios",
+  "description": "",
+  "order_index": 9,
+  "last_one": true,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "input",
+        "select",
+        "textarea"
+      ],
+      "requiredAttributes": {},
+      "requiredNesting": [],
+      "forbiddenTags": [],
+      "minTags": {},
+      "maxTags": {}
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "008",
+  "tutorial_id": "008",
+  "course_id": "javascript-programming",
+  "title": "Biblioteca Padrão",
+  "description": "",
+  "order_index": 8,
+  "validation": {
+    "javascript": {
+      "requiredFunctions": [
+        "toLowerCase",
+        "toUpperCase",
+        "includes",
+        "replace",
+        "trim",
+        "Math.round",
+        "Math.floor",
+        "Math.ceil",
+        "Math.min",
+        "Math.max",
+        "Math.random",
+        "map",
+        "filter",
+        "reduce"
+      ],
+      "requiredVariables": [
+        "texto",
+        "frase",
+        "espacado",
+        "numeros",
+        "dobrados",
+        "pares",
+        "soma",
+        "produtos"
+      ],
+      "forbiddenStatements": [
+        "eval",
+        "innerHTML"
+      ]
+    }
+  },
+  "is_active": true,
+  "translations": {
+    "pt": {
+      "title": "Biblioteca Padrão"
+    },
+    "en": {
+      "title": "Biblioteca Padrão"
+    }
+  }
+}

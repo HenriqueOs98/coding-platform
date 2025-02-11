@@ -1,0 +1,32 @@
+{
+  "id": "2",
+  "title": "Desenvolvimento Web",
+  "description": "Aprenda as tecnologias essenciais para desenvolvimento web",
+  "order": 2,
+  "courses": [
+    {
+      "id": "1",
+      "slug": "exemplos-praticos-de-html",
+      "title": "Exemplos práticos de HTML",
+      "order": 1
+    },
+    {
+      "id": "2",
+      "slug": "css",
+      "title": "CSS",
+      "order": 2
+    },
+    {
+      "id": "3",
+      "slug": "javascript-programming",
+      "title": "Programação em JavaScript",
+      "order": 3
+    },
+    {
+      "id": "4",
+      "slug": "tailwind-css",
+      "title": "Tailwind CSS",
+      "order": 4
+    }
+  ]
+}

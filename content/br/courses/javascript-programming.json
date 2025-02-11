@@ -1,0 +1,124 @@
+{
+  "id": "3",
+  "group": "web-development",
+  "title": "Programação em JavaScript",
+  "description": "Aprenda programação web com JavaScript, desde o básico até conceitos avançados",
+  "difficulty": "beginner",
+  "order": 3,
+  "tutorials": [
+    {
+      "id": "001",
+      "slug": "001",
+      "title": "getting-started",
+      "order": 1
+    },
+    {
+      "id": "002",
+      "slug": "002",
+      "title": "data-types",
+      "order": 2
+    },
+    {
+      "id": "003",
+      "slug": "003",
+      "title": "conditionals",
+      "order": 3
+    },
+    {
+      "id": "004",
+      "slug": "004",
+      "title": "iteration",
+      "order": 4
+    },
+    {
+      "id": "005",
+      "slug": "005",
+      "title": "practice-exercises",
+      "order": 5
+    },
+    {
+      "id": "006",
+      "slug": "006",
+      "title": "functions-basics",
+      "order": 6
+    },
+    {
+      "id": "007",
+      "slug": "007",
+      "title": "variable-scope",
+      "order": 7
+    },
+    {
+      "id": "008",
+      "slug": "008",
+      "title": "standard-library",
+      "order": 8
+    },
+    {
+      "id": "009",
+      "slug": "009",
+      "title": "object-basics",
+      "order": 9
+    },
+    {
+      "id": "010",
+      "slug": "010",
+      "title": "this-keyword",
+      "order": 10
+    },
+    {
+      "id": "011",
+      "slug": "011",
+      "title": "array-methods",
+      "order": 11
+    },
+    {
+      "id": "012",
+      "slug": "012",
+      "title": "working-with-json",
+      "order": 12
+    },
+    {
+      "id": "013",
+      "slug": "013",
+      "title": "ajax-requests",
+      "order": 13
+    },
+    {
+      "id": "014",
+      "slug": "014",
+      "title": "promises-async",
+      "order": 14
+    },
+    {
+      "id": "015",
+      "slug": "015",
+      "title": "event-handling",
+      "order": 15
+    },
+    {
+      "id": "016",
+      "slug": "016",
+      "title": "dom-manipulation",
+      "order": 16
+    },
+    {
+      "id": "017",
+      "slug": "017",
+      "title": "projeto-pratico",
+      "order": 17
+    }
+  ],
+  "meta": {
+    "tags": ["javascript", "web", "programming"],
+    "duration": "10-12 hours",
+    "prerequisites": ["html", "css"],
+    "objectives": [
+      "Understand JavaScript fundamentals",
+      "Learn about variables, functions, and objects",
+      "Work with arrays and loops",
+      "Handle events and manipulate the DOM",
+      "Make HTTP requests and work with APIs"
+    ]
+  }
+}

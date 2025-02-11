@@ -1,0 +1,85 @@
+# PRACTICE: Styling tables
+
+Take this HTML table:
+
+```html
+<html>
+  <body>
+    <h2>Tables</h2>
+    <table>
+      <tr>
+        <th>Dog</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Roger</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>Syd</td>
+        <td>7</td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+```
+
+By default it's not shown in a way that's beautiful to see, or to understand:
+
+![Screen Shot 2020-04-16 at 11.12.26.png](PRACTICE%20Styling%20tables%201902767ad7e38185b729f8afccc38eb2/Screen_Shot_2020-04-16_at_11.12.26.png)
+
+And the more data you add, the worse it will become.
+
+Let's add some padding, and some borders, like a good table should have.
+
+First we add a border to the whole table:
+
+```css
+table {
+  border: 1px solid gray;
+}
+
+```
+
+![Screen Shot 2020-04-16 at 16.41.41.png](PRACTICE%20Styling%20tables%201902767ad7e38185b729f8afccc38eb2/Screen_Shot_2020-04-16_at_16.41.41.png)
+
+We now add borders inside it. To do so, I modify the CSS selector to also include `td`:
+
+```css
+table,
+td {
+  border: 1px solid gray;
+}
+
+```
+
+There's a problem now with all those borders:
+
+![Screen Shot 2020-04-16 at 16.42.49.png](PRACTICE%20Styling%20tables%201902767ad7e38185b729f8afccc38eb2/Screen_Shot_2020-04-16_at_16.42.49.png)
+
+CSS lets us collapse borders that are duplicated and too close to each other with a simple instruction:
+
+```css
+table {
+  border-collapse: collapse;
+}
+
+```
+
+![Screen Shot 2020-04-16 at 16.43.40.png](PRACTICE%20Styling%20tables%201902767ad7e38185b729f8afccc38eb2/Screen_Shot_2020-04-16_at_16.43.40.png)
+
+We just need apply some padding to the `td` and `th` elements to make the table look much nicer:
+
+```css
+td,
+th {
+  padding: 10px 20px 10px 20px;
+}
+
+```
+
+![Screen Shot 2020-04-16 at 16.44.40.png](PRACTICE%20Styling%20tables%201902767ad7e38185b729f8afccc38eb2/Screen_Shot_2020-04-16_at_16.44.40.png)
+
+Spacing is everything.
+

@@ -1,0 +1,126 @@
+<article class="tutorial-content">
+    <h2>Escopo em JavaScript</h2>
+    <div class="tutorial-body">
+        <section>
+            <h2>O que é Escopo?</h2>
+            <p>Escopo define onde uma variável "existe" e pode ser acessada no código. Pense em escopo como um conjunto de regras que determina quais partes do seu código podem ver e usar certas variáveis.</p>
+
+            <div class="code-block">
+                <pre><code>// Exemplo Básico de Escopo
+function exemploEscopo() {
+    const mensagem = "Olá!";
+    console.log(mensagem); // Funciona
+}
+
+// console.log(mensagem); // Erro! 'mensagem' não existe aqui</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <h2>Escopo Global vs Local</h2>
+            <p>Variáveis podem ter escopo global (acessíveis em todo lugar) ou local (acessíveis apenas dentro de um bloco específico).</p>
+
+            <div class="code-block">
+                <pre><code>// Escopo Global
+const globalVar = "Sou global!";
+
+function exemplo() {
+    // Escopo Local
+    const localVar = "Sou local!";
+    
+    console.log(globalVar);  // ✅ Funciona
+    console.log(localVar);   // ✅ Funciona
+}
+
+console.log(globalVar);      // ✅ Funciona
+// console.log(localVar);    // ❌ Erro! Fora de escopo</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <h2>Escopo em Blocos</h2>
+            <p>Blocos de código (definidos por chaves {}) criam seus próprios escopos:</p>
+
+            <div class="code-block">
+                <pre><code>let contador = 0;
+
+// Escopo do bloco if
+if (true) {
+    const mensagem = "Dentro do if";
+    contador++;
+}
+// console.log(mensagem); // ❌ Erro! 'mensagem' só existe dentro do if
+console.log(contador);    // ✅ Funciona, contador é global
+
+// Escopo do loop
+for (let i = 0; i < 3; i++) {
+    const temp = i * 2;
+}
+// console.log(i);    // ❌ Erro! 'i' só existe dentro do loop
+// console.log(temp); // ❌ Erro! 'temp' só existe dentro do loop</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <h2>Escopo em Funções</h2>
+            <p>Funções criam seu próprio escopo e podem acessar variáveis de escopos externos:</p>
+
+            <div class="code-block">
+                <pre><code>const valorGlobal = 10;
+
+function funcaoExterna() {
+    const valorExterno = 20;
+    
+    function funcaoInterna() {
+        const valorInterno = 30;
+        console.log(valorGlobal);   // ✅ 10
+        console.log(valorExterno);  // ✅ 20
+        console.log(valorInterno);  // ✅ 30
+    }
+    
+    funcaoInterna();
+    // console.log(valorInterno); // ❌ Erro!
+}
+
+// console.log(valorExterno); // ❌ Erro!</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <h2>Exercício: Identificando Escopos</h2>
+            <div class="code-block">
+                <pre><code>let a = 1;
+function teste() {
+    let b = 2;
+    if (true) {
+        let c = 3;
+        console.log(a); // O que acontece aqui?
+        console.log(b); // E aqui?
+        console.log(c); // E aqui?
+    }
+    console.log(c); // E aqui?
+}
+console.log(b); // E aqui?</code></pre>
+            </div>
+
+            <p>Respostas:</p>
+            <ul>
+                <li>console.log(a) - ✅ Funciona (escopo global)</li>
+                <li>console.log(b) - ✅ Funciona (escopo da função)</li>
+                <li>console.log(c) dentro do if - ✅ Funciona (escopo do bloco if)</li>
+                <li>console.log(c) fora do if - ❌ Erro (fora do escopo)</li>
+                <li>console.log(b) no escopo global - ❌ Erro (fora do escopo)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Dicas Importantes</h2>
+            <ul>
+                <li>Variáveis declaradas com const e let têm escopo de bloco</li>
+                <li>Use o escopo mais restrito possível para suas variáveis</li>
+                <li>Evite variáveis globais quando possível</li>
+                <li>Lembre-se que cada { } cria um novo escopo</li>
+            </ul>
+        </section>
+    </div>
+</article>

@@ -1,0 +1,48 @@
+{
+  "id": "015",
+  "tutorial_id": "015",
+  "course_id": "web-development-basics",
+  "title": "Manipulação de Eventos",
+  "description": "",
+  "order_index": 2,
+  "validation": {
+    "javascript": {
+      "requiredFunctions": [
+        "addEventListener",
+        "preventDefault",
+        "stopPropagation"
+      ],
+      "requiredEventListeners": [
+        "click",
+        "dblclick",
+        "mouseover",
+        "mouseout",
+        "keydown",
+        "keyup",
+        "keypress",
+        "submit",
+        "change",
+        "input",
+        "load",
+        "DOMContentLoaded"
+      ],
+      "requiredVariables": [
+        "event",
+        "elemento",
+        "botao",
+        "container",
+        "taskManager"
+      ],
+      "forbiddenStatements": []
+    }
+  },
+  "is_active": true,
+  "translations": {
+    "pt": {
+      "title": "Manipulação de Eventos"
+    },
+    "en": {
+      "title": "Manipulação de Eventos"
+    }
+  }
+}

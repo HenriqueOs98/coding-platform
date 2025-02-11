@@ -1,0 +1,88 @@
+{
+  "id": "017",
+  "tutorial_id": "017",
+  "course_id": "api-and-networking",
+  "title": "Projeto Prático",
+  "description": "",
+  "order_index": 4,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "input",
+        "button",
+        "div"
+      ],
+      "requiredAttributes": {
+        "input": [
+          "type",
+          "id",
+          "class"
+        ],
+        "button": [
+          "id",
+          "type"
+        ],
+        "div": [
+          "class"
+        ]
+      },
+      "requiredNesting": [
+        {
+          "parent": "div",
+          "child": "input"
+        },
+        {
+          "parent": "div",
+          "child": "button"
+        }
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "input": 5
+      },
+      "maxTags": {}
+    },
+    "css": {
+      "requiredSelectors": [
+        ".row",
+        ".letter",
+        ".correct",
+        ".incorrect",
+        ".partial"
+      ],
+      "requiredProperties": [
+        "color",
+        "background-color"
+      ],
+      "requiredValues": {
+        ".correct": {
+          "background-color": "green"
+        },
+        ".incorrect": {
+          "background-color": "gray"
+        },
+        ".partial": {
+          "background-color": "yellow"
+        }
+      },
+      "forbiddenProperties": []
+    },
+    "javascript": {
+      "requiredFunctions": [
+        "getWord",
+        "validateWord"
+      ],
+      "requiredEventListeners": [
+        "click",
+        "keydown"
+      ],
+      "requiredVariables": [
+        "secretWord",
+        "WORD_URL",
+        "VALIDATE_URL"
+      ],
+      "forbiddenStatements": []
+    }
+  },
+  "is_active": true
+}

@@ -1,0 +1,46 @@
+{
+  "id": "016",
+  "tutorial_id": "016",
+  "course_id": "web-development-basics",
+  "title": "Manipulação do DOM",
+  "description": "",
+  "order_index": 1,
+  "validation": {
+    "javascript": {
+      "requiredFunctions": [
+        "querySelector",
+        "querySelectorAll",
+        "getElementById",
+        "getElementsByClassName",
+        "getElementsByTagName",
+        "addEventListener",
+        "removeEventListener"
+      ],
+      "requiredEventListeners": [
+        "click",
+        "mouseover",
+        "keydown",
+        "submit"
+      ],
+      "requiredVariables": [
+        "elemento",
+        "porId",
+        "elementos",
+        "porClasse",
+        "porTag"
+      ],
+      "forbiddenStatements": [
+        "innerHTML = '<script>'"
+      ]
+    }
+  },
+  "is_active": true,
+  "translations": {
+    "pt": {
+      "title": "Manipulação do DOM"
+    },
+    "en": {
+      "title": "DOM Manipulação do"
+    }
+  }
+}

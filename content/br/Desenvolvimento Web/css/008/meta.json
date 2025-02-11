@@ -1,0 +1,66 @@
+{
+  "id": "008",
+  "tutorial_id": "008",
+  "course_id": "2",
+  "title": "Tipografia",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "link"
+      ],
+      "requiredAttributes": {
+        "link": [
+          "href",
+          "rel"
+        ]
+      },
+      "requiredNesting": [],
+      "forbiddenTags": [],
+      "minTags": {
+        "link": 1
+      },
+      "maxTags": {}
+    },
+    "css": {
+      "requiredSelectors": [
+        "body",
+        "h1",
+        ".artigo",
+        "p",
+        ".titulo-destaque",
+        ".destaque",
+        ".codigo"
+      ],
+      "requiredProperties": [
+        "font-family",
+        "font-size",
+        "line-height",
+        "text-align",
+        "font-weight"
+      ],
+      "requiredValues": {
+        "font-family": [
+          "'Poppins'",
+          "'Montserrat', Arial, sans-serif",
+          "'Courier New', monospace"
+        ],
+        "font-size": [
+          "1.2rem"
+        ],
+        "line-height": [
+          "1.5"
+        ],
+        "text-align": [
+          "center"
+        ],
+        "font-weight": [
+          "600"
+        ]
+      },
+      "forbiddenProperties": []
+    }
+  }
+}

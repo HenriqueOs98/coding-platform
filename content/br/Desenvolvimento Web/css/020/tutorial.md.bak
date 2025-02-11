@@ -1,0 +1,78 @@
+# PRACTICE: Create a layout using Grid
+
+I want to do a little demo of CSS Grid.
+
+Starting from [this codepen](https://codepen.io/flaviocopes/pen/abjpogQ?editors=1100) where we have a body with a `div` and 4 paragraphs that by default are styled like this:
+
+![Untitled](PRACTICE%20Create%20a%20layout%20using%20Grid%201902767ad7e381b8a5b1c8659d301ece/Untitled.png)
+
+
+
+Because `p` tags are *block* elements, we have one for each line.
+
+Let’s add a little border to the paragraphs.
+
+```css
+p {
+  border: 1px solid;
+}
+```
+
+![Untitled](PRACTICE%20Create%20a%20layout%20using%20Grid%201902767ad7e381b8a5b1c8659d301ece/Untitled%201.png)
+
+I'm going to add some `padding`, like 20 pixels, so we have some more spacing inside the `p` tag
+
+![Untitled](PRACTICE%20Create%20a%20layout%20using%20Grid%201902767ad7e381b8a5b1c8659d301ece/Untitled%202.png)
+
+I'm going to remove all the `margin`, which is added by the browser, so each p element is close to the other.
+
+![Untitled](PRACTICE%20Create%20a%20layout%20using%20Grid%201902767ad7e381b8a5b1c8659d301ece/Untitled%203.png)
+
+I'm also going to say `text-align: center` to center the text inside the p tag. Let me also pick a nicer color, for example, this one and I'm going to say `background-color: yellow`.
+
+![Untitled](PRACTICE%20Create%20a%20layout%20using%20Grid%201902767ad7e381b8a5b1c8659d301ece/Untitled%204.png)
+
+Let’s now set the `p` elements to be laid out using CSS Grid. 
+
+We add `display: grid` to the `div` element that contains all the `p` tags.
+
+We enabled the grid layout, but nothing changed because CSS Grid by default aligns the elements vertically in a single column.
+
+![Untitled](PRACTICE%20Create%20a%20layout%20using%20Grid%201902767ad7e381b8a5b1c8659d301ece/Untitled%205.png)
+
+To change that we need to set **two columns**. So we say `grid-template-columns: 200px 200px`
+
+![Untitled](PRACTICE%20Create%20a%20layout%20using%20Grid%201902767ad7e381b8a5b1c8659d301ece/Untitled%206.png)
+
+So we can also set different sizes, for example, let’s set the first column as 100px, and the second as 200px:
+
+![Untitled](PRACTICE%20Create%20a%20layout%20using%20Grid%201902767ad7e381b8a5b1c8659d301ece/Untitled%207.png)
+
+Instead of using pixels, we could also use fractions. Fractions basically divide all the space available into equal fractions. So for example, we can say that I want this layout to have 1 fraction for the first column and 2 fractions for the second. So we expect this to divide all the space available to the div into 3 equal parts, and use it accordingly to our rules, using `grid-template-columns: 1fr 2fr;`
+
+![Untitled](PRACTICE%20Create%20a%20layout%20using%20Grid%201902767ad7e381b8a5b1c8659d301ece/Untitled%208.png)
+
+Enough with the columns.
+
+For rows, it's different because height is calculated a little bit differently. It doesn't expand to the full height available. We need to set an explicit height, like this:
+
+```css
+div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  **height: 400px;**
+}
+```
+
+![Untitled](PRACTICE%20Create%20a%20layout%20using%20Grid%201902767ad7e381b8a5b1c8659d301ece/Untitled%209.png)
+
+We can also set the gap between each item in the grid, so we can say `gap: 20px` and this will make a gap between each element in the grid.
+
+![Untitled.png](PRACTICE%20Create%20a%20layout%20using%20Grid%201902767ad7e381b8a5b1c8659d301ece/Untitled%2010.png)
+
+[Here’s the final demo Codepen](https://codepen.io/flaviocopes/pen/jOpyOPa).
+
+[Note: in the video I use `grid-gap` to add the gap - it works in the same way as `gap`, but it’s an old name for that property (please forgive me)](PRACTICE%20Create%20a%20layout%20using%20Grid%201902767ad7e381b8a5b1c8659d301ece/DEMO_Create_a_layout_using_Grid.mp4)
+
+Note: in the video I use `grid-gap` to add the gap - it works in the same way as `gap`, but it’s an old name for that property (please forgive me)
+

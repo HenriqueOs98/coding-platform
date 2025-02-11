@@ -1,0 +1,101 @@
+<article>
+    <h2>Introdução ao AJAX e Consumo de APIs</h2>
+    <p>
+      Neste tutorial, você aprenderá o que é uma API, como fazer requisições assíncronas utilizando AJAX e como manipular os dados retornados. Vamos explorar conceitos básicos, exemplos práticos e boas práticas para trabalhar com APIs no JavaScript.
+    </p>
+  
+    <section>
+      <h2>O que é uma API?</h2>
+      <p>
+        API (Interface de Programação de Aplicações) é uma forma de comunicação entre sistemas. Pense nela como um "site" que não é feito para humanos, mas sim para máquinas. É um método que permite que um computador solicite informações de outro.
+      </p>
+      <blockquote>
+        Nota: O termo API também pode ser usado para descrever como algo é utilizado. Por exemplo, se você criar um objeto "carro" no JavaScript com métodos como <code>acelerar()</code> e <code>frear()</code>, esses métodos seriam a "API" do objeto. Neste tutorial, focaremos em APIs como endpoints que fornecem dados.
+      </blockquote>
+      <p>
+        Vamos imaginar um exemplo prático: você está criando uma página de previsão do tempo onde o usuário insere o CEP e recebe a previsão do dia. O fluxo seria assim:
+      </p>
+      <ol>
+        <li>O usuário acessa sua página e ela é carregada.</li>
+        <li>O usuário digita <code>01001-000</code> no campo de busca e pressiona Enter.</li>
+        <li>Seu aplicativo faz uma requisição para <code>api.exemplo.com/clima?cep=01001-000</code>.</li>
+        <li>A API responde com <code>{ "temperatura": 28, "unidade": "C" }</code>.</li>
+        <li>Seu aplicativo converte a string JSON em um objeto usando <code>JSON.parse</code>.</li>
+        <li>Seu aplicativo atualiza a página para exibir: "A temperatura atual é 28ºC".</li>
+      </ol>
+    </section>
+  
+    <section>
+      <h2>Como fazer uma requisição AJAX</h2>
+      <p>
+        Vamos criar um exemplo prático onde buscamos uma imagem aleatória de um gato utilizando uma API pública. Para isso, usaremos o método <code>fetch</code>, que é nativo do JavaScript e permite fazer requisições HTTP.
+      </p>
+      <pre class="code-block">
+        📄 HTML para o exemplo:
+        <code>
+  <button id="cat-btn">Mostrar Gato</button>
+  <div id="cat-target"></div>
+        </code>
+      </pre>
+      <p>Agora, o código JavaScript:</p>
+      <pre class="code-block">
+        📄 Exemplo de Requisição AJAX:
+        <code>
+  const CAT_URL = "https://api.thecatapi.com/v1/images/search";
+  
+  const gatos = document.getElementById("cat-target");
+  
+  function adicionarGato() {
+    fetch(CAT_URL)
+      .then(function (resposta) {
+        return resposta.json(); // Converte a resposta para JSON
+      })
+      .then(function (dados) {
+        const img = document.createElement("img");
+        img.src = dados[0].url; // URL da imagem do gato
+        img.alt = "Imagem de um gato fofo";
+        gatos.appendChild(img);
+      })
+      .catch(function (erro) {
+        console.error("Erro ao buscar a imagem do gato:", erro);
+      });
+  }
+  
+  document.getElementById("cat-btn").addEventListener("click", adicionarGato);
+        </code>
+      </pre>
+      <p>
+        Neste exemplo, ao clicar no botão, uma imagem aleatória de um gato será exibida na página. Vamos entender o que está acontecendo:
+      </p>
+      <ul>
+        <li>
+          <code>fetch</code>: Faz a requisição para a URL da API.
+        </li>
+        <li>
+          <code>then</code>: Processa a resposta da API. No primeiro <code>then</code>, convertemos a resposta para JSON. No segundo, manipulamos os dados retornados.
+        </li>
+        <li>
+          <code>catch</code>: Captura erros caso algo dê errado durante a requisição.
+        </li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>Entendendo Query Strings</h2>
+      <p>
+        Query strings são parâmetros que enviamos na URL para personalizar a requisição. Por exemplo, se quisermos buscar o clima de amanhã para um CEP específico, podemos usar:
+      </p>
+      <pre class="code-block">
+        📄 Exemplo de Query String:
+        <code>
+  https://api.exemplo.com/clima?cep=01001-000&dia=amanha
+        </code>
+      </pre>
+      <p>
+        Aqui, estamos enviando dois parâmetros: <code>cep</code> e <code>dia</code>. Eles são separados pelo caractere <code>&</code>. A API usará esses parâmetros para retornar os dados solicitados.
+      </p>
+    </section>
+  
+    <section>
+      <h2>Desafio Prático</h2>
+      <p>Agora é sua vez! Complete o desafio abaixo para pratic

@@ -1,0 +1,58 @@
+{
+  "id": "015",
+  "tutorial_id": "015",
+  "course_id": "2",
+  "title": "CSS: Modelo de Caixa",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "css": {
+      "requiredSelectors": [
+        ".largura-fixa",
+        ".adaptavel",
+        ".elemento",
+        ".borda-simples",
+        ".borda-destaque",
+        ".borda-inferior"
+      ],
+      "requiredProperties": [
+        "padding",
+        "padding-top",
+        "margin",
+        "margin-bottom",
+        "border",
+        "border-bottom",
+        "width",
+        "height",
+        "min-width",
+        "max-width"
+      ],
+      "requiredValues": {
+        "border": [
+          "solid",
+          "dashed",
+          "dotted"
+        ],
+        "margin": [
+          "auto"
+        ],
+        "padding": [
+          "px values"
+        ],
+        "border-width": [
+          "1px",
+          "2px",
+          "3px"
+        ],
+        "min-width": [
+          "500px"
+        ],
+        "max-width": [
+          "1200px"
+        ]
+      },
+      "forbiddenProperties": []
+    }
+  }
+}

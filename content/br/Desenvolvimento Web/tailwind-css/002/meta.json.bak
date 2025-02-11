@@ -1,0 +1,86 @@
+{
+  "id": "002",
+  "tutorial_id": "002",
+  "course_id": "3",
+  "title": "practice-styling-an-html-page-with-tailwind",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "div",
+        "h1",
+        "p",
+        "ul",
+        "li",
+        "button"
+      ],
+      "requiredAttributes": {
+        "div": [
+          "max-w-2xl",
+          "mx-auto",
+          "mt-8",
+          "p-6",
+          "bg-slate-50",
+          "rounded-xl",
+          "shadow-lg"
+        ],
+        "h1": [
+          "text-3xl",
+          "font-bold",
+          "text-blue-800",
+          "mb-4"
+        ],
+        "p": [
+          "text-lg",
+          "text-gray-600",
+          "mb-6"
+        ],
+        "ul": [
+          "space-y-2",
+          "mb-8"
+        ],
+        "li": [
+          "flex",
+          "items-center"
+        ],
+        "button": [
+          "bg-blue-600",
+          "text-white",
+          "px-6",
+          "py-3",
+          "rounded-lg",
+          "hover:bg-blue-700",
+          "transition-colors"
+        ],
+        "span": [
+          "w-2",
+          "h-2",
+          "bg-green-500",
+          "rounded-full",
+          "mr-2"
+        ]
+      },
+      "requiredNesting": [
+        "div > h1:first-child",
+        "div > p:nth-child(2)",
+        "div > ul:nth-child(3)",
+        "div > button:last-child",
+        "ul > li"
+      ],
+      "forbiddenTags": [
+        "style"
+      ],
+      "minTags": {
+        "h1": 1,
+        "button": 1,
+        "li": 3
+      },
+      "maxTags": {
+        "h1": 1,
+        "button": 1
+      }
+    }
+  }
+}

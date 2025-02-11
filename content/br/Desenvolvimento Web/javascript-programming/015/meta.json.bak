@@ -1,0 +1,99 @@
+{
+  "id": "015",
+  "tutorial_id": "015",
+  "course_id": "web-development-basics",
+  "title": "Manipulação de Eventos",
+  "description": "",
+  "order_index": 2,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "button",
+        "form",
+        "input",
+        "div"
+      ],
+      "requiredAttributes": {
+        "button": [
+          "class"
+        ],
+        "form": [
+          "class"
+        ],
+        "div": [
+          "class"
+        ]
+      },
+      "requiredNesting": [
+        "form > input",
+        ".task-container > .task"
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "button": 2,
+        "input": 1,
+        "div": 3
+      }
+    },
+    "css": {
+      "requiredSelectors": [
+        ".task",
+        ".completed",
+        ".task-container",
+        ".task-form",
+        ".task-toggle",
+        ".task-delete"
+      ],
+      "requiredProperties": [
+        "class"
+      ],
+      "requiredValues": {
+        ".completed": [
+          "text-decoration",
+          "opacity"
+        ]
+      },
+      "forbiddenProperties": []
+    },
+    "javascript": {
+      "requiredFunctions": [
+        "addEventListener",
+        "preventDefault",
+        "stopPropagation",
+        "querySelector",
+        "matches",
+        "closest",
+        "remove",
+        "classList.toggle"
+      ],
+      "requiredVariables": [
+        "event.target",
+        "event.currentTarget"
+      ],
+      "requiredKeywords": [
+        "function",
+        "=>"
+      ],
+      "forbiddenKeywords": [
+        "onclick",
+        "onsubmit"
+      ],
+      "expectedConsoleOutput": [
+        "Botão foi clicado!"
+      ],
+      "expectedVariableValues": {
+        "event.type": "click",
+        "event.key": "Enter"
+      }
+    }
+  },
+  "is_active": true,
+  "translations": {
+    "pt": {
+      "title": "Manipulação de Eventos"
+    },
+    "en": {
+      "title": "Manipulação de Eventos"
+    }
+  }
+}

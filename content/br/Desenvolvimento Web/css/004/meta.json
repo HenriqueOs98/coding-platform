@@ -1,0 +1,73 @@
+{
+  "id": "004",
+  "tutorial_id": "004",
+  "course_id": "2",
+  "title": "Mais Seletores",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "p",
+        "div",
+        "section",
+        "article",
+        "h1",
+        "h2",
+        "span"
+      ],
+      "requiredAttributes": {
+        "class": [
+          "nome-pet",
+          "caixa",
+          "destaque",
+          "tag"
+        ],
+        "id": [
+          "pet-especial",
+          "urgente"
+        ]
+      },
+      "requiredNesting": [
+        {
+          "parent": "section",
+          "child": "div"
+        },
+        {
+          "parent": "article",
+          "child": "p"
+        },
+        {
+          "parent": "div",
+          "child": "p"
+        }
+      ],
+      "forbiddenTags": [],
+      "minTags": {},
+      "maxTags": {}
+    },
+    "css": {
+      "requiredSelectors": [
+        ".nome-pet",
+        ".caixa.destaque",
+        ".tag#urgente",
+        "section p",
+        "article > .autor",
+        "h2 + p"
+      ],
+      "requiredProperties": [
+        "color",
+        "background",
+        "font-size",
+        "box-shadow",
+        "border",
+        "font-weight",
+        "font-style",
+        "margin-top"
+      ],
+      "requiredValues": {},
+      "forbiddenProperties": []
+    }
+  }
+}

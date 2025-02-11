@@ -1,0 +1,36 @@
+{
+  "id": "004",
+  "tutorial_id": "004",
+  "course_id": "javascript-programming",
+  "title": "Iteração e Loops",
+  "description": "",
+  "order_index": 4,
+  "validation": {
+    "javascript": {
+      "requiredVariables": [
+        "contador",
+        "valor",
+        "energia",
+        "numero",
+        "soma",
+        "i",
+        "hora"
+      ],
+      "requiredFunctions": [],
+      "requiredEventListeners": [],
+      "forbiddenStatements": [
+        "while (true)",
+        "for (;;)"
+      ]
+    }
+  },
+  "is_active": true,
+  "translations": {
+    "pt": {
+      "title": "Iteração e Loops"
+    },
+    "en": {
+      "title": "Iteração e Loops"
+    }
+  }
+}

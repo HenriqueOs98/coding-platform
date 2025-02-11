@@ -1,0 +1,100 @@
+<article class="tutorial-content">
+    <h2>Exercício: Repetição de Caracteres</h2>
+    <div class="tutorial-body">
+        <section>
+            <h2>O Problema</h2>
+            <p>Precisamos criar um programa que repita um caractere específico um determinado número de vezes.</p>
+            
+            <p><strong>Requisitos:</strong></p>
+            <ul>
+                <li>Declarar uma variável para o caractere</li>
+                <li>Declarar uma variável para o número de repetições</li>
+                <li>Usar um loop para construir a string final</li>
+                <li>Exibir o resultado no console</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Solução Passo a Passo</h2>
+            <div class="code-block">
+                <pre><code>// 1. Declarar as variáveis
+const character = '🌟';
+const timesToRepeat = 5;
+
+// 2. Criar uma string vazia para armazenar o resultado
+let result = '';
+
+// 3. Usar um loop para adicionar o caractere
+for (let i = 0; i < timesToRepeat; i++) {
+    result = result + character;
+}
+
+// 4. Exibir o resultado
+console.log(result); // Exibe: 🌟🌟🌟🌟🌟</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <h2>Explicação</h2>
+            <ul>
+                <li>Começamos com uma string vazia (result = '')</li>
+                <li>A cada iteração do loop, concatenamos o caractere à string existente</li>
+                <li>O loop roda exatamente o número de vezes especificado em timesToRepeat</li>
+                <li>No final, temos uma string com o caractere repetido</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Variações</h2>
+            <div class="code-block">
+                <pre><code>// Exemplo com letra
+const character = 'a';
+const timesToRepeat = 3;
+let result = '';
+for (let i = 0; i < timesToRepeat; i++) {
+    result += character;
+}
+console.log(result); // Exibe: aaa
+
+// Exemplo com emoji
+const character = '🐶';
+const timesToRepeat = 4;
+let result = '';
+for (let i = 0; i < timesToRepeat; i++) {
+    result += character;
+}
+console.log(result); // Exibe: 🐶🐶🐶🐶
+
+// Exemplo com símbolo
+const character = '*';
+const timesToRepeat = 10;
+let result = '';
+for (let i = 0; i < timesToRepeat; i++) {
+    result += character;
+}
+console.log(result); // Exibe: **********</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <h2>Dicas Importantes</h2>
+            <ul>
+                <li>Use let para a variável result pois ela será modificada no loop</li>
+                <li>O operador += é um atalho para result = result + character</li>
+                <li>O loop deve começar em 0 e ir até timesToRepeat - 1</li>
+                <li>Teste com diferentes tipos de caracteres para garantir que funciona</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Teste Você Mesmo</h2>
+            <p>Experimente com diferentes combinações:</p>
+            <ul>
+                <li>Letras: 'b' repetido 5 vezes</li>
+                <li>Números: '1' repetido 8 vezes</li>
+                <li>Emojis: '🎈' repetido 3 vezes</li>
+                <li>Símbolos: '-' repetido 20 vezes</li>
+            </ul>
+        </section>
+    </div>
+</article>

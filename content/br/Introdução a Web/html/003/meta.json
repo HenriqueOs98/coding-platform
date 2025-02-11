@@ -1,0 +1,58 @@
+{
+  "id": "003",
+  "tutorial_id": "003",
+  "course_id": "3",
+  "title": "atributos",
+  "description": "",
+  "order_index": 3,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "p",
+        "article",
+        "script",
+        "div"
+      ],
+      "requiredAttributes": {
+        "class": [
+          "texto-destaque",
+          "post-blog",
+          "card",
+          "principal"
+        ],
+        "id": [
+          "topo",
+          "oferta-especial"
+        ],
+        "defer": [],
+        "src": [
+          "carregamento-diferido.js"
+        ],
+        "href": []
+      },
+      "requiredNesting": [
+        {
+          "tag": "article",
+          "children": [
+            "p"
+          ]
+        },
+        {
+          "tag": "div",
+          "children": [
+            "p"
+          ]
+        }
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "p": 1,
+        "article": 1,
+        "script": 1,
+        "div": 1
+      },
+      "maxTags": {}
+    }
+  }
+}

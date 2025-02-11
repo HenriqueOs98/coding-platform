@@ -1,0 +1,37 @@
+{
+  "id": "005",
+  "tutorial_id": "005",
+  "course_id": "javascript-programming",
+  "title": "Exercícios Práticos",
+  "description": "",
+  "order_index": 5,
+  "validation": {
+    "javascript": {
+      "requiredVariables": [
+        "character",
+        "timesToRepeat",
+        "result"
+      ],
+      "requiredFunctions": [
+        "console.log"
+      ],
+      "requiredStatements": [
+        "for",
+        "let"
+      ],
+      "forbiddenStatements": [
+        "while",
+        "do-while"
+      ]
+    }
+  },
+  "is_active": true,
+  "translations": {
+    "pt": {
+      "title": "Exercícios Práticos"
+    },
+    "en": {
+      "title": "Exercícios Práticos"
+    }
+  }
+}

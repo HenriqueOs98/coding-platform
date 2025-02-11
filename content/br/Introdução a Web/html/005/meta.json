@@ -1,0 +1,44 @@
+{
+  "id": "005",
+  "tutorial_id": "005",
+  "course_id": "3",
+  "title": "imagens",
+  "description": "",
+  "order_index": 5,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "img"
+      ],
+      "requiredAttributes": {
+        "img": [
+          "src",
+          "alt"
+        ]
+      },
+      "requiredNesting": [],
+      "forbiddenTags": [],
+      "minTags": {
+        "img": 1
+      },
+      "maxTags": {}
+    },
+    "css": {
+      "requiredSelectors": [],
+      "requiredProperties": [
+        "max-width",
+        "height"
+      ],
+      "requiredValues": {
+        "max-width": [
+          "100%"
+        ],
+        "height": [
+          "auto"
+        ]
+      },
+      "forbiddenProperties": []
+    }
+  }
+}

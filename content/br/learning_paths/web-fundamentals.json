@@ -1,0 +1,28 @@
+{
+  "id": "1",
+  "title": "Fundamentos da Web",
+  "description": "Aprenda os conceitos fundamentais da Web",
+  "order": 1,
+  "courses": [
+    {
+      "id": "1",
+      "slug": "a-internet",
+      "order": 1
+    },
+    {
+      "id": "2",
+      "slug": "a-web",
+      "order": 2
+    },
+    {
+      "id": "3",
+      "slug": "html",
+      "order": 3
+    },
+    {
+      "id": "4",
+      "slug": "http",
+      "order": 4
+    }
+  ]
+}

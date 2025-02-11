@@ -1,0 +1,21 @@
+{
+  "id": "003",
+  "tutorial_id": "003",
+  "course_id": "javascript-programming",
+  "title": "Condicionais",
+  "description": "",
+  "order_index": 3,
+  "validation": {
+    "expectedOutput": [],
+    "requiredStatements": []
+  },
+  "is_active": true,
+  "translations": {
+    "pt": {
+      "title": "Condicionais"
+    },
+    "en": {
+      "title": "Condicionais"
+    }
+  }
+}

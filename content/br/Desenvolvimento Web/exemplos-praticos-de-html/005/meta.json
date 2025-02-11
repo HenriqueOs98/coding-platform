@@ -1,0 +1,82 @@
+{
+  "id": "005",
+  "tutorial_id": "005",
+  "course_id": "1",
+  "title": "Prática: Tabelas",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+    "validation": {
+      "html": {
+        "requiredTags": [
+          "html",
+          "body",
+          "table",
+          "tr",
+          "td"
+        ],
+        "requiredNesting": [
+          {
+            "parent": "html",
+            "child": "body"
+          },
+          {
+            "parent": "body",
+            "child": ["h2", "table"]
+          },
+          {
+            "parent": "table",
+            "child": "tr"
+          },
+          {
+            "parent": "tr",
+            "child": ["td", "th"]
+          }
+        ],
+        "allowedTags": [
+          "html",
+          "body",
+          "table",
+          "tr",
+          "td",
+          "th",
+          "img",
+          "h2"
+        ],
+        "forbiddenTags": [
+          "h1",
+          "h3",
+          "h4",
+          "h5",
+          "h6",
+          "p"
+        ],
+        "minTags": {
+          "html": 1,
+          "body": 1,
+          "table": 1,
+          "tr": 1,
+          "td": 1
+        },
+        "maxTags": {
+          "html": 1,
+          "body": 1,
+          "h2": 1
+        },
+        "attributes": {
+          "img": {
+            "required": ["src", "width"],
+            "allowed": ["alt", "height"]
+          },
+          "table": {
+            "allowed": ["border"]
+          }
+        },
+        "customRules": {
+          "requireTableStructure": true,
+          "requireHeaderRow": true,
+          "allowNestedTables": true
+        }
+      }
+    }
+}

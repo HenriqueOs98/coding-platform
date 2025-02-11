@@ -1,0 +1,28 @@
+{
+  "id": "3",
+  "group": "web-development",
+  "title": "Tailwind CSS",
+  "description": "Aprenda o framework Tailwind CSS",
+  "difficulty": "medium",
+  "order": 3,
+  "tutorials": [
+    {
+      "id": "001",
+      "slug": "001",
+      "title": "introducing-tailwind-css",
+      "order": 1
+    },
+    {
+      "id": "002",
+      "slug": "002",
+      "title": "practice-styling-an-html-page-with-tailwind",
+      "order": 2
+    },
+    {
+      "id": "003",
+      "slug": "003",
+      "title": "practice-building-layouts-with-tailwind",
+      "order": 3
+    }
+  ]
+}

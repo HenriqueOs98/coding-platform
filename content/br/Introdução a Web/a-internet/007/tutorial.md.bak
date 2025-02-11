@@ -1,0 +1,33 @@
+# IP Address
+
+In a TCP/IP network, nodes are identified by IP addresses.
+
+An IP address uniquely identifies a node of the network.
+
+An IP address is composed by 4 8-bit parts.
+
+> Note that this description corresponds to IPv4 addresses. IPv6 is the newest version, but adoption has been slower over the last few years. IPv6 addresses contain 128 bits compared to the 32 bits of IPv4, and offers more advanced mechanisms.
+> 
+
+Each of those parts is identified by a number from 0 to 255, each separated by a dot. For example:
+
+```
+212.21.4.28
+8.8.8.8
+121.2.1.2
+```
+
+You can immediately see that with just 32 bits, there is a finite amount of computers that we can identify.
+
+This was not a problem when the original Internet was born, as no one ever thought it'd become the incredible ecosystem that we have now.
+
+Originally, each computer had its own unique IP address. Today, every time you connect to a network with your computer or phone, you'll get a random IP address.
+
+This IP address is local, meaning that in most cases you can't be reached from the outside of the network built by your home or office router.
+
+Some providers offer static IP addresses, that never change, which can be used to reach your network from the outside, but it's usually a premium service.
+
+There are some special ranges of IP addresses reserved for LAN usage. The most common one is `192.168.xxx.xxx`.
+
+From any computer, you can reach itself using the special address `127.0.0.1`.
+

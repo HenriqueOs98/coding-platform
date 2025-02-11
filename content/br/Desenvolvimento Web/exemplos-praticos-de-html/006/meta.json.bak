@@ -1,0 +1,39 @@
+{
+  "id": "006",
+  "tutorial_id": "006",
+  "course_id": "1",
+  "title": "Prática: Links",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "a",
+        "nav",
+        "ul",
+        "li",
+        "section",
+        "article"
+      ],
+      "requiredAttributes": {
+        "a": [
+          "href"
+        ],
+        "section": [
+          "id"
+        ]
+      },
+      "requiredNesting": [
+        "nav > ul > li > a",
+        "article > section"
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "a": 3,
+        "section": 2
+      },
+      "maxTags": 0
+    }
+  }
+}

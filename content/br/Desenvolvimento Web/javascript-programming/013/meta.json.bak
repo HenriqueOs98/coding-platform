@@ -1,0 +1,73 @@
+{
+  "id": "013",
+  "tutorial_id": "013",
+  "course_id": "api-and-networking",
+  "title": "AJAX Requisições",
+  "description": "",
+  "order_index": 2,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "button",
+        "div"
+      ],
+      "requiredAttributes": {
+        "button": [
+          "id"
+        ],
+        "div": [
+          "id"
+        ]
+      },
+      "requiredNesting": [
+        "button#cat-btn",
+        "div#cat-target"
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "button": 1,
+        "div": 1
+      },
+      "maxTags": {
+        "button": 1
+      }
+    },
+    "javascript": {
+      "requiredFunctions": [
+        "fetch",
+        "document.getElementById",
+        "addEventListener",
+        "createElement",
+        "appendChild"
+      ],
+      "requiredVariables": [
+        "CAT_URL",
+        "gatos",
+        "img"
+      ],
+      "requiredKeywords": [
+        ".then",
+        ".catch",
+        "JSON.parse"
+      ],
+      "forbiddenKeywords": [
+        "XMLHttpRequest"
+      ],
+      "expectedConsoleOutput": [
+        "Erro ao buscar a imagem do gato:"
+      ],
+      "expectedVariableValues": {
+        "CAT_URL": "https://api.thecatapi.com/v1/images/search"
+      }
+    }
+  },
+  "is_active": true,
+  "translations": {
+    "pt": {
+      "title": "AJAX Requisições"
+    },
+    "en": {
+      "title": "AJAX Requisições"
+    }
+  }
+}

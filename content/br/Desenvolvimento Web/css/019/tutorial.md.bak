@@ -1,0 +1,247 @@
+# CSS Grid
+
+CSS offers two ways to create layouts: Grid and Flexbox.
+
+Grid works on 2 dimensions (rows AND columns). Flexbox works on a single dimension (rows OR columns).
+
+They make it easy to create responsive and flexible layouts.
+
+Each of them has its place, and we’re going to look at the basics of both.
+
+The CSS Grid layout is activated on a container element (which can be a `div` or any other tag) by setting the `display` property to `grid`.
+
+After this, you can define some properties on the container, and some properties on each individual item in the grid.
+
+These properties combined will determine the final look of the grid.
+
+The most basic container properties are `grid-template-columns` and `grid-template-rows`.
+
+We’re going to see how they work with an example.
+
+Let’s use this HTML structure:
+
+```html
+<div>
+  <p>1</p>
+  <p>2</p>
+  <p>3</p>
+  <p>4</p>
+</div>
+```
+
+By default the browser displays it like this:
+
+![Untitled](CSS%20Grid%201902767ad7e381d18999de3dfd169c93/Untitled.png)
+
+Now let’s add some CSS that uses the properties `grid-template-columns` and `grid-template-rows`.
+
+Those properties define the number of columns and rows in the grid, and they also set the width of each column/row.
+
+Here's an example of a grid with 2 columns and 2 rows:
+
+```css
+div {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 100px 100px;
+}
+```
+
+![Untitled](CSS%20Grid%201902767ad7e381d18999de3dfd169c93/Untitled%201.png)
+
+(I added some border to the `p` elements to make the grid more visible)
+
+Here’s another grid with 4 columns each 200px wide, and 2 rows with a 300px height each:
+
+```css
+/* The HTML now has 8 grid elements
+<div>
+  <p>1</p>
+  <p>2</p>
+  <p>3</p>
+  <p>4</p>
+  <p>5</p>
+  <p>6</p>
+  <p>7</p>
+  <p>8</p>
+</div>
+*/
+
+div {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 300px 300px;
+}
+```
+
+![Untitled](CSS%20Grid%201902767ad7e381d18999de3dfd169c93/Untitled%202.png)
+
+[**See it on Codepen**](https://codepen.io/flaviocopes/pen/QWBjPLd?editors=1100)
+
+In the previous examples, we made regular grids by using the same values for rows and the same values for columns.
+
+You can specify any value for each row/column, to create a lot of different designs:
+
+```css
+div {
+  display: grid;
+  grid-template-columns: 100px 200px;
+  grid-template-rows: 100px 50px;
+}
+```
+
+![Untitled](CSS%20Grid%201902767ad7e381d18999de3dfd169c93/Untitled%203.png)
+
+[See on Codepen](https://codepen.io/flaviocopes/pen/zYLNObL?editors=1100)
+
+Unless specified, there is no space between the cells.
+
+You can add spacing by using these properties:
+
+- `column-gap`
+- `row-gap`
+
+or the shorthand syntax `gap`.
+
+Example:
+
+```css
+div {
+  display: grid;
+  grid-template-columns: 100px 200px;
+  grid-template-rows: 100px 50px;
+  **column-gap: 25px;
+  row-gap: 25px;**
+}
+```
+
+![Untitled](CSS%20Grid%201902767ad7e381d18999de3dfd169c93/Untitled%204.png)
+
+[See on Codepen](https://codepen.io/flaviocopes/pen/NWBdKmd?editors=1100)
+
+Since both gaps for cols and rows are the same, that layout could be created using the shorthand property `gap`:
+
+```css
+div {
+  display: grid;
+  grid-template-columns: 100px 200px;
+  grid-template-rows: 100px 50px;
+  **gap: 25px;**
+}
+```
+
+Every cell item has the option to occupy more than just one box in the row and expand horizontally or vertically to get more space while respecting the grid proportions set in the container.
+
+These are the properties we'll use for that:
+
+- `grid-column-start`
+- `grid-column-end`
+- `grid-row-start`
+- `grid-row-end`
+
+Example:
+
+```css
+/* HTML is now
+<div>
+  <p>1</p>
+  <p class="item2">2</p>
+  <p>3</p>
+  <p>4</p>
+  <p>5</p>
+  <p class="item6">6</p>
+</div>
+*/
+
+div {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 300px 300px;
+}
+
+**.item2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.item6 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}**
+```
+
+![Untitled](CSS%20Grid%201902767ad7e381d18999de3dfd169c93/Untitled%205.png)
+
+[See on Codepen](https://codepen.io/flaviocopes/pen/abjpoxQ?editors=1100)
+
+[See on Replit](https://replit.com/@flaviocopes/Bootcamp-2023-Mod-2-CSS-Grid-Example-5)
+
+The numbers used in `grid-column-*` correspond to the vertical line that separates each column, starting from 1 (not 0)
+
+![6.png](CSS%20Grid%201902767ad7e381d18999de3dfd169c93/6.png)
+
+The same principle applies to `grid-row-start` and `grid-row-end`, except this time instead of taking more columns, a cell takes more rows.
+
+Those properties have a shorthand syntax provided by:
+
+- `grid-column`
+- `grid-row`
+
+Here's how to replicate the above layout using those properties:
+
+```css
+div {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 300px 300px;
+}
+
+**.item2 {
+  grid-column: 2 / 4;
+}
+
+.item6 {
+  grid-column: 3 / 5;
+}**
+```
+
+Another approach is to set the starting column/row, and set how many it should occupy using `span`:
+
+```css
+div {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 300px 300px;
+}
+
+.item2 {
+  **grid-column: 2 / span 2;**
+}
+
+.item6 {
+  **grid-column: 3 / span 2;**
+}
+```
+
+## Fractions and percentages
+
+Specifying the exact width of each column or row in pixels is not always ideal.
+
+You can use **fractions**. A fraction is a unit of space.
+
+The following example divides a grid into 3 columns with the same width, 1/3 of the available space each.
+
+```css
+div {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+```
+
+You can also use percentages, and mix and match fractions, pixels, rem, and percentages:
+
+```css
+div {
+  grid-template-columns: 3rem 15% 1fr 2fr
+}
+```
+

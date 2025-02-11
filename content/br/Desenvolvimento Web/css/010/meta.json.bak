@@ -1,0 +1,100 @@
+{
+  "id": "010",
+  "tutorial_id": "010",
+  "course_id": "2",
+  "title": "Prática: Estilizando Post de Blog",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "html",
+        "head",
+        "link",
+        "body",
+        "nav",
+        "ol",
+        "li",
+        "a",
+        "main",
+        "h1",
+        "h2",
+        "div",
+        "p",
+        "footer"
+      ],
+      "requiredAttributes": {
+        "link": [
+          "href",
+          "rel"
+        ]
+      },
+      "requiredNesting": [
+        "nav > ol",
+        "ol > li",
+        "li > a",
+        "main > h1",
+        "main > h2",
+        "main > div"
+      ],
+      "forbiddenTags": [
+        "ul"
+      ],
+      "minTags": {
+        "h1": 1,
+        "nav": 1,
+        "footer": 1
+      },
+      "maxTags": {
+        "h1": 1
+      }
+    },
+    "css": {
+      "requiredSelectors": [
+        "body",
+        "nav ol",
+        "nav li",
+        "nav a",
+        "nav li:not(:last-child)::after",
+        "main",
+        "h1",
+        "h2",
+        "footer"
+      ],
+      "requiredProperties": [
+        "font-family",
+        "list-style",
+        "padding-left",
+        "display",
+        "margin-right",
+        "text-decoration",
+        "color",
+        "content",
+        "margin-left",
+        "max-width",
+        "margin",
+        "padding",
+        "line-height",
+        "font-size",
+        "text-align",
+        "border-top"
+      ],
+      "requiredValues": {
+        "body": {
+          "font-family": "system-ui"
+        },
+        "nav ol": {
+          "list-style": "none",
+          "padding-left": "0"
+        },
+        "nav li": {
+          "display": "inline-block"
+        },
+        "nav a": {
+          "text-decoration": "none"
+        }
+      }
+    }
+  }
+}

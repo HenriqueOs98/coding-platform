@@ -1,0 +1,100 @@
+# PRACTICE: A simple page structure to test headers and common tags
+
+Let's start from a basic HTML page
+
+HTML pages always start with an `<html>` tag, and are closed by a `</html>` tag, also called *closing tag*.
+
+Inside those 2 tags we write all the HTML, they are containers:
+
+```html
+<html></html>
+```
+
+Inside them we can only put 2 child tags: the `head` tag, and the `body` tag.
+
+```html
+<html>
+  <head> </head>
+  <body></body>
+</html>
+
+```
+
+Those are the 2 main parts of a page. `head` defines the invisible parts like meta tags, or instructs the browser to load CSS and JS, `body` contains the visible parts of the page.
+
+You can omit the head tag:
+
+```html
+<html>
+  <body></body>
+</html>
+
+```
+
+Let's take a look at the 6 heading tags:
+
+```html
+<html>
+  <body>
+    <h1>h1 tag</h1>
+    <h2>h2 tag</h2>
+    <h3>h3 tag</h3>
+    <h4>h4 tag</h4>
+    <h5>h5 tag</h5>
+    <h6>h6 tag</h6>
+  </body>
+</html>
+
+```
+
+Here's how the browser renders them (this is [Codepen](Codepen%201902767ad7e38189afa6cf0b6e71c501.md)):
+
+![Screenshot 2020-04-14 at 13.41.21.png](PRACTICE%20A%20simple%20page%20structure%20to%20test%20headers%20a%201902767ad7e381ac9547daf241848c94/Screenshot_2020-04-14_at_13.41.21.png)
+
+The smaller the number, the more important the header tag is.
+
+Typically `h1` is the page title, then you have several `h2` tags for each section of the page, and so on.
+
+Add a paragraph now:
+
+```html
+<html>
+  <body>
+    <h1>h1 tag</h1>
+    <h2>h2 tag</h2>
+    <h3>h3 tag</h3>
+    <h4>h4 tag</h4>
+    <h5>h5 tag</h5>
+    <h6>h6 tag</h6>
+
+    <p>A paragraph</p>
+  </body>
+</html>
+
+```
+
+![Screenshot 2020-04-14 at 13.54.53.png](PRACTICE%20A%20simple%20page%20structure%20to%20test%20headers%20a%201902767ad7e381ac9547daf241848c94/Screenshot_2020-04-14_at_13.54.53.png)
+
+There's no `h7` tag. If you add it, you'll see the browser does not recognize it, and will fall back to a default styling:
+
+```html
+<html>
+  <body>
+    <h1>h1 tag</h1>
+    <h2>h2 tag</h2>
+    <h3>h3 tag</h3>
+    <h4>h4 tag</h4>
+    <h5>h5 tag</h5>
+    <h6>h6 tag</h6>
+    <h7>h7 tag</h7>
+
+    <p>A paragraph</p>
+  </body>
+</html>
+
+```
+
+![Screenshot 2020-04-14 at 13.55.29.png](PRACTICE%20A%20simple%20page%20structure%20to%20test%20headers%20a%201902767ad7e381ac9547daf241848c94/Screenshot_2020-04-14_at_13.55.29.png)
+
+In the next lesson I'll introduce semantic tags, page heading and how to give your page structure a meaning.
+

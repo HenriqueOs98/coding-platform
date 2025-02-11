@@ -1,0 +1,40 @@
+{
+  "id": "2",
+  "group": "web-fundamentals",
+  "title": "A Web",
+  "description": "Aprenda sobre a Web",
+  "difficulty": "beginner",
+  "order": 2,
+  "tutorials": [
+    {
+      "id": "001",
+      "slug": "001",
+      "title": "O Protocolo HTTP",
+      "order": 1
+    },
+    {
+      "id": "002",
+      "slug": "002",
+      "title": "Hiperlinks",
+      "order": 2
+    },
+    {
+      "id": "003",
+      "slug": "003",
+      "title": "O que é um Servidor Web",
+      "order": 3
+    },
+    {
+      "id": "004",
+      "slug": "004",
+      "title": "O que é um Navegador Web",
+      "order": 4
+    },
+    {
+      "id": "005",
+      "slug": "005",
+      "title": "Sites e Aplicações Web",
+      "order": 5
+    }
+  ]
+}

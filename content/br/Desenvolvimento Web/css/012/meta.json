@@ -1,0 +1,84 @@
+{
+  "id": "012",
+  "tutorial_id": "012",
+  "course_id": "2",
+  "title": "Prática: Estilizando Tabelas",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "html",
+        "body",
+        "h2",
+        "table",
+        "tr",
+        "th",
+        "td"
+      ],
+      "requiredAttributes": {},
+      "requiredNesting": [
+        [
+          "html",
+          "body"
+        ],
+        [
+          "body",
+          "h2"
+        ],
+        [
+          "body",
+          "table"
+        ],
+        [
+          "table",
+          "tr"
+        ],
+        [
+          "tr",
+          "th"
+        ],
+        [
+          "tr",
+          "td"
+        ]
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "tr": 2,
+        "th": 2,
+        "td": 2
+      },
+      "maxTags": {}
+    },
+    "css": {
+      "requiredSelectors": [
+        "table",
+        "td",
+        "th"
+      ],
+      "requiredProperties": [
+        "border",
+        "border-collapse",
+        "padding",
+        "text-align"
+      ],
+      "requiredValues": {
+        "border": [
+          "1px solid #ccc"
+        ],
+        "border-collapse": [
+          "collapse"
+        ],
+        "padding": [
+          "12px 24px"
+        ],
+        "text-align": [
+          "left"
+        ]
+      },
+      "forbiddenProperties": []
+    }
+  }
+}

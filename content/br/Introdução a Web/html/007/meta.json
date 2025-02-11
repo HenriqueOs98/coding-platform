@@ -1,0 +1,64 @@
+{
+  "id": "007",
+  "tutorial_id": "007",
+  "course_id": "3",
+  "title": "tags-container",
+  "description": "",
+  "order_index": 7,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "div",
+        "section",
+        "article",
+        "header",
+        "footer",
+        "nav"
+      ],
+      "requiredAttributes": {
+        "img": [
+          "src",
+          "alt"
+        ]
+      },
+      "requiredNesting": [
+        [
+          "section",
+          [
+            "header",
+            "article",
+            "footer"
+          ]
+        ],
+        [
+          "header",
+          [
+            "h1"
+          ]
+        ],
+        [
+          "article",
+          [
+            "h2",
+            "p"
+          ]
+        ],
+        [
+          "footer",
+          [
+            "p"
+          ]
+        ]
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "section": 1,
+        "header": 1,
+        "article": 1,
+        "footer": 1
+      },
+      "maxTags": {}
+    }
+  }
+}

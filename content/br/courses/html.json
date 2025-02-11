@@ -1,0 +1,64 @@
+{
+  "id": "3",
+  "group": "web-fundamentals",
+  "title": "HTML",
+  "description": "Aprenda HTML, a linguagem fundamental da Web",
+  "difficulty": "beginner",
+  "order": 3,
+  "tutorials": [
+    {
+      "id": "001",
+      "slug": "001",
+      "title": "sua-primeira-pagina-html",
+      "order": 1
+    },
+    {
+      "id": "002",
+      "slug": "002",
+      "title": "tags-de-texto",
+      "order": 2
+    },
+    {
+      "id": "003",
+      "slug": "003",
+      "title": "atributos",
+      "order": 3
+    },
+    {
+      "id": "004",
+      "slug": "004",
+      "title": "links",
+      "order": 4
+    },
+    {
+      "id": "005",
+      "slug": "005",
+      "title": "imagens",
+      "order": 5
+    },
+    {
+      "id": "006",
+      "slug": "006",
+      "title": "tags-de-cabecalho",
+      "order": 6
+    },
+    {
+      "id": "007",
+      "slug": "007",
+      "title": "tags-container",
+      "order": 7
+    },
+    {
+      "id": "008",
+      "slug": "008",
+      "title": "tabelas",
+      "order": 8
+    },
+    {
+      "id": "009",
+      "slug": "009",
+      "title": "nota-sobre-formularios",
+      "order": 9
+    }
+  ]
+}

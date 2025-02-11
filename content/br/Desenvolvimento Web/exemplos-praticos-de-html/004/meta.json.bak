@@ -1,0 +1,32 @@
+{
+  "id": "004",
+  "tutorial_id": "004",
+  "course_id": "1",
+  "title": "Prática: Imagens",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "img"
+      ],
+      "requiredAttributes": {
+        "img": [
+          "src",
+          "alt"
+        ]
+      },
+      "requiredNesting": [
+        "body img"
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "img": 1
+      },
+      "maxTags": 0
+    },
+    "css": {},
+    "javascript": {}
+  }
+}

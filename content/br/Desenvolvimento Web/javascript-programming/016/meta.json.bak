@@ -1,0 +1,89 @@
+{
+  "id": "016",
+  "tutorial_id": "016",
+  "course_id": "web-development-basics",
+  "title": "Manipulação do DOM",
+  "description": "",
+  "order_index": 1,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "form",
+        "input",
+        "button",
+        "ul",
+        "li",
+        "div",
+        "p"
+      ],
+      "requiredAttributes": {
+        "form": [
+          "class=\"todo-form\""
+        ],
+        "ul": [
+          "class=\"todo-list\""
+        ],
+        "button": [
+          "class=\"delete\""
+        ]
+      },
+      "requiredNesting": [],
+      "forbiddenTags": [
+        "onclick",
+        "onmouseover",
+        "onsubmit"
+      ],
+      "minTags": 0,
+      "maxTags": 0
+    },
+    "javascript": {
+      "requiredFunctions": [
+        "document.querySelector",
+        "document.getElementById",
+        "document.querySelectorAll",
+        "addEventListener",
+        "classList.add",
+        "classList.remove",
+        "classList.toggle",
+        "classList.contains",
+        "setAttribute",
+        "createElement",
+        "preventDefault",
+        "appendChild",
+        "remove"
+      ],
+      "requiredVariables": [
+        "elemento",
+        "elementos",
+        "botao",
+        "todoList"
+      ],
+      "requiredKeywords": [
+        "const",
+        "if"
+      ],
+      "forbiddenKeywords": [
+        "onclick",
+        "onmouseover",
+        "onsubmit"
+      ],
+      "expectedConsoleOutput": [
+        "'Botão foi clicado!'",
+        "'Elemento está ativo'"
+      ],
+      "expectedVariableValues": {
+        "elemento.style.display": "'flex'",
+        "elemento.id": "'novo-id'"
+      }
+    }
+  },
+  "is_active": true,
+  "translations": {
+    "pt": {
+      "title": "Manipulação do DOM"
+    },
+    "en": {
+      "title": "DOM Manipulação do"
+    }
+  }
+}

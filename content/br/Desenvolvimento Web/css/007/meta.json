@@ -1,0 +1,89 @@
+{
+  "id": "007",
+  "tutorial_id": "007",
+  "course_id": "2",
+  "title": "Seletores Avançados",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "css": {
+      "requiredSelectors": [
+        "p[id]",
+        "p[id*='demo']",
+        "a[href^='https']",
+        "img[src$='.png']",
+        "[class*='btn' i]",
+        ":hover",
+        ":focus",
+        ":nth-child(2)",
+        ":disabled",
+        ":checked",
+        "a:link",
+        "a:visited",
+        "a:hover",
+        "tr:nth-child(odd)",
+        "li:nth-child(-n+3)",
+        "p::first-letter",
+        "a.externo::before",
+        ".balao::after",
+        ".botao-destaque:hover::after"
+      ],
+      "requiredProperties": [
+        "content",
+        "color",
+        "text-decoration",
+        "background",
+        "font-weight",
+        "font-size",
+        "margin-right",
+        "position",
+        "width",
+        "height",
+        "animation"
+      ],
+      "requiredValues": {
+        "content": [
+          "url([DOCS]/icone-link.png)",
+          "",
+          "none"
+        ],
+        "color": [
+          "azul",
+          "roxo",
+          "vermelho",
+          "dourado"
+        ],
+        "text-decoration": [
+          "underline"
+        ],
+        "background": [
+          "#f8f8f8",
+          "dourado"
+        ],
+        "font-weight": [
+          "bold"
+        ],
+        "font-size": [
+          "2.5em"
+        ],
+        "margin-right": [
+          "5px"
+        ],
+        "position": [
+          "absolute"
+        ],
+        "width": [
+          "100%"
+        ],
+        "height": [
+          "2px"
+        ],
+        "animation": [
+          "brilho 0.3s"
+        ]
+      },
+      "forbiddenProperties": []
+    }
+  }
+}

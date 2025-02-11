@@ -1,0 +1,44 @@
+{
+  "id": "001",
+  "tutorial_id": "001",
+  "course_id": "1",
+  "title": "Prática: Estrutura de Página Simples para Testar Cabeçalhos e Tags Comuns",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "html",
+        "body"
+      ],
+      "requiredNesting": [
+        {
+          "parent": "html",
+          "child": "body"
+        },
+        {
+          "parent": "body",
+          "child": [
+            "h1",
+            "h2",
+            "h3",
+            "h4",
+            "h5",
+            "h6",
+            "p"
+          ]
+        }
+      ],
+      "forbiddenTags": [
+        "h7"
+      ],
+      "minTags": {
+        "h1": 1
+      },
+      "maxTags": {
+        "h1": 1
+      }
+    }
+  }
+}

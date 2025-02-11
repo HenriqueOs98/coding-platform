@@ -1,0 +1,131 @@
+# PRACTICE: Tables
+
+Let's make a table with two dogs:
+
+```html
+<html>
+  <body>
+    <h2>Tables</h2>
+    <table>
+      <tr>
+        <th>Dog</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Roger</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>Syd</td>
+        <td>7</td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+```
+
+By default the browser will display it nicely formatted:
+
+![Screen Shot 2020-04-14 at 17.23.06.png](PRACTICE%20Tables%201902767ad7e3816b8c5fed14d7e5d0f2/Screen_Shot_2020-04-14_at_17.23.06.png)
+
+Tables can contain more than text. Images, for example:
+
+```html
+<html>
+  <body>
+    <h2>Tables</h2>
+    <table>
+      <tr>
+        <th>Dog</th>
+        <th>Age</th>
+        <th>Picture</th>
+      </tr>
+      <tr>
+        <td>Roger</td>
+        <td>8</td>
+        <td>
+          <img
+            src="<https://images.unsplash.com/photo-1561037404-61cd46aa615b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60>"
+            width="200"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>Syd</td>
+        <td>7</td>
+        <td>
+          <img
+            src="<https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60>"
+            width="200"
+          />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+```
+
+![Screen Shot 2020-04-14 at 17.24.55.png](PRACTICE%20Tables%201902767ad7e3816b8c5fed14d7e5d0f2/Screen_Shot_2020-04-14_at_17.24.55.png)
+
+We can also nest tables inside tables:
+
+```html
+<html>
+  <body>
+    <h2>Tables</h2>
+    <table>
+      <tr>
+        <th>Dog</th>
+        <th>Age</th>
+        <th>Weight</th>
+      </tr>
+      <tr>
+        <td>Roger</td>
+        <td>8</td>
+        <td>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Weight</th>
+            </tr>
+            <tr>
+              <td>Dec 2018</td>
+              <td>18kg</td>
+            </tr>
+            <tr>
+              <td>Apr 2020</td>
+              <td>20kg</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>Syd</td>
+        <td>7</td>
+        <td>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Weight</th>
+            </tr>
+            <tr>
+              <td>Dec 2018</td>
+              <td>18kg</td>
+            </tr>
+            <tr>
+              <td>Apr 2020</td>
+              <td>20kg</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+```
+
+![Screen Shot 2020-04-14 at 17.26.35.png](PRACTICE%20Tables%201902767ad7e3816b8c5fed14d7e5d0f2/Screen_Shot_2020-04-14_at_17.26.35.png)
+

@@ -1,0 +1,40 @@
+{
+  "id": "1",
+  "group": "development-tools",
+  "title": "Linha de Comando",
+  "description": "Aprenda a usar a linha de comando",
+  "difficulty": "beginner",
+  "order": 1,
+  "tutorials": [
+    {
+      "id": "001",
+      "slug": "001",
+      "title": "Introdução à Linha de Comando",
+      "order": 1
+    },
+    {
+      "id": "002",
+      "slug": "002",
+      "title": "O Shell Bash",
+      "order": 2
+    },
+    {
+      "id": "003",
+      "slug": "003",
+      "title": "Navegando no Sistema de Arquivos",
+      "order": 3
+    },
+    {
+      "id": "004",
+      "slug": "004",
+      "title": "Executando Comandos Shell",
+      "order": 4
+    },
+    {
+      "id": "005",
+      "slug": "005",
+      "title": "Comandos Comuns do Shell",
+      "order": 5
+    }
+  ]
+}

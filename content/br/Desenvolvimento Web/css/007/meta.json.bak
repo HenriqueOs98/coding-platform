@@ -1,0 +1,61 @@
+{
+  "id": "007",
+  "tutorial_id": "007",
+  "course_id": "2",
+  "title": "Seletores Avançados",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "css": {
+      "requiredSelectors": [
+        "[id]",
+        "[id*=\"demo\"]",
+        "a[href^=\"https\"]",
+        "img[src$=\".png\"]",
+        "[class*=\"btn\" i]",
+        ":hover",
+        ":focus",
+        ":nth-child(2)",
+        ":disabled",
+        ":checked",
+        "a:link",
+        "a:visited",
+        "tr:nth-child(odd)",
+        "li:nth-child(-n+3)",
+        "::before",
+        "::after",
+        "::first-letter",
+        "::selection"
+      ],
+      "requiredProperties": [
+        "content",
+        "background",
+        "font-size",
+        "color",
+        "text-decoration",
+        "position",
+        "width",
+        "height",
+        "animation",
+        "margin-right"
+      ],
+      "requiredValues": {
+        "attribute": [
+          "*=",
+          "^=",
+          "$=",
+          "i"
+        ],
+        "content": [
+          "\"\"",
+          "url()"
+        ],
+        "position": [
+          "absolute"
+        ]
+      },
+      "forbiddenProperties": []
+    }
+  }
+}

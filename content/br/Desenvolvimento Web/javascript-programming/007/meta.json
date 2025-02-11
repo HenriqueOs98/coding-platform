@@ -1,0 +1,46 @@
+{
+  "id": "007",
+  "tutorial_id": "007",
+  "course_id": "javascript-programming",
+  "title": "Escopo de Variáveis",
+  "description": "",
+  "order_index": 7,
+  "validation": {
+    "javascript": {
+      "requiredFunctions": [
+        "exemploEscopo",
+        "exemplo",
+        "funcaoExterna",
+        "funcaoInterna",
+        "teste"
+      ],
+      "requiredVariables": [
+        "mensagem",
+        "globalVar",
+        "localVar",
+        "contador",
+        "valorGlobal",
+        "valorExterno",
+        "valorInterno",
+        "a",
+        "b",
+        "c"
+      ],
+      "forbiddenStatements": [
+        "console.log(mensagem) outside of exemploEscopo function",
+        "console.log(localVar) outside of exemplo function",
+        "console.log(c) outside of if block",
+        "console.log(b) outside of teste function"
+      ]
+    }
+  },
+  "is_active": true,
+  "translations": {
+    "pt": {
+      "title": "Escopo de Variáveis"
+    },
+    "en": {
+      "title": "Escopo de Variáveis"
+    }
+  }
+}

@@ -1,0 +1,121 @@
+# PRACTICE: Styling a blog post
+
+In the HTML Exercises module we created a blog post markup:
+
+```html
+<html>
+  <body>
+    <nav>
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ol>
+    </nav>
+    <main>
+      <h1>My nice blog post</h1>
+      <h2>A subtitle</h2>
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate sollicitudin congue. Nunc malesuada fringilla sem eu efficitur. Suspendisse potenti. Suspendisse mauris dolor, aliquam ut volutpat sed, ultrices sit amet mauris. Donec rutrum ligula at nibh interdum, vel hendrerit nisi dignissim. Cras tincidunt rhoncus scelerisque. Vestibulum quis urna ac mauris laoreet volutpat vitae sit amet nisi. Pellentesque ac odio vel ex iaculis dapibus in vitae tortor. Pellentesque nec vulputate nulla, quis efficitur urna. Donec eu mollis urna. Praesent tellus velit, rutrum non iaculis ut, tristique eget lacus. Vivamus eget ipsum sem.
+        </p>
+        <p>Fusce et libero vel nibh hendrerit aliquam et pellentesque magna. Proin condimentum tempus convallis. Sed accumsan dolor vel pharetra sagittis. Suspendisse bibendum est hendrerit orci porttitor mattis. Maecenas volutpat ac lacus ut condimentum. Donec convallis nibh vel neque venenatis, nec suscipit enim iaculis. Fusce porttitor finibus aliquam. Mauris arcu dolor, rutrum quis nibh at, malesuada luctus ipsum. Ut commodo cursus nibh auctor volutpat. Vestibulum condimentum sodales libero, sit amet porta tellus mollis ac. Sed ultricies porttitor lorem nec commodo.</p>
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2020 Flavio</p>
+    </footer>
+  </body>
+</html>
+
+```
+
+![Screen Shot 2020-04-16 at 10.31.15.png](PRACTICE%20Styling%20a%20blog%20post%201902767ad7e381759407ea1fdaaa6dab/Screen_Shot_2020-04-16_at_10.31.15.png)
+
+Let's make it look nicer with CSS!
+
+First we can load the fonts from Google Fonts, adding to the `head`
+
+```html
+<link
+  href="<https://fonts.googleapis.com/css?family=Heebo:400,500,700|IBM+Plex+Sans:600,600i>"
+  rel="stylesheet"
+/>
+
+```
+
+and we apply them:
+
+```css
+body {
+  font-family: system-ui;
+}
+
+h1,
+h2 {
+  font-family: IBM Plex Sans;
+}
+
+```
+
+![Screen Shot 2020-04-16 at 10.33.54.png](PRACTICE%20Styling%20a%20blog%20post%201902767ad7e381759407ea1fdaaa6dab/Screen_Shot_2020-04-16_at_10.33.54.png)
+
+Then we can style the nav bar.
+
+![Screen Shot 2020-04-16 at 10.54.18.png](PRACTICE%20Styling%20a%20blog%20post%201902767ad7e381759407ea1fdaaa6dab/Screen_Shot_2020-04-16_at_10.54.18.png)
+
+First, we can remove the numbers, which we don't need:
+
+```css
+nav ol {
+  list-style-type: none;
+}
+
+```
+
+![Screen Shot 2020-04-16 at 10.54.41.png](PRACTICE%20Styling%20a%20blog%20post%201902767ad7e381759407ea1fdaaa6dab/Screen_Shot_2020-04-16_at_10.54.41.png)
+
+Remove the padding on the left of the `ol` element:
+
+```css
+nav ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+```
+
+![Screen Shot 2020-04-16 at 10.55.24.png](PRACTICE%20Styling%20a%20blog%20post%201902767ad7e381759407ea1fdaaa6dab/Screen_Shot_2020-04-16_at_10.55.24.png)
+
+Next, we can make the items display inline, instead than being placed on their own block:
+
+```css
+nav li {
+  display: inline;
+}
+
+```
+
+![Screen Shot 2020-04-16 at 11.01.46.png](PRACTICE%20Styling%20a%20blog%20post%201902767ad7e381759407ea1fdaaa6dab/Screen_Shot_2020-04-16_at_11.01.46.png)
+
+and we can add a vertical line `|` to separate them:
+
+```css
+nav li::after {
+  content: " | ";
+}
+
+```
+
+![Screen Shot 2020-04-16 at 11.01.41.png](PRACTICE%20Styling%20a%20blog%20post%201902767ad7e381759407ea1fdaaa6dab/Screen_Shot_2020-04-16_at_11.01.41.png)
+
+Finally, I remove that on the last item of the list:
+
+```css
+nav li:last-child::after {
+  content: "";
+}
+
+```
+
+![Screen Shot 2020-04-16 at 11.01.54.png](PRACTICE%20Styling%20a%20blog%20post%201902767ad7e381759407ea1fdaaa6dab/Screen_Shot_2020-04-16_at_11.01.54.png)
+

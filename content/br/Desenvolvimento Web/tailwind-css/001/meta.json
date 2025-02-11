@@ -1,0 +1,33 @@
+{
+  "id": "001",
+  "tutorial_id": "001",
+  "course_id": "3",
+  "title": "introducing-tailwind-css",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "p"
+      ],
+      "requiredAttributes": {
+        "p": [
+          "class"
+        ]
+      },
+      "requiredNesting": [],
+      "forbiddenTags": [],
+      "minTags": {
+        "p": 1
+      },
+      "maxTags": {}
+    },
+    "css": {
+      "requiredSelectors": [],
+      "requiredProperties": [],
+      "requiredValues": {},
+      "forbiddenProperties": []
+    }
+  }
+}

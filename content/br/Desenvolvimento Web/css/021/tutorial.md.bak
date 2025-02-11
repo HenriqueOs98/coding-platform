@@ -1,0 +1,120 @@
+# Flexbox
+
+Flexbox is one of the two modern layouts systems, along with CSS Grid.
+
+Flexbox is a **one-dimensional layout model**.
+
+It will control the layout based on a row or on a column, but not rows/columns together at the same time as Grid does.
+
+The main goal of flexbox is to allow items to fill all the space made available by their container, depending on some rules you set.
+
+In this lesson I want to give you an overview of Flexbox, ignoring some of the less used or less important features, but focusing on the core of it.
+
+A flexbox layout is applied to a container by setting the property `display` to `flex`:
+
+```css
+.container {
+  display: flex;
+}
+```
+
+Once you add this to an element, the content **inside the element** will be aligned using flexbox.
+
+Once you do so, you can use other flexbox properties to set the layout.
+
+Some of those properties apply to the **container.**
+
+Some other properties apply to each individual item **inside the container**.
+
+| Apply to **container** | Apply to **items inside the container** |
+| --- | --- |
+| • `flex-direction`
+• `justify-content`
+• `align-items`
+• `align-content`
+• `flex-wrap`
+• `flex-flow` | • `order`
+• `align-self`
+• `flex-grow`
+• `flex-shrink`
+• `flex-basis`
+• `flex` |
+
+The first property we see, **`flex-direction`**, determines if the container should align its items as **rows**, or as **columns**:
+
+- `flex-direction: row` places items as a **row**, in the text direction (left-to-right for western countries)
+- `flex-direction: row-reverse` places items just like `row` but in the opposite direction
+- `flex-direction: column` places items in a **column**, ordering top to bottom
+- `flex-direction: column-reverse` places items in a column, just like `column` but in the opposite direction
+    
+    ![1.png](Flexbox%201902767ad7e381c08651c3cfb6654f4d/1.png)
+    
+
+By default, items start from the left if `flex-direction` is “row”, and from the top, if `flex-direction` is “column”.
+
+![2.png](Flexbox%201902767ad7e381c08651c3cfb6654f4d/2.png)
+
+You can change this behavior using `justify-content` to change the horizontal alignment.
+
+**`justify-content`** has 5 possible values:
+
+- `start` or `left` align to the left side of the container.
+- `flex-end`, `end`, or `right`: align to the right side of the container.
+- `center`: align at the center of the container.
+- `space-between`: display with equal spacing between them.
+- `space-around`: display with equal spacing around them
+    
+    ![3.png](Flexbox%201902767ad7e381c08651c3cfb6654f4d/3.png)
+    
+
+**`align-content`** has 6 possible values:
+
+- `flex-start`: align to the top of the container.
+- `flex-end`: align to the bottom of the container.
+- `center`: align at the vertical center of the container.
+- `space-between`: display with equal spacing between items.
+- `space-around`: display with equal spacing around items.
+- `stretch`: items are stretched to fit the container.
+
+**`align-items`** lets us align the elements on the cross-axis instead than on the main axis and has 5 possible values:
+
+- `flex-start`: align to the top of the container.
+- `flex-end`: align to the bottom of the container.
+- `center`: align at the vertical center of the container.
+- `baseline`: display at the baseline of the container.
+- `stretch`: items are stretched to fit the container.
+    
+    ![4.png](Flexbox%201902767ad7e381c08651c3cfb6654f4d/4.png)
+    
+
+By default items in a flexbox container are kept on a single line, shrinking them to fit in the container.
+
+To force the items to spread across multiple lines, use `flex-wrap: wrap`.
+
+When this happens we can use **`align-content`** to change the vertical alignment when it spans over multiple lines, similar to how `justify-content` can change the horizontal alignment.
+
+`flex-wrap: wrap` will distribute the items according to the order set in `flex-direction`. 
+
+You can use `flex-wrap: wrap-reverse` to reverse this order.
+
+Items are ordered based on the order they are assigned. By default, every item has order `0` and the appearance in the HTML determines the final order.
+
+You can override this property using the `order` property on each separate item. This is a property you set on the item, not the container. You can make an item appear before all the others by setting a negative value.
+
+![5.png](Flexbox%201902767ad7e381c08651c3cfb6654f4d/5.png)
+
+An item can choose to **override** the container `align-items` setting, using **`align-self`**, which has the same 5 possible values of `align-items`:
+
+- `flex-start`: align to the top of the container.
+- `flex-end`: align to the bottom of the container.
+- `center`: align at the vertical center of the container.
+- `baseline`: display at the baseline of the container.
+- `stretch`: items are stretched to fit the container.
+    
+    ![6.png](Flexbox%201902767ad7e381c08651c3cfb6654f4d/6.png)
+    
+
+`flex-grow` allows an element to decide to be bigger than the others. The default value of this property is 0. If all items are defined as 1 and one is defined as 2, the bigger element will take the space of two "1" items. 
+
+The opposite of `flex-grow` is `flex-shrink`. The default value of this property is 1. If all items are defined as 1 and one is defined as 3, the bigger element will shrink 3x the other ones. When less space is available, it will take 3x less space.
+

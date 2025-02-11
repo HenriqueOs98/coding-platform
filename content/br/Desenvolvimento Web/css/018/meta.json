@@ -1,0 +1,114 @@
+{
+  "id": "018",
+  "tutorial_id": "018",
+  "course_id": "2",
+  "title": "Prática: Criar um Design Simples Usando CSS",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "div",
+        "h1",
+        "p",
+        "ul",
+        "li",
+        "button"
+      ],
+      "requiredAttributes": {},
+      "requiredNesting": [
+        [
+          "div",
+          "h1"
+        ],
+        [
+          "div",
+          "p"
+        ],
+        [
+          "div",
+          "ul"
+        ],
+        [
+          "ul",
+          "li"
+        ],
+        [
+          "div",
+          "button"
+        ]
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "li": 3
+      },
+      "maxTags": {}
+    },
+    "css": {
+      "requiredSelectors": [
+        "body",
+        "h1",
+        "button",
+        "button:hover",
+        "ul",
+        "li"
+      ],
+      "requiredProperties": [
+        "background-color",
+        "font-family",
+        "text-align",
+        "padding",
+        "color",
+        "font-size",
+        "border-radius",
+        "font-weight",
+        "transition",
+        "transform",
+        "list-style",
+        "display",
+        "justify-content",
+        "gap"
+      ],
+      "requiredValues": {
+        "body": {
+          "background-color": "#f0f2f5",
+          "font-family": "system-ui",
+          "text-align": "center"
+        },
+        "h1": {
+          "padding": "2rem 0",
+          "color": "#1a365d",
+          "font-size": "2.5rem"
+        },
+        "button": {
+          "background-color": "#2b6cb0",
+          "color": "white",
+          "padding": "12px 24px",
+          "border-radius": "6px",
+          "font-weight": "600",
+          "transition": "all 0.3s"
+        },
+        "button:hover": {
+          "background-color": "#1e4e8c",
+          "transform": "scale(1.05)"
+        },
+        "ul": {
+          "list-style": "none",
+          "padding": "1.5rem 0",
+          "display": "flex",
+          "justify-content": "center",
+          "gap": "2rem"
+        },
+        "li": {
+          "color": "#4a5568",
+          "font-weight": "500",
+          "padding": "8px 16px",
+          "background": "#e2e8f0",
+          "border-radius": "4px"
+        }
+      },
+      "forbiddenProperties": []
+    }
+  }
+}

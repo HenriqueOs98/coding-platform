@@ -1,0 +1,59 @@
+{
+  "id": "013",
+  "tutorial_id": "013",
+  "course_id": "api-and-networking",
+  "title": "AJAX Requisições",
+  "description": "",
+  "order_index": 2,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "button",
+        "div"
+      ],
+      "requiredAttributes": {
+        "button": [
+          "id"
+        ],
+        "div": [
+          "id"
+        ]
+      },
+      "requiredNesting": [
+        [
+          "button",
+          "div"
+        ]
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "button": 1,
+        "div": 1
+      },
+      "maxTags": {}
+    },
+    "javascript": {
+      "requiredFunctions": [
+        "fetch",
+        "JSON.parse"
+      ],
+      "requiredEventListeners": [
+        "click"
+      ],
+      "requiredVariables": [
+        "CAT_URL",
+        "gatos"
+      ],
+      "forbiddenStatements": []
+    }
+  },
+  "is_active": true,
+  "translations": {
+    "pt": {
+      "title": "AJAX Requisições"
+    },
+    "en": {
+      "title": "AJAX Requisições"
+    }
+  }
+}

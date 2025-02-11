@@ -1,0 +1,38 @@
+# HTTP methods
+
+HTTP is based on methods.
+
+Each method used performs a very different action.
+
+The most popular are `GET` and `POST`.
+
+### `GET`
+
+GET is the most used method. It's the one that's used when you type an URL in the browser address bar, or when you click a link.
+
+It asks the server to send the requested resource as a response.
+
+### `HEAD`
+
+HEAD is just like GET, but tells the server to not send the response body back. Just the headers.
+
+### `POST`
+
+The client uses the POST method to send data to the server. It's typically used in forms, for example, but also when interacting with a REST API.
+
+### `PUT`
+
+The PUT method is intended to create a resource at that specific URL, with the parameters passed in the request body. Mainly used in REST APIs
+
+### `DELETE`
+
+The DELETE method is called against an URL to request deletion of that resource. Mainly used in REST APIs
+
+### `OPTIONS`
+
+When a server receives an OPTIONS request it should send back the list of HTTP methods allowed for that specific URL.
+
+### `TRACE`
+
+Returns back to the client the request that has been received. Used for debugging or diagnostic purposes.
+

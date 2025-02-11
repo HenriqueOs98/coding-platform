@@ -1,0 +1,67 @@
+{
+  "id": "001",
+  "tutorial_id": "001",
+  "course_id": "javascript-programming",
+  "title": "Começando com JavaScript",
+  "description": "",
+  "order_index": 1,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "html",
+        "head",
+        "title",
+        "body",
+        "h1",
+        "script"
+      ],
+      "requiredAttributes": {
+        "html": [
+          "lang"
+        ],
+        "script": [
+          "src"
+        ]
+      },
+      "requiredNesting": [
+        [
+          "html",
+          "head"
+        ],
+        [
+          "html",
+          "body"
+        ],
+        [
+          "head",
+          "title"
+        ],
+        [
+          "body",
+          "h1"
+        ],
+        [
+          "body",
+          "script"
+        ]
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "script": 1
+      },
+      "maxTags": {}
+    },
+    "javascript": {
+      "requiredFunctions": [
+        "console.log"
+      ],
+      "requiredVariables": [
+        "precoPaoFrances",
+        "quantidadePaesPorFornada",
+        "vendasDiarias"
+      ],
+      "forbiddenStatements": []
+    }
+  },
+  "is_active": true
+}

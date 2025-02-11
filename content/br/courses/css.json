@@ -1,0 +1,154 @@
+{
+  "id": "2",
+  "group": "web-development",
+  "title": "CSS",
+  "description": "Aprenda CSS para estilizar páginas web",
+  "difficulty": "beginner",
+  "order": 2,
+  "tutorials": [
+    {
+      "id": "001",
+      "slug": "001",
+      "title": "Fundamentos do CSS",
+      "order": 1
+    },
+    {
+      "id": "002",
+      "slug": "002",
+      "title": "Ferramentas de Desenvolvedor para CSS",
+      "order": 2
+    },
+    {
+      "id": "003",
+      "slug": "003",
+      "title": "Cores",
+      "order": 3
+    },
+    {
+      "id": "004",
+      "slug": "004",
+      "title": "Mais Seletores",
+      "order": 4
+    },
+    {
+      "id": "005",
+      "slug": "005",
+      "title": "Cascata",
+      "order": 5
+    },
+    {
+      "id": "006",
+      "slug": "006",
+      "title": "Unidades",
+      "order": 6
+    },
+    {
+      "id": "007",
+      "slug": "007",
+      "title": "Seletores Avançados",
+      "order": 7
+    },
+    {
+      "id": "008",
+      "slug": "008",
+      "title": "Tipografia",
+      "order": 8
+    },
+    {
+      "id": "009",
+      "slug": "009",
+      "title": "Prática: Estilizando Estrutura de Página Simples",
+      "order": 9
+    },
+    {
+      "id": "010",
+      "slug": "010",
+      "title": "Prática: Estilizando Post de Blog",
+      "order": 10
+    },
+    {
+      "id": "011",
+      "slug": "011",
+      "title": "Prática: Estilizando Texto",
+      "order": 11
+    },
+    {
+      "id": "012",
+      "slug": "012",
+      "title": "Prática: Estilizando Tabelas",
+      "order": 12
+    },
+    {
+      "id": "013",
+      "slug": "013",
+      "title": "Prática: Estilizando Links",
+      "order": 13
+    },
+    {
+      "id": "014",
+      "slug": "014",
+      "title": "Prática: Como Desenhar Interfaces",
+      "order": 14
+    },
+    {
+      "id": "015",
+      "slug": "015",
+      "title": "CSS: Modelo de Caixa",
+      "order": 15
+    },
+    {
+      "id": "016",
+      "slug": "016",
+      "title": "CSS: Propriedade Display",
+      "order": 16
+    },
+    {
+      "id": "017",
+      "slug": "017",
+      "title": "CSS: Posicionamento",
+      "order": 17
+    },
+    {
+      "id": "018",
+      "slug": "018",
+      "title": "Prática: Criar um Design Simples Usando CSS",
+      "order": 18
+    },
+    {
+      "id": "019",
+      "slug": "019",
+      "title": "CSS Grid",
+      "order": 19
+    },
+    {
+      "id": "020",
+      "slug": "020",
+      "title": "Prática: Criar um Layout Usando Grid",
+      "order": 20
+    },
+    {
+      "id": "021",
+      "slug": "021",
+      "title": "Flexbox",
+      "order": 21
+    },
+    {
+      "id": "022",
+      "slug": "022",
+      "title": "Prática: Criar um Layout Usando Flexbox",
+      "order": 22
+    },
+    {
+      "id": "023",
+      "slug": "023",
+      "title": "Design Responsivo",
+      "order": 23
+    },
+    {
+      "id": "024",
+      "slug": "024",
+      "title": "Prática: Criar uma Landing Page com CSS",
+      "order": 24
+    }
+  ]
+}

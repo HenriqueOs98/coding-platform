@@ -1,0 +1,22 @@
+# Browser DevTools for CSS
+
+Before we go on with CSS, I have to show you a tool you’ll use all the time: the **Browser DevTools**.
+
+This set of tools is available in any browser.
+
+In Chrome, Firefox, and Edge you can right-click on any page and have access to the DevTools by clicking the **Inspect** menu.
+
+This is what shows up:
+
+![Untitled](Browser%20DevTools%20for%20CSS%201902767ad7e38152969bd173c5366bb7/Untitled.png)
+
+A similar menu is available in Safari too, but you need to enable the Develop menu from the configuration.
+
+The DevTools are more or less similar in all browsers. 
+
+The most basic form of usage, and a very common one, is inspecting the content of a webpage, like in the above pictures, using the **Elements/Inspector panel**.
+
+There you can select any of the HTML tags of the page, and see the styling applied to them (we’ll use this a lot when we’ll build web pages). This works for your sites, but also for every site on the Internet. You can inspect how they are built.
+
+[The Browser DevTools.mp4](Browser%20DevTools%20for%20CSS%201902767ad7e38152969bd173c5366bb7/The_Browser_DevTools.mp4)
+

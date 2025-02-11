@@ -1,0 +1,43 @@
+# An HTTP request
+
+What's in a request?
+
+The first thing is **the URL**, which we've already seen before.
+
+When we enter an address and press enter in our browser, under the hoods the server sends to the correct IP address a request like this:
+
+```
+GET /a-page
+```
+
+where /a-page is the URL you requested.
+
+The second thing is **the HTTP method** (also called verb).
+
+HTTP in the early days defined 3 of them:
+
+- `GET`
+- `POST`
+- `HEAD`
+
+and HTTP/1.1 introduced
+
+- `PUT`
+- `DELETE`
+- `OPTIONS`
+- `TRACE`
+
+We'll see them in detail in a minute.
+
+The third thing that composes a request is a set of **HTTP headers**.
+
+The client sets **request headers** to communicate something to the server when we make a request.
+
+For example the client can set an authorization token, or a cookie, or set a language.
+
+And the server can use **response headers** to communicate information back.
+
+For example, the content encoding, the content type, when it was last modified, etc.
+
+Finally, in some kinds of requests (`POST` and `PUT` requests) we can have a **request body**.
+

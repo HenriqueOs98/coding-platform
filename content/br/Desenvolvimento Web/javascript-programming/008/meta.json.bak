@@ -1,0 +1,70 @@
+{
+  "id": "008",
+  "tutorial_id": "008",
+  "course_id": "javascript-programming",
+  "title": "Biblioteca Padrão",
+  "description": "",
+  "order_index": 8,
+  "validation": {
+    "javascript": {
+      "requiredFunctions": [
+        "toLowerCase",
+        "toUpperCase",
+        "includes",
+        "replace",
+        "trim",
+        "Math.round",
+        "Math.floor",
+        "Math.ceil",
+        "Math.min",
+        "Math.max",
+        "Math.random",
+        "map",
+        "filter",
+        "reduce"
+      ],
+      "requiredVariables": [
+        "produtos",
+        "processarCompra"
+      ],
+      "requiredKeywords": [
+        "const",
+        "arrow function",
+        "spread operator"
+      ],
+      "forbiddenKeywords": [
+        "for",
+        "while"
+      ],
+      "expectedConsoleOutput": [
+        180
+      ],
+      "expectedVariableValues": {
+        "produtos": [
+          {
+            "nome": "Tênis",
+            "preco": 120
+          },
+          {
+            "nome": "Camiseta",
+            "preco": 40
+          },
+          {
+            "nome": "Calça",
+            "preco": 80
+          }
+        ],
+        "processarCompra": "function"
+      }
+    }
+  },
+  "is_active": true,
+  "translations": {
+    "pt": {
+      "title": "Biblioteca Padrão"
+    },
+    "en": {
+      "title": "Biblioteca Padrão"
+    }
+  }
+}

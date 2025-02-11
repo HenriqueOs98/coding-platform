@@ -1,0 +1,55 @@
+{
+  "id": "023",
+  "tutorial_id": "023",
+  "course_id": "2",
+  "title": "Design Responsivo",
+  "description": "",
+  "order_index": 1,
+  "last_one": false,
+  "validation": {
+    "html": {
+      "requiredTags": [
+        "div"
+      ],
+      "requiredAttributes": {
+        "class": [
+          "grid",
+          "grid-cols-1",
+          "md:grid-cols-2",
+          "xl:grid-cols-3",
+          "gap-4"
+        ]
+      },
+      "requiredNesting": [
+        "div > div"
+      ],
+      "forbiddenTags": [],
+      "minTags": {
+        "div": 2
+      },
+      "maxTags": {}
+    },
+    "css": {
+      "requiredSelectors": [
+        ".card"
+      ],
+      "requiredProperties": [
+        "width",
+        "background"
+      ],
+      "requiredValues": {
+        "width": [
+          "100%",
+          "50%",
+          "33%"
+        ],
+        "background": [
+          "#f0f0f0",
+          "#e0e0e0",
+          "#d0d0d0"
+        ]
+      },
+      "forbiddenProperties": []
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "012",
+  "tutorial_id": "012",
+  "course_id": "api-and-networking",
+  "title": "Trabalhando com JSON",
+  "description": "",
+  "order_index": 1,
+  "validation": {
+    "expectedOutput": [],
+    "requiredStatements": []
+  },
+  "is_active": true,
+  "translations": {
+    "pt": {
+      "title": "Trabalhando com JSON"
+    },
+    "en": {
+      "title": "Trabalhando com JSON"
+    }
+  }
+}

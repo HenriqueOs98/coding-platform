@@ -1,0 +1,51 @@
+# PRACTICE: Formatting text
+
+Let's start from the last lesson, and we're going to see how we can format our text by adding special text formatting tags that the browser will interpret and apply a special visual appearance to them.
+
+Let's make a portion of the paragraph bold using the `strong` tag, and another part italicized using the `em` tag, which stands for *emphasis*:
+
+![Screen Shot 2020-04-14 at 16.10.58.png](PRACTICE%20Formatting%20text%201902767ad7e381e8a004fde8cb8a460d/Screen_Shot_2020-04-14_at_16.10.58.png)
+
+You can cut a paragraph in the middle using the `br` tag, which stands for *break line*:
+
+![Screen Shot 2020-04-14 at 16.13.15.png](PRACTICE%20Formatting%20text%201902767ad7e381e8a004fde8cb8a460d/Screen_Shot_2020-04-14_at_16.13.15.png)
+
+This tag is different from the others, because it's a self-closing tag: it does not need a closing tag.
+
+Another popular self-closing tag is `hr`, horizontal ruler:
+
+![Screen Shot 2020-04-14 at 16.18.10.png](PRACTICE%20Formatting%20text%201902767ad7e381e8a004fde8cb8a460d/Screen_Shot_2020-04-14_at_16.18.10.png)
+
+Another useful tag is `blockquote`, used to add quotes to the text:
+
+```html
+<blockquote>A quote from a famous author</blockquote>
+
+```
+
+and `q`, used for the same goal, but displays the quote inline instead than on its own block. Notice in this example the browser puts quotes around it:
+
+![Screen Shot 2020-04-14 at 16.29.29.png](PRACTICE%20Formatting%20text%201902767ad7e381e8a004fde8cb8a460d/Screen_Shot_2020-04-14_at_16.29.29.png)
+
+It's important to note that you will be able style those elements as you like using CSS, but by default the browser adds those styling options.
+
+Lists are another great tool when writing and formatting text.
+
+You have 3 kinds of lists: ordered lists, unordered lists, and definition lists.
+
+Unordered lists are the most common ones, and you define them using the `ul` tag. Each item is wrapped in a `li` tag:
+
+![Screen Shot 2020-04-14 at 16.52.32.png](PRACTICE%20Formatting%20text%201902767ad7e381e8a004fde8cb8a460d/Screen_Shot_2020-04-14_at_16.52.32.png)
+
+An ordered list is similar, it just changes `ul` (unordered list) to `ol` (ordered list):
+
+![Screen Shot 2020-04-14 at 16.52.48.png](PRACTICE%20Formatting%20text%201902767ad7e381e8a004fde8cb8a460d/Screen_Shot_2020-04-14_at_16.52.48.png)
+
+You can nest lists:
+
+![Screen Shot 2020-04-14 at 16.54.13.png](PRACTICE%20Formatting%20text%201902767ad7e381e8a004fde8cb8a460d/Screen_Shot_2020-04-14_at_16.54.13.png)
+
+Definition lists are used to create glossaries, for example. We have a term, and a definition:
+
+![Screen Shot 2020-04-14 at 16.55.49.png](PRACTICE%20Formatting%20text%201902767ad7e381e8a004fde8cb8a460d/Screen_Shot_2020-04-14_at_16.55.49.png)
+

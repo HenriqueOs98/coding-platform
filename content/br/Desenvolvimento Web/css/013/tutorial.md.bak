@@ -1,0 +1,63 @@
+# PRACTICE: Styling links
+
+Let's create a list of 3 links:
+
+```html
+<html>
+  <body>
+    <h2>Links</h2>
+    <ul>
+      <li>
+        <a href="/">home</a>
+      </li>
+      <li>
+        <a href="/blog">blog</a>
+      </li>
+      <li>
+        <a href="<https://flaviocopes.com>">flaviocopes.com</a>
+      </li>
+    </ul>
+  </body>
+</html>
+
+```
+
+By default browsers render link in the blue color, and in that other color if a link has been *visited*:
+
+![Screen Shot 2020-04-16 at 16.46.43.png](PRACTICE%20Styling%20links%201902767ad7e381c5ba29c7fbb71d9422/Screen_Shot_2020-04-16_at_16.46.43.png)
+
+Yes, the browser maintains an internal state based on your visualization history.
+
+We can style all links by targeting the `a` selector:
+
+```css
+a {
+  color: black;
+}
+
+```
+
+![Screen Shot 2020-04-16 at 16.59.39.png](PRACTICE%20Styling%20links%201902767ad7e381c5ba29c7fbb71d9422/Screen_Shot_2020-04-16_at_16.59.39.png)
+
+You can style visited links by adding the `:visited` pseudo-class:
+
+```css
+a:visited {
+  color: red;
+}
+
+```
+
+![Screen Shot 2020-04-16 at 16.59.31.png](PRACTICE%20Styling%20links%201902767ad7e381c5ba29c7fbb71d9422/Screen_Shot_2020-04-16_at_16.59.31.png)
+
+You can change the style of links you hover with the mouse using the `:hover` pseudo-class:
+
+```css
+a:hover {
+  color: blue;
+}
+
+```
+
+![Screen Shot 2020-04-16 at 16.59.26.png](PRACTICE%20Styling%20links%201902767ad7e381c5ba29c7fbb71d9422/Screen_Shot_2020-04-16_at_16.59.26.png)
+

@@ -1,0 +1,41 @@
+{
+  "id": "002",
+  "tutorial_id": "002",
+  "course_id": "javascript-programming",
+  "title": "Tipos de Dados",
+  "description": "",
+  "order_index": 2,
+  "validation": {
+    "javascript": {
+      "requiredFunctions": [
+        "saudacao",
+        "calcularMedia"
+      ],
+      "requiredVariables": [
+        "numeroDeUsuarios",
+        "pontosPorUsuario",
+        "pontosTotais",
+        "idade",
+        "altura",
+        "nome",
+        "mensagem",
+        "estaLogado",
+        "temPermissao",
+        "cores",
+        "numeros",
+        "usuario"
+      ],
+      "requiredEventListeners": [],
+      "forbiddenStatements": []
+    }
+  },
+  "is_active": true,
+  "translations": {
+    "pt": {
+      "title": "Tipos de Dados"
+    },
+    "en": {
+      "title": "Tipos de Dados"
+    }
+  }
+}

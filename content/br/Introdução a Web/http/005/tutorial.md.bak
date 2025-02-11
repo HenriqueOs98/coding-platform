@@ -1,0 +1,83 @@
+# HTTP Request Headers
+
+Every HTTP request has a set of mandatory and optional headers.
+
+We have a lot of them, but here I'll list you the most important / useful ones.
+
+### Host
+
+`Host: flaviocopes.com`
+
+The domain name of the server, and the port number on which the server is listening. If the port is omitted, 80 is assumed.
+
+This is the only mandatory HTTP request header
+
+All the other headers are listed in alphabetical order.
+
+### Accept
+
+`Accept: application/json`
+
+The MIME type we'll want the response to be
+
+### Accept-Charset
+
+`Accept-Charset: utf-8`
+
+Lists the charset we'll want the response to be
+
+### Accept-Encoding
+
+`Accept-Encoding: gzip, deflate`
+
+List of acceptable encodings we'll want the response to be
+
+### Accept-Language
+
+`Accept-Language: en-US`
+
+List of languages we'll want the response to be
+
+### Authorization
+
+`Authorization: Basic 34i3j4iom2323==`
+
+To pass authentication credentials, for example a token
+
+### Cache-Control
+
+We can set the caching rules using this header.
+
+- `Cache-Control: no-cache` tells the server to revalidate the data before sending the response to make sure it's current
+- `Cache-Control: max-age=30` tells the server we want data that's not older than 30 seconds
+
+### Content-Length
+
+`Content-Length: 348`
+
+The length of the request body in bytes
+
+### Content-Type
+
+`Content-Type: application/x-www-form-urlencoded`
+
+The content type of the body of the request (used in POST and PUT requests).
+
+### Cookie
+
+`Cookie: name=value`
+
+Sets a cookie
+
+### Referer
+
+`Referer: <https://flaviocopes.com`>
+
+The address of the previous web page from which a link to the currently requested page was followed.
+
+### User-Agent
+
+`User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36`
+
+The string that identifies the user agent (the browser)
+
